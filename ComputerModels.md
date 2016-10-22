@@ -2,46 +2,64 @@
 
 ## 1. PersonalComputer
 - Id 
+- Model
 - Price
 - Motherboard ( model )
-- CPU ( model )
-- GPU ( model )
-- RAM ( model )
-- HDD ( model )
-- Cooling ( model )
+- Procesor ( model )
+- VideoCard ( model )
+- Memory ( model )
+- HardDrives ( model ) ( can have more than one HardDrive )
+- Cooling ( model ) ( this is not set )
 
 ## 2. Motherboard
 - Id
+- Model
 - Price
-- Quantity
+- Manufacturer
+- Quantity ( this is not set )
 - Computers
 
-## 2. CPU
+## 3. Procesor
+- Id
+- Model
+- Price
+- FrequencyInMhz
+- Manufacturer
+- Quantity ( this is not set )
+- Computers
+
+## 4. VideoCard
+- Id
+- Model
+- Price
+- Manufacturer 
+- Quantity ( this is not set )
+- Computers
+
+## 5. Memory
+- Id
+- CapacityInGb
+- Price
+- Manufacturer
+- Quantity ( this is not set )
+- Computers
+
+## 6. HardDrive
+- Id
+- Model
+- Price
+- CapacityInGb
+- Manufacturer
+- Quantity ( this is not set )
+- Computers
+
+## 7. Cooling (this is not set)
 - Id
 - Price
 - Quantity
 - Computers
 
-## 2. GPU
+## 8. ComputerShop (can delete if it is unnecessary)
 - Id
-- Price
-- Quantity
-- Computers
-
-## 2. RAM
-- Id
-- Price
-- Quantity
-- Computers
-
-## 2. HDD
-- Id
-- Price
-- Quantity
-- Computers
-
-## 2. Cooling
-- Id
-- Price
-- Quantity
-- Computers
+- Name
+- Computers 
