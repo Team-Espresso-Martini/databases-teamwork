@@ -32,20 +32,6 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
 
             service.SaveDataToDatabase<Memory>(new List<Memory>() { memory });
 
-            //var props = db.GetType().GetProperties();
-            //foreach (var item in props)
-            //{
-            //    if (item.PropertyType.IsGenericType)
-            //    {
-            //        Console.WriteLine(item.PropertyType.GetGenericArguments()[0].Name);
-            //    }
-            //}
-
-            //var type = db.Memories.GetType().GetMethod("Add");
-
-            //db.Memories.Add(memory);
-            //db.SaveChanges();
-
             Console.WriteLine(db.Memories.Count());
         }
     }

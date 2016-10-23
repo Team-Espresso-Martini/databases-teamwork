@@ -39,11 +39,12 @@ namespace ComputersFactory.Data.Services
 
             var contextAddMethod = this.ResolveModelTypeToMatchingContextAddMethod(typeof(ModelType));
             var contextMatchingDbSetProperty = this.ResolveModelTypeToMatchingContextProperty(typeof(ModelType));
-            var contextInstanceMatchingDbSet = contextMatchingDbSetProperty.GetValue(entityContext);
+            var contextInstanceMatchingDbSet = contextMatchingDbSetProperty.GetValue(this.entityContext);
 
             foreach (var item in validDataItems)
             {
-                contextAddMethod.Invoke(contextInstanceMatchingDbSet, new object[] { item });
+                var nextValueToAdd = new object[] { item };
+                contextAddMethod.Invoke(contextInstanceMatchingDbSet, nextValueToAdd);
             }
 
             this.entityContext.SaveChanges();
