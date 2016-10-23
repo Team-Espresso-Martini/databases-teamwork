@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IFileSystemProvider.cs" />
     <Compile Include="Contracts\IFileSystemService.cs" />
+    <Compile Include="FileSystemProviders\FileSystemProvider.cs" />
+    <Compile Include="FileSystemProviders\ResolveMissingPathFileSystemProvider.cs" />
     <Compile Include="FileSystemService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
