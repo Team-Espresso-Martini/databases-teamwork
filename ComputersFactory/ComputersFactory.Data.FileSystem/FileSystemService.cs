@@ -8,6 +8,18 @@ namespace ComputersFactory.Data.FileSystem
 {
     public class FileSystemService : IFileSystemService
     {
+        private readonly IFileSystemProvider fileSystemProvider;
+
+        public FileSystemService(IFileSystemProvider fileSystemProvider)
+        {
+            if (fileSystemProvider == null)
+            {
+                throw new ArgumentNullException(nameof(fileSystemProvider));
+            }
+
+            this.fileSystemProvider = fileSystemProvider;
+        }
+
         public IEnumerable<string> ReadFromFile(string filePath)
         {
             if (string.IsNullOrEmpty(filePath))
@@ -15,13 +27,7 @@ namespace ComputersFactory.Data.FileSystem
                 throw new ArgumentNullException(nameof(filePath));
             }
 
-            var fileExists = File.Exists(filePath);
-            if (!fileExists)
-            {
-                throw new FileNotFoundException(filePath);
-            }
-
-            var content = File.ReadAllLines(filePath);
+            var content = this.fileSystemProvider.ReadAllLines(filePath);
             return content;
         }
 
@@ -37,15 +43,7 @@ namespace ComputersFactory.Data.FileSystem
                 throw new ArgumentNullException(nameof(filePath));
             }
 
-            var filePathInfo = new FileInfo(filePath);
-            var directoryName = filePathInfo.DirectoryName;
-            var containingDirectoryExists = Directory.Exists(directoryName);
-            if (!containingDirectoryExists)
-            {
-                throw new DirectoryNotFoundException(filePath);
-            }
-
-            File.WriteAllText(filePath, content);
+            this.fileSystemProvider.WriteAllText(filePath, content);
         }
     }
 }
