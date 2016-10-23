@@ -60,7 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="MySqlTesting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +71,10 @@
     <ProjectReference Include="..\ComputersFactory.Data.MySql\ComputersFactory.Data.MySql.csproj">
       <Project>{4df6e47f-c8ae-4a9a-80af-89e73fc479dc}</Project>
       <Name>ComputersFactory.Data.MySql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.Services\ComputersFactory.Data.Services.csproj">
+      <Project>{56ecb015-d00b-4dcb-a229-43da09536a81}</Project>
+      <Name>ComputersFactory.Data.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
       <Project>{4fe099d3-b89f-4905-8f5b-3a5752fba06e}</Project>

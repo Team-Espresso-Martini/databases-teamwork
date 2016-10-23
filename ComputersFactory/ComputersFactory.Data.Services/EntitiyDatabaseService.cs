@@ -28,6 +28,14 @@ namespace ComputersFactory.Data.Services
             throw new NotImplementedException();
         }
 
+        private Type ResolveModelTypeToMatchingContextSet(Type modelType)
+        {
+            var modelTypeName = modelType.Name;
+            var contextSet = this.contextSetsNames[modelTypeName];
+
+            return contextSet;
+        }
+
         private IDictionary<string, Type> ResolveEntityContextSetsNames(DbContext entityContext)
         {
             var result = new Dictionary<string, Type>();
