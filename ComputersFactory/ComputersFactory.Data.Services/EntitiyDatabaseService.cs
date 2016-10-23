@@ -14,6 +14,7 @@ namespace ComputersFactory.Data.Services
         private readonly MethodInfo dbSetAddMethod;
         private readonly IDictionary<string, MethodInfo> contextSetsAddMethods;
         private readonly IDictionary<string, PropertyInfo> contextProperties;
+
         public EntitiyDatabaseService(DbContext entityContext)
         {
             if (entityContext == null)
@@ -29,13 +30,13 @@ namespace ComputersFactory.Data.Services
 
         public void SaveDataToDatabase<ModelType>(IEnumerable<ModelType> data)
         {
-            var method = this.ResolveModelTypeToMatchingContextAddMethod(typeof(ModelType));
-            var property = this.ResolveModelTypeToMatchingContextProperty(typeof(ModelType));
-            var targetObject = property.GetValue(entityContext);
+            var contextAddMethod = this.ResolveModelTypeToMatchingContextAddMethod(typeof(ModelType));
+            var contextMatchingDbSetProperty = this.ResolveModelTypeToMatchingContextProperty(typeof(ModelType));
+            var contextInstanceMatchingDbSet = contextMatchingDbSetProperty.GetValue(entityContext);
 
             foreach (var item in data)
             {
-                method.Invoke(targetObject, new object[] { item });
+                contextAddMethod.Invoke(contextInstanceMatchingDbSet, new object[] { item });
             }
 
             this.entityContext.SaveChanges();
