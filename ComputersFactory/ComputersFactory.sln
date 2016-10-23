@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Json"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.FileSystem", "ComputersFactory.Data.FileSystem\ComputersFactory.Data.FileSystem.csproj", "{3865597A-86B0-410F-B43D-206B1F6FBB57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.MySql", "ComputersFactory.Data.MySql\ComputersFactory.Data.MySql.csproj", "{4DF6E47F-C8AE-4A9A-80AF-89E73FC479DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3865597A-86B0-410F-B43D-206B1F6FBB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3865597A-86B0-410F-B43D-206B1F6FBB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3865597A-86B0-410F-B43D-206B1F6FBB57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF6E47F-C8AE-4A9A-80AF-89E73FC479DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF6E47F-C8AE-4A9A-80AF-89E73FC479DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF6E47F-C8AE-4A9A-80AF-89E73FC479DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF6E47F-C8AE-4A9A-80AF-89E73FC479DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,13 +1,14 @@
 ﻿using System.Data.Entity;
+
 using ComputersFactory.Models;
 using ComputersFactory.Models.Components;
 
-namespace ComputersFactory.Data
+namespace ComputersFactory.Data.MySql
 {
-    public class ComputersFactoryDbContext : DbContext
+    public class ComputersMySqlDbContext : DbContext
     {
-        public ComputersFactoryDbContext()
-            : base("ComputersFactoryConnection")
+        public ComputersMySqlDbContext()
+            : base("MySqlConnection")
         {
         }
 
