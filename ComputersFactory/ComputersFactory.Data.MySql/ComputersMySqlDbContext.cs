@@ -4,7 +4,6 @@ using ComputersFactory.Models;
 using ComputersFactory.Models.Components;
 
 using MySql.Data.Entity;
-using System.Data.Common;
 
 namespace ComputersFactory.Data.MySql
 {
@@ -14,13 +13,6 @@ namespace ComputersFactory.Data.MySql
         public ComputersMySqlDbContext()
             : base("MySqlConnection")
         {
-        }
-
-        // Constructor to use on a DbConnection that is already opened
-        public ComputersMySqlDbContext(DbConnection existingConnection, bool contextOwnsConnection)
-            : base(existingConnection, contextOwnsConnection)
-        {
-
         }
 
         public virtual IDbSet<Memory> Memories { get; set; }

@@ -19,8 +19,6 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
             var db = new ComputersMySqlDbContext();
             db.Database.CreateIfNotExists();
 
-
-            //This is for deleting
             var memory = new Memory
             {
                 CapacityInGb = 2,
