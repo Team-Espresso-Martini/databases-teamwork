@@ -85,10 +85,15 @@ namespace ComputersFactory.Data.Services
 
         private PropertyInfo ResolveModelTypeToMatchingContextProperty(Type modelType)
         {
+            PropertyInfo contextProperty;
             var modelTypeName = modelType.Name;
-            var contextSet = this.contextProperties[modelTypeName];
+            var contextPropertyIsFound = this.contextProperties.TryGetValue(modelTypeName, out contextProperty);
+            if (!contextPropertyIsFound)
+            {
+                throw new ArgumentException("Invalid model type");
+            }
 
-            return contextSet;
+            return contextProperty;
         }
 
         private IDictionary<string, MethodInfo> ResolveEntityContextSetsAddMethods(DbContext entityContext)
