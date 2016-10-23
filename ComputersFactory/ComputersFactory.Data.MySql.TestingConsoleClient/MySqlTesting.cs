@@ -5,6 +5,7 @@ using System.Linq;
 using ComputersFactory.Data.MySql.Migrations;
 using ComputersFactory.Models.Components;
 using ComputersFactory.Data.Services;
+using System.Collections.Generic;
 
 namespace ComputersFactory.Data.MySql.TestingConsoleClient
 {
@@ -29,7 +30,7 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
                 Manufacturer = "IBM"
             };
 
-
+            service.SaveDataToDatabase<Memory>(new List<Memory>() { memory });
 
             //var props = db.GetType().GetProperties();
             //foreach (var item in props)
