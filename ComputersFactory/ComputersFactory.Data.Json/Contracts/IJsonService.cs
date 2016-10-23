@@ -2,5 +2,6 @@
 {
     public interface IJsonService
     {
+        string ConvertModelToJson<ModelType>(ModelType model);
     }
 }
