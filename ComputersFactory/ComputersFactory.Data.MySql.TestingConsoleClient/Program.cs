@@ -11,7 +11,7 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
     {
         public static void Main()
         {
-            var connection = new MySqlConnection("server=localhost;port=3306;database=mycontext;uid=randomuser;pwd=1234");
+            var connection = new MySqlConnection("server=localhost;port=3306;database=mycontext;uid=root;pwd=1234");
 
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersMySqlDbContext, MySqlEntityConfiguration>());
 
