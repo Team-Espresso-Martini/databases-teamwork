@@ -2,9 +2,9 @@ using System.Data.Entity.Migrations;
 
 namespace ComputersFactory.Data.MySql.Migrations
 {
-    internal sealed class Configuration : DbMigrationsConfiguration<ComputersMySqlDbContext>
+    public sealed class MySqlEntityConfiguration : DbMigrationsConfiguration<ComputersMySqlDbContext>
     {
-        public Configuration()
+        public MySqlEntityConfiguration()
         {
             this.AutomaticMigrationsEnabled = true;
             this.AutomaticMigrationDataLossAllowed = true;
