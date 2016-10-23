@@ -30,11 +30,18 @@ namespace ComputersFactory.Data.Services
 
         public void SaveDataToDatabase<ModelType>(IEnumerable<ModelType> data)
         {
+            if (data == null)
+            {
+                throw new ArgumentNullException(nameof(data));
+            }
+
+            var validDataItems = data.Where(item => item != null).ToList();
+
             var contextAddMethod = this.ResolveModelTypeToMatchingContextAddMethod(typeof(ModelType));
             var contextMatchingDbSetProperty = this.ResolveModelTypeToMatchingContextProperty(typeof(ModelType));
             var contextInstanceMatchingDbSet = contextMatchingDbSetProperty.GetValue(entityContext);
 
-            foreach (var item in data)
+            foreach (var item in validDataItems)
             {
                 contextAddMethod.Invoke(contextInstanceMatchingDbSet, new object[] { item });
             }
@@ -65,8 +72,13 @@ namespace ComputersFactory.Data.Services
 
         private MethodInfo ResolveModelTypeToMatchingContextAddMethod(Type modelType)
         {
+            MethodInfo contextSet;
             var modelTypeName = modelType.Name;
-            var contextSet = this.contextSetsAddMethods[modelTypeName];
+            var contextSetIsFound = this.contextSetsAddMethods.TryGetValue(modelTypeName, out contextSet);
+            if (!contextSetIsFound)
+            {
+                throw new ArgumentException("Invalid model type");
+            }
 
             return contextSet;
         }
