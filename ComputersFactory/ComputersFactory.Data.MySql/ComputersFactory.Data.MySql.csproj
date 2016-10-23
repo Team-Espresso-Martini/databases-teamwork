@@ -57,7 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComputersMySqlDbContext.cs" />
+    <Compile Include="ComputersFactoryMySqlDbContext.cs" />
     <Compile Include="Migrations\DbMigrationsConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

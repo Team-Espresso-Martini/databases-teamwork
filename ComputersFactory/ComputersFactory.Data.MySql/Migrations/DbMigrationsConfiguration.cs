@@ -2,7 +2,7 @@ using System.Data.Entity.Migrations;
 
 namespace ComputersFactory.Data.MySql.Migrations
 {
-    public sealed class MySqlEntityConfiguration : DbMigrationsConfiguration<ComputersMySqlDbContext>
+    public sealed class MySqlEntityConfiguration : DbMigrationsConfiguration<ComputersFactoryMySqlDbContext>
     {
         public MySqlEntityConfiguration()
         {
@@ -10,7 +10,7 @@ namespace ComputersFactory.Data.MySql.Migrations
             this.AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(ComputersMySqlDbContext context)
+        protected override void Seed(ComputersFactoryMySqlDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -8,9 +8,9 @@ using MySql.Data.Entity;
 namespace ComputersFactory.Data.MySql
 {
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
-    public class ComputersMySqlDbContext : DbContext
+    public class ComputersFactoryMySqlDbContext : DbContext
     {
-        public ComputersMySqlDbContext()
+        public ComputersFactoryMySqlDbContext()
             : base("MySqlConnection")
         {
         }

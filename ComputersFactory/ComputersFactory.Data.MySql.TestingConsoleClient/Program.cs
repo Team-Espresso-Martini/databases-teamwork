@@ -14,9 +14,9 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
 
         public static void Main()
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersMySqlDbContext, MySqlEntityConfiguration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersFactoryMySqlDbContext, MySqlEntityConfiguration>());
 
-            var db = new ComputersMySqlDbContext();
+            var db = new ComputersFactoryMySqlDbContext();
             db.Database.CreateIfNotExists();
 
             var memory = new Memory
@@ -25,6 +25,17 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
                 Price = 50.00M,
                 Manufacturer = "IBM"
             };
+
+            var props = db.GetType().GetProperties();
+            foreach (var item in props)
+            {
+                if (item.PropertyType.IsGenericType)
+                {
+                    Console.WriteLine(item.PropertyType.GetGenericArguments()[0].Name);
+                }
+            }
+
+            var type = db.Memories.GetType().GetGenericArguments();
 
             db.Memories.Add(memory);
             db.SaveChanges();
