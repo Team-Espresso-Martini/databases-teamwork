@@ -12,8 +12,8 @@ namespace ComputersFactory.Data.Services
     {
         private readonly DbContext entityContext;
         private readonly MethodInfo dbSetAddMethod;
-        private readonly IDictionary<string, MethodInfo> contextSetsNames;
-
+        private readonly IDictionary<string, MethodInfo> contextSetsAddMethods;
+        private readonly IDictionary<string, PropertyInfo> contextProperties;
         public EntitiyDatabaseService(DbContext entityContext)
         {
             if (entityContext == null)
@@ -23,15 +23,19 @@ namespace ComputersFactory.Data.Services
 
             this.entityContext = entityContext;
             this.dbSetAddMethod = this.ResolveDbSetAddMethod(entityContext);
-            this.contextSetsNames = this.ResolveEntityContextSetsNames(entityContext);
+            this.contextProperties = this.ResolveEntityContextSetsProperties(entityContext);
+            this.contextSetsAddMethods = this.ResolveEntityContextSetsAddMethods(entityContext);
         }
 
         public void SaveDataToDatabase<ModelType>(IEnumerable<ModelType> data)
         {
-            var method = this.ResolveModelTypeToMatchingContextSet(typeof(ModelType));
+            var method = this.ResolveModelTypeToMatchingContextAddMethod(typeof(ModelType));
+            var property = this.ResolveModelTypeToMatchingContextProperty(typeof(ModelType));
+            var targetObject = property.GetValue(entityContext);
+
             foreach (var item in data)
             {
-                method.Invoke(this.entityContext.GetType().GetProperty("Memories").GetValue(entityContext), new object[] { item });
+                method.Invoke(targetObject, new object[] { item });
             }
 
             this.entityContext.SaveChanges();
@@ -58,15 +62,23 @@ namespace ComputersFactory.Data.Services
             return dbSetAddMethodInfo;
         }
 
-        private MethodInfo ResolveModelTypeToMatchingContextSet(Type modelType)
+        private MethodInfo ResolveModelTypeToMatchingContextAddMethod(Type modelType)
         {
             var modelTypeName = modelType.Name;
-            var contextSet = this.contextSetsNames[modelTypeName];
+            var contextSet = this.contextSetsAddMethods[modelTypeName];
 
             return contextSet;
         }
 
-        private IDictionary<string, MethodInfo> ResolveEntityContextSetsNames(DbContext entityContext)
+        private PropertyInfo ResolveModelTypeToMatchingContextProperty(Type modelType)
+        {
+            var modelTypeName = modelType.Name;
+            var contextSet = this.contextProperties[modelTypeName];
+
+            return contextSet;
+        }
+
+        private IDictionary<string, MethodInfo> ResolveEntityContextSetsAddMethods(DbContext entityContext)
         {
             var result = new Dictionary<string, MethodInfo>();
 
@@ -82,6 +94,27 @@ namespace ComputersFactory.Data.Services
                     var generictTypeName = genericType.Name;
                     var addMethod = propertyType.GetMethod("Add");
                     result.Add(generictTypeName, addMethod);
+                }
+            }
+
+            return result;
+        }
+
+        private IDictionary<string, PropertyInfo> ResolveEntityContextSetsProperties(DbContext entityContext)
+        {
+            var result = new Dictionary<string, PropertyInfo>();
+
+            var contextProperties = entityContext.GetType().GetProperties();
+            foreach (var property in contextProperties)
+            {
+                var propertyType = property.PropertyType;
+                var genericType = propertyType.GetGenericArguments().FirstOrDefault();
+
+                var genericTypeExists = genericType != null;
+                if (genericTypeExists)
+                {
+                    var generictTypeName = genericType.Name;
+                    result.Add(generictTypeName, property);
                 }
             }
 

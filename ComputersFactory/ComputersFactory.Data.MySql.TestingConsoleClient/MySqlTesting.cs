@@ -41,10 +41,10 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
             //    }
             //}
 
-            var type = db.Memories.GetType().GetMethod("Add");
+            //var type = db.Memories.GetType().GetMethod("Add");
 
-            db.Memories.Add(memory);
-            db.SaveChanges();
+            //db.Memories.Add(memory);
+            //db.SaveChanges();
 
             Console.WriteLine(db.Memories.Count());
         }
