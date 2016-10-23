@@ -1,32 +1,24 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Linq;
+
 using ComputersFactory.Data.MySql.Migrations;
 using ComputersFactory.Models.Components;
-using MySql.Data.MySqlClient;
 
 namespace ComputersFactory.Data.MySql.TestingConsoleClient
 {
     public class Program
     {
+        // Leave for reference
+        private const string ConnectionString = "server=localhost;port=3306;database=mycontext;uid=root;pwd=1234";
+
         public static void Main()
         {
-            var connection = new MySqlConnection("server=localhost;port=3306;database=mycontext;uid=root;pwd=1234");
-
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersMySqlDbContext, MySqlEntityConfiguration>());
 
-            var db = new ComputersMySqlDbContext(connection, false);
+            var db = new ComputersMySqlDbContext();
+            db.Database.CreateIfNotExists();
 
-            try
-            {
-                db.Database.CreateIfNotExists();
-
-            }
-            catch (Exception ex)
-            {
-
-                throw;
-            }
 
             //This is for deleting
             var memory = new Memory
@@ -38,7 +30,6 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
 
             db.Memories.Add(memory);
             db.SaveChanges();
-
 
             Console.WriteLine(db.Memories.Count());
         }

@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComputersMySqlDbContext.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\DbMigrationsConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
