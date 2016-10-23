@@ -31,7 +31,7 @@ namespace ComputersFactory.Data.Json
             this.fileSystemService = fileSystemService;
         }
 
-        public void SaveModelDataToFileSystem<ModelType>(IEnumerable<ModelType> modelData, string rootDirectoryPath)
+        public void SaveModelDataToFileSystemAsJson<ModelType>(IEnumerable<ModelType> modelData, string rootDirectoryPath)
         {
             if (modelData == null)
             {
@@ -54,10 +54,8 @@ namespace ComputersFactory.Data.Json
                 var fullFilePath = this.ResolveFullPathToTargetFileName(targetDirectory, fileNameWithoutExtension);
 
                 var json = this.jsonProvider.SerializeObject(item);
-                this.fileSystemService.WriteToFile(rootDirectoryPath, json);
+                this.fileSystemService.WriteToFile(fullFilePath, json);
             }
-
-            throw new NotImplementedException();
         }
 
         private string ResolveDirectoryNameForModel(string rootDirectoryPath, string modelName)
@@ -85,7 +83,7 @@ namespace ComputersFactory.Data.Json
             var idPropertyExists = idProperty != null;
             if (!idPropertyExists)
             {
-                throw new ArgumentException("propery Id does not exist.");
+                throw new ArgumentException("Property Id does not exist.");
             }
 
             var fileNameWithoutExtension = idProperty.GetValue(item).ToString();
