@@ -48,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IJsonService.cs" />
+    <Compile Include="Contracts\IJsonProvider.cs" />
+    <Compile Include="JsonProviders\NewtonsoftJsonProvider.cs" />
+    <Compile Include="JsonService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

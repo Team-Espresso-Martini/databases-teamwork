@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace ComputersFactory.Data.Json.JsonProviders
 {
-    public class NewtonsoftJsonProviders : IJsonProvider
+    public class NewtonsoftJsonProvider : IJsonProvider
     {
         public ModelType DeserializeToModel<ModelType>(string json)
         {

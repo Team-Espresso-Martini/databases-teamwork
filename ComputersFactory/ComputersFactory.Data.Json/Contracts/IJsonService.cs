@@ -1,7 +1,9 @@
-﻿namespace ComputersFactory.Data.Json.Contracts
+﻿using System.Collections.Generic;
+
+namespace ComputersFactory.Data.Json.Contracts
 {
     public interface IJsonService
     {
-        string ConvertModelToJson<ModelType>(ModelType model);
+        void SaveModelDataToFileSystem<ModelType>(IEnumerable<ModelType> modelData, string rootDirectoryPath);
     }
 }
