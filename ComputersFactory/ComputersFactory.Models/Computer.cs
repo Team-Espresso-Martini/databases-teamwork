@@ -34,7 +34,7 @@ namespace ComputersFactory.Models
 
         public int ProcesorId { get; set; }
 
-        public virtual Procesor Procesor { get; set; }
+        public virtual Processor Processor { get; set; }
 
         public int VideocardId { get; set; }
 

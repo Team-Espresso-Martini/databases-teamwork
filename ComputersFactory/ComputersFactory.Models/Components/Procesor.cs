@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ComputersFactory.Models.Components
 {
-    public class Procesor
+    public class Processor
     {
         private ICollection<Computer> computers;
 
-        public Procesor()
+        public Processor()
         {
             this.computers = new HashSet<Computer>();
         }

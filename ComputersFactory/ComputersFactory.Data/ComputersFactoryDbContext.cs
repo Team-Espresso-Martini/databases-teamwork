@@ -14,7 +14,7 @@ namespace ComputersFactory.Data
 
         public virtual IDbSet<Motherboard> MotherBoards { get; set; }
 
-        public virtual IDbSet<Procesor> Procesors { get; set; }
+        public virtual IDbSet<Processor> Procesors { get; set; }
 
         public virtual IDbSet<VideoCard> VideoCards { get; set; }
 
