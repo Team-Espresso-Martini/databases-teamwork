@@ -1,4 +1,6 @@
-﻿namespace ComputersFactory.Data.Services.Contracts
+﻿using System.Collections.Generic;
+
+namespace ComputersFactory.Data.Services.Contracts
 {
     public interface IDatabaseService
     {
