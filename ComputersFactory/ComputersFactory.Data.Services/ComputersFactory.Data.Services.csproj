@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IDatabaseService.cs" />
+    <Compile Include="Contracts\IDatabaseWriterService.cs" />
     <Compile Include="EntitiyDatabaseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

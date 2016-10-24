@@ -2,8 +2,7 @@
 
 namespace ComputersFactory.Data.Services.Contracts
 {
-    public interface IDatabaseService
+    public interface IDatabaseService : IDatabaseReaderService, IDatabaseWriterService
     {
-        void SaveDataToDatabase<ModelType>(IEnumerable<ModelType> data);
     }
 }
