@@ -11,7 +11,8 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
 {
     public class MySqlTesting
     {
-        // Leave for reference
+        // Leave for reference, needs a user: root, with password: 1234 to work.
+        // Creates a new database named "mycontext".
         private const string ConnectionString = "server=localhost;port=3306;database=mycontext;uid=root;pwd=1234";
 
         public static void Main()
@@ -26,7 +27,7 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
             var memory = new Memory
             {
                 CapacityInGb = 2,
-                Price = 50.00M,
+                Price = 55.00M,
                 Manufacturer = "IBM"
             };
 
