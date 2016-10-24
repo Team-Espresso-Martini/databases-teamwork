@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
 using ComputersFactory.Data.MySql.Migrations;
-using ComputersFactory.Data.Services.EntitiyDatabaseServices;
 using ComputersFactory.Models.Components;
-
+using ComputersFactory.Data.Services;
+using System.Collections.Generic;
 
 namespace ComputersFactory.Data.MySql.TestingConsoleClient
 {
@@ -23,7 +22,7 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
             var db = new ComputersFactoryMySqlDbContext();
             db.Database.CreateIfNotExists();
 
-            var service = new EntitiyDatabaseWriterService(db);
+            var service = new EntitiyDatabaseService(db);
 
             var memory = new Memory
             {

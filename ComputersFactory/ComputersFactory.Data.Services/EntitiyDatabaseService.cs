@@ -6,16 +6,16 @@ using System.Reflection;
 
 using ComputersFactory.Data.Services.Contracts;
 
-namespace ComputersFactory.Data.Services.EntitiyDatabaseServices
+namespace ComputersFactory.Data.Services
 {
-    public class EntitiyDatabaseWriterService : IDatabaseReaderService
+    public class EntitiyDatabaseService : IDatabaseService
     {
         private readonly DbContext entityContext;
         private readonly MethodInfo dbSetAddMethod;
         private readonly IDictionary<string, MethodInfo> contextSetsAddMethods;
         private readonly IDictionary<string, PropertyInfo> contextProperties;
 
-        public EntitiyDatabaseWriterService(DbContext entityContext)
+        public EntitiyDatabaseService(DbContext entityContext)
         {
             if (entityContext == null)
             {
