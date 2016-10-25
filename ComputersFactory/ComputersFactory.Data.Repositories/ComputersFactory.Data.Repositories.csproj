@@ -50,15 +50,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ComputersRepository.cs" />
+    <Compile Include="Repositories\Contracts\IHardDrivesRepository.cs" />
+    <Compile Include="Repositories\Contracts\IMemoryRepository.cs" />
+    <Compile Include="Repositories\Contracts\IMotherboardsRepository.cs" />
+    <Compile Include="Repositories\Contracts\IProcessorsRepository.cs" />
     <Compile Include="Repositories\Contracts\IRepository.cs" />
-    <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="Repositories\Base\GenericRepository.cs" />
+    <Compile Include="Repositories\Contracts\IComputersRepository.cs" />
+    <Compile Include="Repositories\Contracts\IVideoCardsRepository.cs" />
+    <Compile Include="UnitsOfWork\Contracts\IUnitOfWork.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UnitsOfWork\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
+      <Project>{4fe099d3-b89f-4905-8f5b-3a5752fba06e}</Project>
+      <Name>ComputersFactory.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

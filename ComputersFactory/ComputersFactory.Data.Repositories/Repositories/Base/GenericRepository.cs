@@ -22,6 +22,14 @@ namespace ComputersFactory.Data.Repositories.Repositories.Base
             this.entityContext = entityContext;
         }
 
+        protected virtual DbContext Context
+        {
+            get
+            {
+                return this.entityContext;
+            }
+        }
+
         public TEntity Get(int id)
         {
             var entity = this.entityContext.Set<TEntity>().Find(id);
