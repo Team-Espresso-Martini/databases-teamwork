@@ -25,8 +25,8 @@ namespace ComputersFactory.ConsoleClient
                 Manufacturer = "IBM"
             };
 
-            db.Memories.Add(memory);
-            db.SaveChanges();
+            //db.Memories.Add(memory);
+            //db.SaveChanges();
 
             worker.Memory.Add(memory);
             worker.SaveChanges();
