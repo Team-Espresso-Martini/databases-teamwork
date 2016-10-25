@@ -2,11 +2,11 @@
 
 using ComputersFactory.Data.Repositories.Repositories.Base;
 using ComputersFactory.Data.Repositories.Repositories.Contracts;
-using ComputersFactory.Models;
+using ComputersFactory.Models.Components;
 
 namespace ComputersFactory.Data.Repositories.Repositories
 {
-    public class ProcessorsRepository : GenericRepository<Computer>, IComputersRepository
+    public class ProcessorsRepository : GenericRepository<Processor>, IProcessorsRepository
     {
         public ProcessorsRepository(DbContext entityContext)
             : base(entityContext)

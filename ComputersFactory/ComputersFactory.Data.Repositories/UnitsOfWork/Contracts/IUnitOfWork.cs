@@ -15,5 +15,7 @@ namespace ComputersFactory.Data.Repositories.UnitsOfWork.Contracts
         IProcessorsRepository Processors { get; }
 
         IVideoCardsRepository VideoCards { get; }
+
+        int SaveChanges();
     }
 }

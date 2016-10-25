@@ -6,7 +6,7 @@ using ComputersFactory.Models.Components;
 
 namespace ComputersFactory.Data.Repositories.Repositories
 {
-    public class MemoryRepository : GenericRepository<HardDrive>, IHardDrivesRepository
+    public class MemoryRepository : GenericRepository<Memory>, IMemoryRepository
     {
         public MemoryRepository(DbContext entityContext)
             : base(entityContext)
