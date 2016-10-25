@@ -8,7 +8,7 @@ using ComputersFactory.Data.Services.Contracts;
 
 namespace ComputersFactory.Data.Services
 {
-    public class EntitiyDatabaseService : IDatabaseService
+    public class EntitiyDatabaseService : IDatabaseWriterService
     {
         private readonly DbContext entityContext;
         private readonly MethodInfo dbSetAddMethod;
