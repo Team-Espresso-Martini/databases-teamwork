@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
 using ComputersFactory.Data.MySql.Migrations;
 using ComputersFactory.Models.Components;
 using ComputersFactory.Data.Services;
-using System.Collections.Generic;
 
 namespace ComputersFactory.Data.MySql.TestingConsoleClient
 {
