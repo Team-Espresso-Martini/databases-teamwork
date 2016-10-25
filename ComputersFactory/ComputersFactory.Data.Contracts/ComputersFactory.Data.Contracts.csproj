@@ -49,7 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IDbContext.cs" />
+    <Compile Include="AbstractComputersFactoryDbContext.cs" />
+    <Compile Include="IComputersFactoryDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

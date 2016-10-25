@@ -70,9 +70,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComputersFactory.Data.Contracts\ComputersFactory.Data.Contracts.csproj">
+      <Project>{146d25aa-5937-4532-bd73-b34fd33d59a4}</Project>
+      <Name>ComputersFactory.Data.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.MySql\ComputersFactory.Data.MySql.csproj">
       <Project>{4df6e47f-c8ae-4a9a-80af-89e73fc479dc}</Project>
       <Name>ComputersFactory.Data.MySql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.Repositories\ComputersFactory.Data.Repositories.csproj">
+      <Project>{3d93c677-0eb5-4d59-b97e-de6851800264}</Project>
+      <Name>ComputersFactory.Data.Repositories</Name>
     </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.Services\ComputersFactory.Data.Services.csproj">
       <Project>{56ecb015-d00b-4dcb-a229-43da09536a81}</Project>

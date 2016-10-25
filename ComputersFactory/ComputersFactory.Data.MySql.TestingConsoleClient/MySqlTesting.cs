@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
 using ComputersFactory.Data.MySql.Migrations;
-using ComputersFactory.Models.Components;
-using ComputersFactory.Data.Services;
+using ComputersFactory.Data.Repositories.UnitsOfWork;
 
 namespace ComputersFactory.Data.MySql.TestingConsoleClient
 {
@@ -22,18 +20,22 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
             var db = new ComputersFactoryMySqlDbContext();
             db.Database.CreateIfNotExists();
 
-            var service = new EntitiyDatabaseService(db);
+            var worker = new ComputersFactoryUnitOfWork(db);
 
-            var memory = new Memory
-            {
-                CapacityInGb = 2,
-                Price = 55.00M,
-                Manufacturer = "IBM"
-            };
+            var count = worker.Memory.GetAll().Count();
 
-            service.SaveDataToDatabase<Memory>(new List<Memory>() { memory });
+            //var service = new EntitiyDatabaseService(db);
 
-            Console.WriteLine(db.Memories.Count());
+            //var memory = new Memory
+            //{
+            //    CapacityInGb = 2,
+            //    Price = 55.00M,
+            //    Manufacturer = "IBM"
+            //};
+
+            //service.SaveDataToDatabase<Memory>(new List<Memory>() { memory });
+
+            Console.WriteLine(count);
         }
     }
 }

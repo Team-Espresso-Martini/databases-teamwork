@@ -66,6 +66,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComputersFactory.Data.Contracts\ComputersFactory.Data.Contracts.csproj">
+      <Project>{146d25aa-5937-4532-bd73-b34fd33d59a4}</Project>
+      <Name>ComputersFactory.Data.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
       <Project>{4FE099D3-B89F-4905-8F5B-3A5752FBA06E}</Project>
       <Name>ComputersFactory.Models</Name>

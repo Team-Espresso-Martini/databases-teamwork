@@ -60,6 +60,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComputersFactory.Data.Contracts\ComputersFactory.Data.Contracts.csproj">
+      <Project>{146d25aa-5937-4532-bd73-b34fd33d59a4}</Project>
+      <Name>ComputersFactory.Data.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.Repositories\ComputersFactory.Data.Repositories.csproj">
+      <Project>{3d93c677-0eb5-4d59-b97e-de6851800264}</Project>
+      <Name>ComputersFactory.Data.Repositories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data\ComputersFactory.Data.csproj">
       <Project>{e6065a6e-6f85-4922-946a-a16c5ea35efc}</Project>
       <Name>ComputersFactory.Data</Name>

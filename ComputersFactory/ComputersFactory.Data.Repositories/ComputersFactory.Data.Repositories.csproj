@@ -59,6 +59,12 @@
     <Compile Include="Repositories\Base\GenericRepository.cs" />
     <Compile Include="Repositories\Contracts\IComputersRepository.cs" />
     <Compile Include="Repositories\Contracts\IVideoCardsRepository.cs" />
+    <Compile Include="Repositories\HardDriveRespository.cs" />
+    <Compile Include="Repositories\MemoryRepository.cs" />
+    <Compile Include="Repositories\MotherboardsRepository.cs" />
+    <Compile Include="Repositories\ProcessorsRepository.cs" />
+    <Compile Include="Repositories\VideoCardsRepository.cs" />
+    <Compile Include="UnitsOfWork\ComputersFactoryUnitOfWork.cs" />
     <Compile Include="UnitsOfWork\Contracts\IUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup />
@@ -67,6 +73,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComputersFactory.Data.Contracts\ComputersFactory.Data.Contracts.csproj">
+      <Project>{146d25aa-5937-4532-bd73-b34fd33d59a4}</Project>
+      <Name>ComputersFactory.Data.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
       <Project>{4fe099d3-b89f-4905-8f5b-3a5752fba06e}</Project>
       <Name>ComputersFactory.Models</Name>
