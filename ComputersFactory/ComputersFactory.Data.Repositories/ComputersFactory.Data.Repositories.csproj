@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4DF6E47F-C8AE-4A9A-80AF-89E73FC479DC}</ProjectGuid>
+    <ProjectGuid>{3D93C677-0EB5-4D59-B97E-DE6851800264}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ComputersFactory.Data.MySql</RootNamespace>
-    <AssemblyName>ComputersFactory.Data.MySql</AssemblyName>
+    <RootNamespace>ComputersFactory.Data.Repositories</RootNamespace>
+    <AssemblyName>ComputersFactory.Data.Repositories</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -38,14 +38,6 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -57,10 +49,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComputersFactoryMySqlDbContext.cs" />
-    <Compile Include="Migrations\DbMigrationsConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ComputersRepository.cs" />
+    <Compile Include="Repositories\Contracts\IHardDrivesRepository.cs" />
+    <Compile Include="Repositories\Contracts\IMemoryRepository.cs" />
+    <Compile Include="Repositories\Contracts\IMotherboardsRepository.cs" />
+    <Compile Include="Repositories\Contracts\IProcessorsRepository.cs" />
+    <Compile Include="Repositories\Contracts\IRepository.cs" />
+    <Compile Include="Repositories\Base\GenericRepository.cs" />
+    <Compile Include="Repositories\Contracts\IComputersRepository.cs" />
+    <Compile Include="Repositories\Contracts\IVideoCardsRepository.cs" />
+    <Compile Include="Repositories\HardDriveRespository.cs" />
+    <Compile Include="Repositories\MemoryRepository.cs" />
+    <Compile Include="Repositories\MotherboardsRepository.cs" />
+    <Compile Include="Repositories\ProcessorsRepository.cs" />
+    <Compile Include="Repositories\VideoCardsRepository.cs" />
+    <Compile Include="UnitsOfWork\ComputersFactoryUnitOfWork.cs" />
+    <Compile Include="UnitsOfWork\Contracts\IUnitOfWork.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
