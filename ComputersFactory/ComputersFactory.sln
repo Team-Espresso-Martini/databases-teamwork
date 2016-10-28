@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Models", "ComputersFactory.Models\ComputersFactory.Models.csproj", "{4FE099D3-B89F-4905-8F5B-3A5752FBA06E}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.MySql.TestingConsoleClient", "ComputersFactory.Data.MySql.TestingConsoleClient\ComputersFactory.Data.MySql.TestingConsoleClient.csproj", "{D0858235-A8AA-4C7F-A4D9-5B05AA3859E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Services", "ComputersFactory.Data.Services\ComputersFactory.Data.Services.csproj", "{56ECB015-D00B-4DCB-A229-43DA09536A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.MongoDbWriter", "ComputersFactory.Data.MongoDbWriter\ComputersFactory.Data.MongoDbWriter.csproj", "{B508354C-435E-49F2-8693-00A2771E425E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{56ECB015-D00B-4DCB-A229-43DA09536A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56ECB015-D00B-4DCB-A229-43DA09536A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56ECB015-D00B-4DCB-A229-43DA09536A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B508354C-435E-49F2-8693-00A2771E425E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B508354C-435E-49F2-8693-00A2771E425E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B508354C-435E-49F2-8693-00A2771E425E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B508354C-435E-49F2-8693-00A2771E425E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

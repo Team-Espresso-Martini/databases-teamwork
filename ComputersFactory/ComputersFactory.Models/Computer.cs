@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 using ComputersFactory.Models.Components;
+using ComputersFactory.Models;
 
-namespace ComputersFactory.Models
+namespace ComputersFactory.Data.Models
 {
     public class Computer
     {

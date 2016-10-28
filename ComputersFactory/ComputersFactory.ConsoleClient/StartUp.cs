@@ -3,6 +3,8 @@ using System.Data.Entity;
 using System.Linq;
 using ComputersFactory.Data;
 using ComputersFactory.Data.Migrations;
+using ComputersFactory.Data.MongoDbWriter;
+using MongoDB.Driver;
 using ComputersFactory.Models.Components;
 
 namespace ComputersFactory.ConsoleClient
@@ -17,19 +19,19 @@ namespace ComputersFactory.ConsoleClient
 
 
             //This is for deleting
-            var memory = new Memory
-            {
-                CapacityInGb = 2,
-                Price = 50.00M,
-                Manufacturer = "IBM"
-            };
+            //var memory = new Memory
+            //{
+            //    CapacityInGb = 2,
+            //    Price = 50.00M,
+            //    Manufacturer = "IBM"
+            //};
 
-            db.Memories.Add(memory);
-            db.SaveChanges();
-
+            //db.Memories.Add(memory);
+            //db.SaveChanges();
 
             Console.WriteLine(db.Memories.Count());
-        }
 
+            MongoDbWriter.GenerateData();
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using ComputersFactory.Models;
 using ComputersFactory.Models.Components;
+using ComputersFactory.Data.Models;
 
 namespace ComputersFactory.Data
 {

@@ -4,6 +4,7 @@ using ComputersFactory.Models;
 using ComputersFactory.Models.Components;
 
 using MySql.Data.Entity;
+using ComputersFactory.Data.Models;
 
 namespace ComputersFactory.Data.MySql
 {
