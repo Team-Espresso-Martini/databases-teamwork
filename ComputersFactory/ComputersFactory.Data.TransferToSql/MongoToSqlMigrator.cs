@@ -147,11 +147,11 @@ namespace ComputersFactory.Data.TransferToSql
         private static void TransferComputerDataToSQL(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
         {
             var mongoComputers = mongoDatabase.GetCollection<ComputerMongoModel>("Computers").AsQueryable().ToList();
-            var memories = context.Memories.ToList();
-            var motherboards = context.MotherBoards.ToList();
-            var processors = context.Procesors.ToList();
-            var videoCards = context.VideoCards.ToList();
-            var computerShops = context.ComputersShops.ToList();
+            var memories = context.Memories.Select(x => x.Id).ToList();
+            var motherboards = context.MotherBoards.Select(x => x.Id).ToList();
+            var processors = context.Procesors.Select(x => x.Id).ToList();
+            var videoCards = context.VideoCards.Select(x => x.Id).ToList();
+            var computerShops = context.ComputersShops.Select(x => x.Id).ToList();
 
             foreach (var mongoComputer in mongoComputers)
             {
@@ -167,11 +167,11 @@ namespace ComputersFactory.Data.TransferToSql
                     {
                         Model = mongoComputer.Model,
                         Price = mongoComputer.Price,
-                        MemoryId = memories[mongoComputer.MemoryId].Id,
-                        MotherboardId = motherboards[mongoComputer.MotherboardId % motherboards.Count].Id,
-                        ProcesorId = processors[mongoComputer.ProcesorId].Id,
-                        VideocardId = videoCards[mongoComputer.VideocardId].Id,
-                        ComputerShopId = computerShops[mongoComputer.ComputerShopId].Id
+                        MemoryId = memories[mongoComputer.MemoryId],
+                        MotherboardId = motherboards[mongoComputer.MotherboardId % motherboards.Count],
+                        ProcessorId = processors[mongoComputer.ProcesorId],
+                        VideocardId = videoCards[mongoComputer.VideocardId],
+                        ComputerShopId = computerShops[mongoComputer.ComputerShopId]
                         //HardDrives = hddCollection
                     });
             }
@@ -282,7 +282,7 @@ namespace ComputersFactory.Data.TransferToSql
                 Price = mongoComputer.Price,
                 MemoryId = mongoComputer.MemoryId,
                 MotherboardId = mongoComputer.MotherboardId,
-                ProcesorId = mongoComputer.ProcesorId,
+                ProcessorId = mongoComputer.ProcesorId,
                 VideocardId = mongoComputer.VideocardId,
                 ComputerShopId = mongoComputer.ComputerShopId
             };
