@@ -1,10 +1,12 @@
-﻿using ComputersFactory.Data.Models;
+﻿using System.Linq;
+
+using ComputersFactory.Data.Models;
 using ComputersFactory.Data.MongoDbWriter.Models;
 using ComputersFactory.Data.MongoDbWriter.Models.Components;
 using ComputersFactory.Models;
 using ComputersFactory.Models.Components;
+
 using MongoDB.Driver;
-using System.Linq;
 
 namespace ComputersFactory.Data.TransferToSql
 {

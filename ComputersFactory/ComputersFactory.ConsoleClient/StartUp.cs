@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+
 using ComputersFactory.Data;
 using ComputersFactory.Data.Migrations;
 using ComputersFactory.Data.MongoDbWriter;
@@ -16,7 +17,7 @@ namespace ComputersFactory.ConsoleClient
             var db = new ComputersFactoryDbContext();
             var worker = new ComputersFactoryUnitOfWork(db);
 
-            //MongoDbWriter.GenerateData();
+            MongoDbWriter.GenerateData();
             MongoToSqlMigrator.TransferData();
 
             //var processorComputers = db.Procesors.Select(p => p.Computers).ToList();
@@ -27,7 +28,6 @@ namespace ComputersFactory.ConsoleClient
             //        Console.WriteLine(computer.Model);
             //    }
             //}
-
         }
     }
 }
