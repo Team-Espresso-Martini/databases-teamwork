@@ -41,23 +41,23 @@ namespace ComputersFactory.Data.TransferToSql
             TransferComputerDataToSQL(context, mongoDatabase);
             context = RefreshContext(context);
 
-            AddComputersSetToHardDrives(context, mongoDatabase);
-            context = RefreshContext(context);
+            //AddComputersSetToHardDrives(context, mongoDatabase);
+            //context = RefreshContext(context);
 
-            AddComputersSetToMemories(context, mongoDatabase);
-            context = RefreshContext(context);
+            //AddComputersSetToMemories(context, mongoDatabase);
+            //context = RefreshContext(context);
 
-            AddComputersSetToMotherboards(context, mongoDatabase);
-            context = RefreshContext(context);
+            //AddComputersSetToMotherboards(context, mongoDatabase);
+            //context = RefreshContext(context);
 
-            AddComputersSetToProcessors(context, mongoDatabase);
-            context = RefreshContext(context);
+            //AddComputersSetToProcessors(context, mongoDatabase);
+            //context = RefreshContext(context);
 
-            AddComputersSetToVideoCards(context, mongoDatabase);
-            context = RefreshContext(context);
+            //AddComputersSetToVideoCards(context, mongoDatabase);
+            //context = RefreshContext(context);
 
-            AddComputersSetToVideoCards(context, mongoDatabase);
-            context = RefreshContext(context);
+            //AddComputersSetToVideoCards(context, mongoDatabase);
+            //context = RefreshContext(context);
         }
 
         private static ComputersFactoryDbContext RefreshContext(ComputersFactoryDbContext context)
@@ -168,8 +168,8 @@ namespace ComputersFactory.Data.TransferToSql
                         Model = mongoComputer.Model,
                         Price = mongoComputer.Price,
                         MemoryId = memories[mongoComputer.MemoryId].Id,
-                        MotherboardId = motherboards[mongoComputer.MotherboardId].Id,
-                        ProcesorId = processors[mongoComputer.ProcesorId].Id % motherboards.Count,
+                        MotherboardId = motherboards[mongoComputer.MotherboardId % motherboards.Count].Id,
+                        ProcesorId = processors[mongoComputer.ProcesorId].Id,
                         VideocardId = videoCards[mongoComputer.VideocardId].Id,
                         ComputerShopId = computerShops[mongoComputer.ComputerShopId].Id
                         //HardDrives = hddCollection
