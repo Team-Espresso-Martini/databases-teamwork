@@ -7,6 +7,7 @@ using ComputersFactory.Data.MongoDbWriter;
 using MongoDB.Driver;
 using ComputersFactory.Models.Components;
 using ComputersFactory.Data.Repositories.UnitsOfWork;
+using ComputersFactory.Data.TransferToSql;
 
 namespace ComputersFactory.ConsoleClient
 {
@@ -19,20 +20,12 @@ namespace ComputersFactory.ConsoleClient
             var db = new ComputersFactoryDbContext();
             var worker = new ComputersFactoryUnitOfWork(db);
 
-            //This is for deleting
-            //var memory = new Memory
-            //{
-            //    CapacityInGb = 2,
-            //    Price = 50.00M,
-            //    Manufacturer = "IBM"
-            //};
-
-            //db.Memories.Add(memory);
-            //db.SaveChanges();
-
-            Console.WriteLine(db.Memories.Count());
-
             MongoDbWriter.GenerateData();
+            MongoToSqlMigrator.TransferData();
+
+            // I use this as a flag that it's working :D
+            // I'll remove it later
+            Console.WriteLine(db.Memories.Count());
         }
     }
 }
