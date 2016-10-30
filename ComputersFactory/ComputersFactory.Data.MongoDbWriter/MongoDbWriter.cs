@@ -29,7 +29,6 @@ namespace ComputersFactory.Data.MongoDbWriter
             GenerateComputerShops(database, generatedComputers);
         }
 
-        #region Generate All Models
         private static void GenerateHardDrives(IMongoDatabase database, IList<ComputerMongoModel> generatedComputers)
         {
             var models = new string[] { "ADATA", "Buffalo Technology", "Freecom", "G-Technology", "Hitachi Global Storage Technologies 2009", "Westen Digital 2011", "HGST", "Hyundai", "IoSafe", "LaCie (acquired by Seagate in 2012)", "LG", "Promise Technology", "Samsung", "Seagate Technology", "Silicon Power", "Sony", "Toshiba", "Transcend Information", "TrekStor", "Verbatim Corporation", "Western Digital" };
@@ -37,7 +36,7 @@ namespace ComputersFactory.Data.MongoDbWriter
             int hardDrivesCount = models.Length;
             decimal price = 99.9m;
 
-            var computersCollection = new List<ComputerMongoModel>();
+            var computersCollection = new HashSet<ComputerMongoModel>();
             for (int i = 0; i < 5; i++)
             {
                 computersCollection.Add(generatedComputers[i]);
@@ -231,7 +230,7 @@ namespace ComputersFactory.Data.MongoDbWriter
 
         private static void GenerateComputerShops(IMongoDatabase database, IList<ComputerMongoModel> generatedComputers)
         {
-            var names = new string[] { "ABS Computer Tech Inc.", "Ansys Inc.", "Cable Doctor Co.", "Cimetrix", "Cognitech Corporation", "Fieldglass Inc.", "NetIQ Corp", "Precision IT Group", "Southway Systems Inc.", "Symantec Corporation", "Thoughtworks Inc.", "Xactware Solutions, Inc." };
+            var names = new string[] { "ABS Computer Tech Inc.", "Ansys Inc.", "Cable Doctor Co.", "Cimetrix", "Cognitech Corporation", "Fieldglass Inc.", "NetIQ Corp", "Precision IT Group", "Southway Systems Inc.", "Symantec Corporation", "Thoughtworks Inc.", "Xactware Solutions, Inc.", "Cable Doctor Co.", "Cimetrix", "Cognitech Corporation", "Fieldglass Inc.", "NetIQ Corp", "Precision IT Group", "Southway Systems Inc.", "Symantec Corporation", "Thoughtworks Inc." };
             int computerShopsCount = names.Length;
 
             var computersCollection = new HashSet<ComputerMongoModel>();
@@ -257,6 +256,5 @@ namespace ComputersFactory.Data.MongoDbWriter
             var computerShopsCollection = database.GetCollection<BsonDocument>("ComputerShops");
             computerShopsCollection.InsertMany(computerShops);
         }
-        #endregion
     }
 }

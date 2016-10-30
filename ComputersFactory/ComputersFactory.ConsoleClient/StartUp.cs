@@ -1,11 +1,7 @@
-﻿using System;
-using System.Data.Entity;
-using System.Linq;
+﻿using System.Data.Entity;
 using ComputersFactory.Data;
 using ComputersFactory.Data.Migrations;
 using ComputersFactory.Data.MongoDbWriter;
-using MongoDB.Driver;
-using ComputersFactory.Models.Components;
 using ComputersFactory.Data.Repositories.UnitsOfWork;
 using ComputersFactory.Data.TransferToSql;
 
@@ -23,9 +19,15 @@ namespace ComputersFactory.ConsoleClient
             MongoDbWriter.GenerateData();
             MongoToSqlMigrator.TransferData();
 
-            // I use this as a flag that it's working :D
-            // I'll remove it later
-            Console.WriteLine(db.Memories.Count());
+            //var processorComputers = db.Procesors.Select(p => p.Computers).ToList();
+            //foreach (var computersList in processorComputers)
+            //{
+            //    foreach (var computer in computersList)
+            //    {
+            //        Console.WriteLine(computer.Model);
+            //    }
+            //}
+
         }
     }
 }
