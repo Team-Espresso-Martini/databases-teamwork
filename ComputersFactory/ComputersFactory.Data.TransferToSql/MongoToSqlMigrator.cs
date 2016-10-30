@@ -43,6 +43,7 @@ namespace ComputersFactory.Data.TransferToSql
             TransferComputerDataToSQL(context, mongoDatabase);
             context = RefreshContext(context);
 
+            // Not necessary and causing issues.
             //AddComputersSetToHardDrives(context, mongoDatabase);
             //context = RefreshContext(context);
 
