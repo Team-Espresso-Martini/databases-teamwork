@@ -169,7 +169,7 @@ namespace ComputersFactory.Data.TransferToSql
                         Price = mongoComputer.Price,
                         MemoryId = memories[mongoComputer.MemoryId].Id,
                         MotherboardId = motherboards[mongoComputer.MotherboardId].Id,
-                        ProcesorId = processors[mongoComputer.ProcesorId].Id,
+                        ProcesorId = processors[mongoComputer.ProcesorId].Id % motherboards.Count,
                         VideocardId = videoCards[mongoComputer.VideocardId].Id,
                         ComputerShopId = computerShops[mongoComputer.ComputerShopId].Id
                         //HardDrives = hddCollection
