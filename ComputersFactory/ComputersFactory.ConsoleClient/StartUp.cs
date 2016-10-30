@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+
 using ComputersFactory.Data;
 using ComputersFactory.Data.Migrations;
 using ComputersFactory.Data.MongoDbWriter;
@@ -27,7 +28,6 @@ namespace ComputersFactory.ConsoleClient
             //        Console.WriteLine(computer.Model);
             //    }
             //}
-
         }
     }
 }

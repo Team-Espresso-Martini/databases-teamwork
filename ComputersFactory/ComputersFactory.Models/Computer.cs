@@ -54,7 +54,7 @@ namespace ComputersFactory.Data.Models
             get; set;
         }
 
-        public int ProcesorId
+        public int ProcessorId
         {
             get; set;
         }
