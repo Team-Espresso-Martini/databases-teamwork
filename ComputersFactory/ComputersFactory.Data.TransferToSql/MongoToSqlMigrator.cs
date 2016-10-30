@@ -20,25 +20,51 @@ namespace ComputersFactory.Data.TransferToSql
             var context = new ComputersFactoryDbContext();
 
             TransferHardDriveDataToSQL(context, mongoDatabase);
+            context = RefreshContext(context);
+
             TransferMemoryDataToSQL(context, mongoDatabase);
+            context = RefreshContext(context);
+
             TransferMotherboardDataToSQL(context, mongoDatabase);
+            context = RefreshContext(context);
+
             TransferProcessorDataToSQL(context, mongoDatabase);
+            context = RefreshContext(context);
+
             TransferVideoCardDataToSQL(context, mongoDatabase);
+            context = RefreshContext(context);
+
             TransferComputerShopDataToSQL(context, mongoDatabase);
-            context.SaveChanges();
+            context = RefreshContext(context);
 
             // If we don't save changes before transfering the computers, there are going to be some FK issues.
             TransferComputerDataToSQL(context, mongoDatabase);
-            context.SaveChanges();
+            context = RefreshContext(context);
 
             AddComputersSetToHardDrives(context, mongoDatabase);
-            AddComputersSetToMemories(context, mongoDatabase);
-            AddComputersSetToMotherboards(context, mongoDatabase);
-            AddComputersSetToProcessors(context, mongoDatabase);
-            AddComputersSetToVideoCards(context, mongoDatabase);
-            AddComputersSetToVideoCards(context, mongoDatabase);
-            context.SaveChanges();
+            context = RefreshContext(context);
 
+            AddComputersSetToMemories(context, mongoDatabase);
+            context = RefreshContext(context);
+
+            AddComputersSetToMotherboards(context, mongoDatabase);
+            context = RefreshContext(context);
+
+            AddComputersSetToProcessors(context, mongoDatabase);
+            context = RefreshContext(context);
+
+            AddComputersSetToVideoCards(context, mongoDatabase);
+            context = RefreshContext(context);
+
+            AddComputersSetToVideoCards(context, mongoDatabase);
+            context = RefreshContext(context);
+        }
+
+        private static ComputersFactoryDbContext RefreshContext(ComputersFactoryDbContext context)
+        {
+            context.SaveChanges();
+            context = new ComputersFactoryDbContext();
+            return context;
         }
 
         private static void TransferHardDriveDataToSQL(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
