@@ -7,11 +7,11 @@ namespace ComputersFactory.Data.MongoDbWriter.Models
 {
     public class ComputerMongoModel
     {
-        private ICollection<HardDriveMongoModel> hardDrives;
+        private ICollection<int> hardDrivesIds;
 
         public ComputerMongoModel()
         {
-            this.hardDrives = new HashSet<HardDriveMongoModel>();
+            this.hardDrivesIds = new HashSet<int>();
         }
 
         [BsonId]
@@ -77,15 +77,15 @@ namespace ComputersFactory.Data.MongoDbWriter.Models
             get; set;
         }
 
-        public virtual ICollection<HardDriveMongoModel> HardDrives
+        public virtual ICollection<int> HardDrivesIds
         {
             get
             {
-                return this.hardDrives;
+                return this.hardDrivesIds;
             }
             set
             {
-                this.hardDrives = value;
+                this.hardDrivesIds = value;
             }
         }
 

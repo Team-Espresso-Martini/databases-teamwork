@@ -1,9 +1,7 @@
 ﻿using MongoDB.Driver;
 using ComputersFactory.Data.MongoDbWriter.Models.Components;
 using MongoDB.Bson;
-using System;
 using System.Collections.Generic;
-using System.Collections;
 using ComputersFactory.Data.MongoDbWriter.Models;
 
 namespace ComputersFactory.Data.MongoDbWriter
@@ -29,27 +27,6 @@ namespace ComputersFactory.Data.MongoDbWriter
             GenerateProcessors(database, generatedComputers);
             GenerateVideoCards(database, generatedComputers);
             GenerateComputerShops(database, generatedComputers);
-
-            // TODO: Generate data in Computers.HardDrives
-            //
-            //var generatedHardDrives = database.GetCollection<HardDriveMongoModel>("HardDrives").AsQueryable().ToList();
-            //for (int i = 0; i < generatedComputers.Count; i++)
-            //{
-            // 
-            // Doesn't work:
-            //    var computers = database.GetCollection<ComputerMongoModel>("Computers").UpdateOne(x => x.HardDrives = null, generatedHardDrives[i]);
-            //    var updateHardDrives = Builders<ComputerMongoModel>.Update.Set("HardDrives", generatedHardDrives[i]);
-
-            // Doesnt't work:
-            //    var filter = Builders<ComputerMongoModel>.Filter.Eq(e => e.HardDrives, null);
-            //    var update = Builders<ComputerMongoModel>.Update.Push<HardDriveMongoModel>(e => e.HardDrives, generatedHardDrives[i]);
-            //    computersCollection.FindOneAndUpdateAsync(filter, update);
-
-            // And again...
-            //    generatedComputers.Find(x => x.HardDrives == null).ToJson().Insert(0, generatedHardDrives[i].ToString());
-            //}
-
-
         }
 
         #region Generate All Models
@@ -66,7 +43,7 @@ namespace ComputersFactory.Data.MongoDbWriter
                 computersCollection.Add(generatedComputers[i]);
             }
 
-            var hardDrives = new List<BsonDocument>();
+            var hardDrives = new HashSet<BsonDocument>();
             var hardDrive = new HardDriveMongoModel();
             for (int i = 0; i < hardDrivesCount; i++)
             {
@@ -93,13 +70,13 @@ namespace ComputersFactory.Data.MongoDbWriter
             int memoriesCount = manufacturers.Length;
             decimal price = 99.9m;
 
-            var computersCollection = new List<ComputerMongoModel>();
+            var computersCollection = new HashSet<ComputerMongoModel>();
             for (int i = 1; i < 6; i++)
             {
                 computersCollection.Add(generatedComputers[i]);
             }
 
-            var memories = new List<BsonDocument>();
+            var memories = new HashSet<BsonDocument>();
             var memory = new MemoryMongoModel();
             for (int i = 1; i < memoriesCount; i++)
             {
@@ -126,13 +103,13 @@ namespace ComputersFactory.Data.MongoDbWriter
             int motherboardsCount = models.Length;
             decimal price = 20.4m;
 
-            var computersCollection = new List<ComputerMongoModel>();
+            var computersCollection = new HashSet<ComputerMongoModel>();
             for (int i = 2; i < 7; i++)
             {
                 computersCollection.Add(generatedComputers[i]);
             }
 
-            var motherboards = new List<BsonDocument>();
+            var motherboards = new HashSet<BsonDocument>();
             var motherboard = new MotherboardMongoModel();
             for (int i = 1; i < motherboardsCount; i++)
             {
@@ -159,13 +136,13 @@ namespace ComputersFactory.Data.MongoDbWriter
             int processorsCount = models.Length;
             decimal price = 92.07m;
 
-            var computersCollection = new List<ComputerMongoModel>();
+            var computersCollection = new HashSet<ComputerMongoModel>();
             for (int i = 3; i < 8; i++)
             {
                 computersCollection.Add(generatedComputers[i]);
             }
 
-            var processors = new List<BsonDocument>();
+            var processors = new HashSet<BsonDocument>();
             var processor = new ProcessorMongoModel();
             for (int i = 1; i < processorsCount; i++)
             {
@@ -195,13 +172,13 @@ namespace ComputersFactory.Data.MongoDbWriter
             int videoCardsCount = models.Length;
             decimal price = 66.0m;
 
-            var computersCollection = new List<ComputerMongoModel>();
+            var computersCollection = new HashSet<ComputerMongoModel>();
             for (int i = 4; i < 13; i++)
             {
                 computersCollection.Add(generatedComputers[i]);
             }
 
-            var videoCards = new List<BsonDocument>();
+            var videoCards = new HashSet<BsonDocument>();
             var videoCard = new VideoCardMongoModel();
             for (int i = 0; i < videoCardsCount; i++)
             {
@@ -227,9 +204,8 @@ namespace ComputersFactory.Data.MongoDbWriter
             "Aspire", "TravelMate", "Acer Chromebook",  "MacBook", "MacBook Pro", "MacBook Air", "ROG Series", "Asus", "Chromebook", "Hewlett-Packard", "HP Elitebook", "HP Envy", "HP OMEN", "HP Chromebook","Lenovo  ThinkPad", "IdeaPad", "Portege", "Tecra" };
             int computersCount = models.Length;
             decimal price = 1200m;
-            var hddCollection = new List<HardDriveMongoModel>() { };
 
-            var computers = new List<BsonDocument>();
+            var computers = new HashSet<BsonDocument>();
             var computer = new ComputerMongoModel();
             for (int i = 1; i < computersCount; i++)
             {
@@ -243,7 +219,7 @@ namespace ComputersFactory.Data.MongoDbWriter
                     ProcesorId = i,
                     VideocardId = i,
                     ComputerShopId = i,
-                    HardDrives = hddCollection
+                    HardDrivesIds = new HashSet<int>() { i, i + 1 }
                 };
 
                 computers.Add(computer.ToBsonDocument());
@@ -258,13 +234,13 @@ namespace ComputersFactory.Data.MongoDbWriter
             var names = new string[] { "ABS Computer Tech Inc.", "Ansys Inc.", "Cable Doctor Co.", "Cimetrix", "Cognitech Corporation", "Fieldglass Inc.", "NetIQ Corp", "Precision IT Group", "Southway Systems Inc.", "Symantec Corporation", "Thoughtworks Inc.", "Xactware Solutions, Inc." };
             int computerShopsCount = names.Length;
 
-            var computersCollection = new List<ComputerMongoModel>();
+            var computersCollection = new HashSet<ComputerMongoModel>();
             for (int i = 5; i < 15; i++)
             {
                 computersCollection.Add(generatedComputers[i]);
             }
 
-            var computerShops = new List<BsonDocument>();
+            var computerShops = new HashSet<BsonDocument>();
             var computerShop = new ComputerShopMongoModel();
             for (int i = 0; i < computerShopsCount; i++)
             {
