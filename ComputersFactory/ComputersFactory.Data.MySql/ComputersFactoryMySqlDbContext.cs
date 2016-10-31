@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 
 using MySql.Data.Entity;
+using ComputersFactory.Data.Models;
 using ComputersFactory.Data.Contracts;
 
 namespace ComputersFactory.Data.MySql

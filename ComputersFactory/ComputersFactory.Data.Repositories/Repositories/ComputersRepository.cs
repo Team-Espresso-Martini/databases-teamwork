@@ -3,6 +3,7 @@
 using ComputersFactory.Data.Repositories.Repositories.Base;
 using ComputersFactory.Data.Repositories.Repositories.Contracts;
 using ComputersFactory.Models;
+using ComputersFactory.Data.Models;
 
 namespace ComputersFactory.Data.Repositories.Repositories
 {

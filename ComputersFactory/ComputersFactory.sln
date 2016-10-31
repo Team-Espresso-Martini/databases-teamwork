@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Models", "ComputersFactory.Models\ComputersFactory.Models.csproj", "{4FE099D3-B89F-4905-8F5B-3A5752FBA06E}"
 EndProject
@@ -19,11 +19,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.MySql
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Services", "ComputersFactory.Data.Services\ComputersFactory.Data.Services.csproj", "{56ECB015-D00B-4DCB-A229-43DA09536A81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.MongoDbWriter", "ComputersFactory.Data.MongoDbWriter\ComputersFactory.Data.MongoDbWriter.csproj", "{B508354C-435E-49F2-8693-00A2771E425E}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Repositories", "ComputersFactory.Data.Repositories\ComputersFactory.Data.Repositories.csproj", "{3D93C677-0EB5-4D59-B97E-DE6851800264}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Contracts", "ComputersFactory.Data.Contracts\ComputersFactory.Data.Contracts.csproj", "{146D25AA-5937-4532-BD73-B34FD33D59A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Xml", "ComputersFactory.Data.Xml\ComputersFactory.Data.Xml.csproj", "{7856A363-90E7-4A02-8267-3E326F4A7D11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.TransferToSql", "ComputersFactory.Data.TransferToSql\ComputersFactory.Data.TransferToSql.csproj", "{FE7B0854-B357-4BDF-8CAA-F65E2A514271}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B2D545E1-29D6-4DB0-BE7C-1FB1040FD8DC}"
 	ProjectSection(SolutionItems) = preProject
@@ -68,6 +72,10 @@ Global
 		{56ECB015-D00B-4DCB-A229-43DA09536A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56ECB015-D00B-4DCB-A229-43DA09536A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56ECB015-D00B-4DCB-A229-43DA09536A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B508354C-435E-49F2-8693-00A2771E425E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B508354C-435E-49F2-8693-00A2771E425E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B508354C-435E-49F2-8693-00A2771E425E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B508354C-435E-49F2-8693-00A2771E425E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3D93C677-0EB5-4D59-B97E-DE6851800264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3D93C677-0EB5-4D59-B97E-DE6851800264}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D93C677-0EB5-4D59-B97E-DE6851800264}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -76,6 +84,11 @@ Global
 		{146D25AA-5937-4532-BD73-B34FD33D59A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{146D25AA-5937-4532-BD73-B34FD33D59A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{146D25AA-5937-4532-BD73-B34FD33D59A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE7B0854-B357-4BDF-8CAA-F65E2A514271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE7B0854-B357-4BDF-8CAA-F65E2A514271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE7B0854-B357-4BDF-8CAA-F65E2A514271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE7B0854-B357-4BDF-8CAA-F65E2A514271}.Release|Any CPU.Build.0 = Release|Any CPU
+
 		{7856A363-90E7-4A02-8267-3E326F4A7D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7856A363-90E7-4A02-8267-3E326F4A7D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7856A363-90E7-4A02-8267-3E326F4A7D11}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using ComputersFactory.Data.Models;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ComputersFactory.Models
