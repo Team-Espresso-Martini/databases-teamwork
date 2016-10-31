@@ -4,7 +4,8 @@ namespace ComputersFactory.Data.Xml.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
     using Models;
-    using Models.Components;
+    using ComputersFactory.Models.Components;
+    using ComputersFactory.Models;
 
     public sealed class Configuration : DbMigrationsConfiguration<ComputersFactorySqlDbContext>
     {

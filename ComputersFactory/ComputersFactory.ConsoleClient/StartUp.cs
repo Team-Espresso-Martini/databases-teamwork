@@ -19,15 +19,6 @@ namespace ComputersFactory.ConsoleClient
 
             MongoDbWriter.GenerateData();
             MongoToSqlMigrator.TransferData();
-
-            //var processorComputers = db.Procesors.Select(p => p.Computers).ToList();
-            //foreach (var computersList in processorComputers)
-            //{
-            //    foreach (var computer in computersList)
-            //    {
-            //        Console.WriteLine(computer.Model);
-            //    }
-            //}
         }
     }
 }
