@@ -70,6 +70,10 @@
       <Project>{146d25aa-5937-4532-bd73-b34fd33d59a4}</Project>
       <Name>ComputersFactory.Data.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.Repositories\ComputersFactory.Data.Repositories.csproj">
+      <Project>{3D93C677-0EB5-4D59-B97E-DE6851800264}</Project>
+      <Name>ComputersFactory.Data.Repositories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
       <Project>{4fe099d3-b89f-4905-8f5b-3a5752fba06e}</Project>
       <Name>ComputersFactory.Models</Name>

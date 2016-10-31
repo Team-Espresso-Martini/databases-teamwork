@@ -39,6 +39,7 @@ namespace ComputersFactory.Data.Repositories.Repositories.Base
 
         public IEnumerable<TEntity> GetAll()
         {
+            //// TODO: IQueryable 
             var entities = this.entityContext.Set<TEntity>().ToList();
             return entities;
         }
