@@ -69,6 +69,7 @@
     <Compile Include="ComputerShop.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Components\VideoCard.cs" />
+    <Compile Include="Sale.cs" />
     <Compile Include="SalesReport.cs" />
   </ItemGroup>
   <ItemGroup>

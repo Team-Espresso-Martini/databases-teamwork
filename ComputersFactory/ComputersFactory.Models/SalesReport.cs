@@ -7,16 +7,16 @@ namespace ComputersFactory.Models
 {
     public class SalesReport
     {
-        private ICollection<Computer> computers;
+        private ICollection<Sale> sales;
 
         public SalesReport()
         {
-            this.computers = new HashSet<Computer>();
+            this.sales = new HashSet<Sale>();
         }
 
         public int Id { get; set; }
 
-        public decimal Sales { get; set; }
+        public decimal TotalAmount { get; set; }
 
         public DateTime Date { get; set; }
 
@@ -24,16 +24,16 @@ namespace ComputersFactory.Models
 
         public virtual ComputerShop ComputerShop { get; set; }
 
-        public virtual ICollection<Computer> Computers
+        public virtual ICollection<Sale> Sales
         {
             get
             {
-                return this.computers;
+                return this.sales;
             }
 
             set
             {
-                this.computers = value;
+                this.sales = value;
             }
         }
     }

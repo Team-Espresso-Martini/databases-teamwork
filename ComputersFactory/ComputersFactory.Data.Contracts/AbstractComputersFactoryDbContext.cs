@@ -28,5 +28,7 @@ namespace ComputersFactory.Data.Contracts
         public virtual IDbSet<ComputerShop> ComputersShops { get; set; }
 
         public virtual IDbSet<SalesReport> SalesReports { get; set; }
+
+        public virtual IDbSet<Sale> Sales { get; set; }
     }
 }
