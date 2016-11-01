@@ -18,6 +18,8 @@ namespace ComputersFactory.Models
 
         public DateTime Date { get; set; }
 
+        public int ComputerShopId { get; set; }
+
         public virtual ComputerShop ComputerShop { get; set; }
 
         public virtual ICollection<Computer> Computers
