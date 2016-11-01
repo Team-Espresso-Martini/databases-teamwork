@@ -16,6 +16,8 @@ namespace ComputersFactory.Models
 
         public int Id { get; set; }
 
+        public decimal Sales { get; set; }
+
         public DateTime Date { get; set; }
 
         public int ComputerShopId { get; set; }
