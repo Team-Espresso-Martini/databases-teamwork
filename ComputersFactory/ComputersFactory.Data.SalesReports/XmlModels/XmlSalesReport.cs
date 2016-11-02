@@ -15,8 +15,6 @@ namespace ComputersFactory.Data.SalesReports.XmlModels
         [XmlAttribute]
         public int ComputerShopId { get; set; }
 
-        public string ComputerShop { get; set; }
-
         [XmlArrayItem(ElementName = "Sale")]
         public List<XmlSale> Sales { get; set; }
     }

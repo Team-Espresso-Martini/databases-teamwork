@@ -5,6 +5,8 @@ using ComputersFactory.Data.SalesReports.Generator.XmlGenerators;
 using ComputersFactory.Data.SalesReports.XmlDeserializers;
 using ComputersFactory.Data.SalesReports.XmlModels;
 using ComputersFactory.Models.Views;
+using ComputersFactory.Data.SalesReports.Converters;
+using ComputersFactory.Models;
 
 namespace ComputersFactory.Data.SalesReports.Generator
 {
@@ -12,10 +14,13 @@ namespace ComputersFactory.Data.SalesReports.Generator
     {
         public static void Main()
         {
-            //SalesReportsGeneratorStartup.GenerateXmlReports();
+            SalesReportsGeneratorStartup.GenerateXmlReports();
 
             var getXmlData = new XmlDeserializer();
             var data = getXmlData.DeserializeXmlTo<XmlSalesReport>("../../../XmlSalesReports/SalesReports.xml", "Reports");
+
+            var converter = new ModelConverter();
+            var result = converter.Convert<XmlSalesReport, SalesReport>(data);
         }
 
         private static void GenerateXmlReports()
