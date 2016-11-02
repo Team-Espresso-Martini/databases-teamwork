@@ -82,7 +82,7 @@ namespace ComputersFactory.Data.SalesReports.Generator.DataGenerators
         private DateTime GenerateDate()
         {
             var year = base.RandomNumberProvider.Next(2014, 2016);
-            var month = base.RandomNumberProvider.Next(0, 11);
+            var month = base.RandomNumberProvider.Next(1, 12);
             var day = base.RandomNumberProvider.Next(1, 28);
 
             var date = new DateTime(year, month, day);

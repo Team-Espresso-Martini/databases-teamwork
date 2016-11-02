@@ -71,6 +71,7 @@
     <Compile Include="Components\VideoCard.cs" />
     <Compile Include="Sale.cs" />
     <Compile Include="SalesReport.cs" />
+    <Compile Include="Views\ComputerIdPriceView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
