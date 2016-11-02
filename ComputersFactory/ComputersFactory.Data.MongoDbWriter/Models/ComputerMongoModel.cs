@@ -7,11 +7,11 @@ namespace ComputersFactory.Data.MongoDbWriter.Models
 {
     public class ComputerMongoModel
     {
-        private ICollection<int> hardDrivesIds;
+        private ICollection<HardDriveMongoModel> hardDrives;
 
         public ComputerMongoModel()
         {
-            this.hardDrivesIds = new HashSet<int>();
+            this.hardDrives = new HashSet<HardDriveMongoModel>();
         }
 
         [BsonId]
@@ -33,19 +33,7 @@ namespace ComputersFactory.Data.MongoDbWriter.Models
             get; set;
         }
 
-        [BsonRepresentation(BsonType.Int32)]
-        public int MemoryId
-        {
-            get; set;
-        }
-
         public virtual MemoryMongoModel Memory
-        {
-            get; set;
-        }
-
-        [BsonRepresentation(BsonType.Int32)]
-        public int MotherboardId
         {
             get; set;
         }
@@ -55,19 +43,7 @@ namespace ComputersFactory.Data.MongoDbWriter.Models
             get; set;
         }
 
-        [BsonRepresentation(BsonType.Int32)]
-        public int ProcesorId
-        {
-            get; set;
-        }
-
         public virtual ProcessorMongoModel Processor
-        {
-            get; set;
-        }
-
-        [BsonRepresentation(BsonType.Int32)]
-        public int VideocardId
         {
             get; set;
         }
@@ -77,27 +53,21 @@ namespace ComputersFactory.Data.MongoDbWriter.Models
             get; set;
         }
 
-        public virtual ICollection<int> HardDrivesIds
-        {
-            get
-            {
-                return this.hardDrivesIds;
-            }
-            set
-            {
-                this.hardDrivesIds = value;
-            }
-        }
-
-        [BsonRepresentation(BsonType.Int32)]
-        public int ComputerShopId
-        {
-            get; set;
-        }
-
         public virtual ComputerShopMongoModel ComputerShop
         {
             get; set;
+        }
+
+        public virtual ICollection<HardDriveMongoModel> HardDrives
+        {
+            get
+            {
+                return this.hardDrives;
+            }
+            set
+            {
+                this.hardDrives = value;
+            }
         }
     }
 }

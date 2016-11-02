@@ -3,6 +3,7 @@ using ComputersFactory.Data.MongoDbWriter.Models.Components;
 using MongoDB.Bson;
 using System.Collections.Generic;
 using ComputersFactory.Data.MongoDbWriter.Models;
+using System.Linq;
 
 namespace ComputersFactory.Data.MongoDbWriter
 {
@@ -16,31 +17,21 @@ namespace ComputersFactory.Data.MongoDbWriter
             var client = new MongoClient(dbHost);
             var database = client.GetDatabase(dbName);
 
+            GenerateHardDrives(database);
+            GenerateMemories(database);
+            GenerateMotherboards(database);
+            GenerateProcessors(database);
+            GenerateVideoCards(database);
+            GenerateComputerShops(database);
             GenerateComputers(database);
-
-            var computersCollection = database.GetCollection<ComputerMongoModel>("Computers");
-            var generatedComputers = computersCollection.AsQueryable().ToList();
-
-            GenerateHardDrives(database, generatedComputers);
-            GenerateMemories(database, generatedComputers);
-            GenerateMotherboards(database, generatedComputers);
-            GenerateProcessors(database, generatedComputers);
-            GenerateVideoCards(database, generatedComputers);
-            GenerateComputerShops(database, generatedComputers);
         }
 
-        private static void GenerateHardDrives(IMongoDatabase database, IList<ComputerMongoModel> generatedComputers)
+        private static void GenerateHardDrives(IMongoDatabase database)
         {
             var models = new string[] { "ADATA", "Buffalo Technology", "Freecom", "G-Technology", "Hitachi Global Storage Technologies 2009", "Westen Digital 2011", "HGST", "Hyundai", "IoSafe", "LaCie (acquired by Seagate in 2012)", "LG", "Promise Technology", "Samsung", "Seagate Technology", "Silicon Power", "Sony", "Toshiba", "Transcend Information", "TrekStor", "Verbatim Corporation", "Western Digital" };
             var manufacturers = new string[] { "Seagate Technology", "Maxtor", "Samsung", "Toshiba", "Western Digital", "HGST", "ASUS", "ATTO Technology", "Dell", "HP", "Intel", "LG", "LSI", "PNY", "Promise Technology", "StarTech.com", "Supermicro", "Seagate Technology", "Maxtor", "Samsung", "Toshiba", "Western Digital", "HGST", "ASUS", "ATTO Technology", "Dell", "HP", "Intel", "LG", "LSI", "PNY", "Promise Technology", "StarTech.com", "Supermicro" };
             int hardDrivesCount = models.Length;
             decimal price = 99.9m;
-
-            var computersCollection = new HashSet<ComputerMongoModel>();
-            for (int i = 0; i < 5; i++)
-            {
-                computersCollection.Add(generatedComputers[i]);
-            }
 
             var hardDrives = new HashSet<BsonDocument>();
             var hardDrive = new HardDriveMongoModel();
@@ -52,8 +43,7 @@ namespace ComputersFactory.Data.MongoDbWriter
                     Model = models[i],
                     Price = price + i,
                     CapacityInGb = i + 1,
-                    Manufacturer = manufacturers[i],
-                    Computers = computersCollection
+                    Manufacturer = manufacturers[i]
                 };
 
                 hardDrives.Add(hardDrive.ToBsonDocument());
@@ -63,17 +53,11 @@ namespace ComputersFactory.Data.MongoDbWriter
             hardDrivesCollection.InsertMany(hardDrives);
         }
 
-        private static void GenerateMemories(IMongoDatabase database, IList<ComputerMongoModel> generatedComputers)
+        private static void GenerateMemories(IMongoDatabase database)
         {
             var manufacturers = new string[] { "ADATA", "Apacer", "Asus", "Axiom", "Buffalo Technology", "Chaintech", "Corsair Memory", "Crucial", "Dataram", "Fujitsu", "G.Skill", "GeIL", "HP", "IBM", "Infineon", "Kingston Technology", "Lenovo", "Micron Technology", "Mushkin", "Nanya", "PNY", "Rambus", "Ramtron International", "Rendition", "Renesas Technology", "Samsung Semiconductor", "Sandisk", "SK Hynix", "Sony", "Strontium Technology", "Super Talent", "Toshiba", "Transcend", "Wilk Elektronik" };
             int memoriesCount = manufacturers.Length;
             decimal price = 99.9m;
-
-            var computersCollection = new HashSet<ComputerMongoModel>();
-            for (int i = 1; i < 6; i++)
-            {
-                computersCollection.Add(generatedComputers[i]);
-            }
 
             var memories = new HashSet<BsonDocument>();
             var memory = new MemoryMongoModel();
@@ -84,8 +68,7 @@ namespace ComputersFactory.Data.MongoDbWriter
                     Id = ObjectId.GenerateNewId().ToString(),
                     Price = price % i + price,
                     CapacityInGb = i + 1,
-                    Manufacturer = manufacturers[i],
-                    Computers = computersCollection
+                    Manufacturer = manufacturers[i]
                 };
 
                 memories.Add(memory.ToBsonDocument());
@@ -95,18 +78,12 @@ namespace ComputersFactory.Data.MongoDbWriter
             memoriesCollection.InsertMany(memories);
         }
 
-        private static void GenerateMotherboards(IMongoDatabase database, IList<ComputerMongoModel> generatedComputers)
+        private static void GenerateMotherboards(IMongoDatabase database)
         {
             var models = new string[] { "Lanner Inc(industrial motherboards)", "Leadtek", "LiteOn", "Magic - Pro", "MSI(Micro - Star International)", "PNY Technologies", "Powercolor", "Sapphire Technology", "Shuttle Inc.", "Simmtronics", "Supermicro", "Trenton Technology" };
             var manufacturers = new string[] { "Acer", "ACube Systems", "AMAX Information Technologies", "AOpen", "ASRock", "Asus", "Biostar", "Chassis Plans", "ECS (Elitegroup Computer Systems)", "EVGA Corporation", "First International Computer", "Foxconn", "Gigabyte Technology", "Gumstix", "Intel", "Tyan", "VIA Technologies", "Vigor Gaming", "XFX", "Zotac" };
             int motherboardsCount = models.Length;
             decimal price = 20.4m;
-
-            var computersCollection = new HashSet<ComputerMongoModel>();
-            for (int i = 2; i < 7; i++)
-            {
-                computersCollection.Add(generatedComputers[i]);
-            }
 
             var motherboards = new HashSet<BsonDocument>();
             var motherboard = new MotherboardMongoModel();
@@ -117,8 +94,7 @@ namespace ComputersFactory.Data.MongoDbWriter
                     Id = ObjectId.GenerateNewId().ToString(),
                     Model = models[i],
                     Price = price * i - price,
-                    Manufacturer = manufacturers[i],
-                    Computers = computersCollection
+                    Manufacturer = manufacturers[i]
                 };
 
                 motherboards.Add(motherboard.ToBsonDocument());
@@ -128,18 +104,12 @@ namespace ComputersFactory.Data.MongoDbWriter
             motherboardsCollection.InsertMany(motherboards);
         }
 
-        private static void GenerateProcessors(IMongoDatabase database, IList<ComputerMongoModel> generatedComputers)
+        private static void GenerateProcessors(IMongoDatabase database)
         {
             var models = new string[] { "3xx - Celeron D", "4xx - Celeron", "5xx - Pentium 4", "6xx - Pentium 4", "8xx - Pentium D and Pentium Extreme Edition", "9xx - Pentium D and Pentium Extreme Edition", "E1xxx - Celeron Dual-Core", "E2xxx - Pentium Dual-Core", "E3x00 - Celeron Dual-Core", "E4xxx - Core 2 Duo", "E5x00 - Pentium Dual-Core", "E6xxx - Core 2 Duo", "E6x00 - Pentium Dual-Core", "E7x00 - Core 2 Duo", "E8xxx - Core 2 Duo", "G6xxx - Pentium Dual-Core", "i3-5xx - Core i3", "i5-6xx - Core i5 (dual-core)", "i5-7xx - Core i5 (quad-core)", "i7-8xx - Core i7", "i7-9xx - Core i7 and Core i7 Extreme Edition", "Q6xxx - Core 2 Quad", "Q8xxx - Core 2 Quad", "Q9xxx - Core 2 Quad", "QX6xxx - Core 2 Extreme", "QX9xxx - Core 2 Extreme", "X6xxx - Core 2 Extreme" };
             var manufacturers = new string[] { "Intel", "AMD", "VIA", "DM & P Electronics", "ZF Micro", "Zet GPL", "RDC Semiconductors", "Nvidia", "ALi", "SiS", "GlobalFoundries", "IBM", "TSMC", "Fujitsu" };
             int processorsCount = models.Length;
             decimal price = 92.07m;
-
-            var computersCollection = new HashSet<ComputerMongoModel>();
-            for (int i = 3; i < 8; i++)
-            {
-                computersCollection.Add(generatedComputers[i]);
-            }
 
             var processors = new HashSet<BsonDocument>();
             var processor = new ProcessorMongoModel();
@@ -151,8 +121,7 @@ namespace ComputersFactory.Data.MongoDbWriter
                     Model = models[i],
                     Price = price + i,
                     Manufacturer = manufacturers[i % manufacturers.Length],
-                    FrequencyInMhz = (int)(i * 2.2),
-                    Computers = computersCollection
+                    FrequencyInMhz = (int)(i * 2.2)
                 };
 
                 processors.Add(processor.ToBsonDocument());
@@ -162,7 +131,7 @@ namespace ComputersFactory.Data.MongoDbWriter
             processorCollection.InsertMany(processors);
         }
 
-        private static void GenerateVideoCards(IMongoDatabase database, IList<ComputerMongoModel> generatedComputers)
+        private static void GenerateVideoCards(IMongoDatabase database)
         {
             var models = new string[] {
             "GeForce 200 series", "GeForce 256","GeForce 300 series","GeForce 400 series","GeForce 500 series","GeForce 700 series","GeForce 900 series","GeForce FX series","Glaze3D","GoForce","Hercules Graphics Card","Hercules Graphics Card Plus","Hercules InColor Card","Hydra Engine","HyperZ","IBM 8514","IBM Monochrome Display Adapter","INMOS G364 framebuffer","Intel 810","Intel 2700G","Intel GMA","IrisVision","Matrox G200","Matrox G400","Matrox Graphics eXpansion Modules","Matrox Mystique","Matrox Parhelia","Matrox Simple Interface","MicroAngelo","Mini-DVI","Radeon HD 6000 Series","NV1","NV2","NvAGP","Nvidia Quadro","Nvidia Tesla"};
@@ -170,12 +139,6 @@ namespace ComputersFactory.Data.MongoDbWriter
             };
             int videoCardsCount = models.Length;
             decimal price = 66.0m;
-
-            var computersCollection = new HashSet<ComputerMongoModel>();
-            for (int i = 4; i < 13; i++)
-            {
-                computersCollection.Add(generatedComputers[i]);
-            }
 
             var videoCards = new HashSet<BsonDocument>();
             var videoCard = new VideoCardMongoModel();
@@ -186,8 +149,7 @@ namespace ComputersFactory.Data.MongoDbWriter
                     Id = ObjectId.GenerateNewId().ToString(),
                     Model = models[i],
                     Price = price + i,
-                    Manufacturer = manufacturers[i],
-                    Computers = computersCollection
+                    Manufacturer = manufacturers[i]
                 };
 
                 videoCards.Add(videoCard.ToBsonDocument());
@@ -204,21 +166,28 @@ namespace ComputersFactory.Data.MongoDbWriter
             int computersCount = models.Length;
             decimal price = 1200m;
 
+            var hddsCollection = database.GetCollection<HardDriveMongoModel>("HardDrives").AsQueryable().ToList();
+            var memoriesCollection = database.GetCollection<MemoryMongoModel>("Memories").AsQueryable().ToList();
+            var motherboardsCollection = database.GetCollection<MotherboardMongoModel>("Motherboards").AsQueryable().ToList();
+            var processorsCollection = database.GetCollection<ProcessorMongoModel>("Processors").AsQueryable().ToList();
+            var videoCardsCollection = database.GetCollection<VideoCardMongoModel>("VideoCards").AsQueryable().ToList();
+            var computerShopsCollection = database.GetCollection<ComputerShopMongoModel>("ComputerShops").AsQueryable().ToList();
+
             var computers = new HashSet<BsonDocument>();
             var computer = new ComputerMongoModel();
-            for (int i = 1; i < computersCount; i++)
+            for (int i = 0; i < computersCount - 1; i++)
             {
                 computer = new ComputerMongoModel()
                 {
                     Id = ObjectId.GenerateNewId().ToString(),
                     Model = models[i],
                     Price = price + i,
-                    MemoryId = i,
-                    MotherboardId = i,
-                    ProcesorId = i,
-                    VideocardId = i,
-                    ComputerShopId = i,
-                    HardDrivesIds = new HashSet<int>() { i, i + 1 }
+                    Memory = memoriesCollection[i % memoriesCollection.Count],
+                    Motherboard = motherboardsCollection[i % motherboardsCollection.Count],
+                    Processor = processorsCollection[i % processorsCollection.Count],
+                    Videocard = videoCardsCollection[i % videoCardsCollection.Count],
+                    ComputerShop = computerShopsCollection[i % computerShopsCollection.Count],
+                    HardDrives = new HashSet<HardDriveMongoModel>() { hddsCollection[i], hddsCollection[i + 1] }
                 };
 
                 computers.Add(computer.ToBsonDocument());
@@ -228,16 +197,10 @@ namespace ComputersFactory.Data.MongoDbWriter
             computersCollection.InsertMany(computers);
         }
 
-        private static void GenerateComputerShops(IMongoDatabase database, IList<ComputerMongoModel> generatedComputers)
+        private static void GenerateComputerShops(IMongoDatabase database)
         {
             var names = new string[] { "ABS Computer Tech Inc.", "Ansys Inc.", "Cable Doctor Co.", "Cimetrix", "Cognitech Corporation", "Fieldglass Inc.", "NetIQ Corp", "Precision IT Group", "Southway Systems Inc.", "Symantec Corporation", "Thoughtworks Inc.", "Xactware Solutions, Inc.", "Cable Doctor Co.", "Cimetrix", "Cognitech Corporation", "Fieldglass Inc.", "NetIQ Corp", "Precision IT Group", "Southway Systems Inc.", "Symantec Corporation", "Thoughtworks Inc." };
             int computerShopsCount = names.Length;
-
-            var computersCollection = new HashSet<ComputerMongoModel>();
-            for (int i = 5; i < 15; i++)
-            {
-                computersCollection.Add(generatedComputers[i]);
-            }
 
             var computerShops = new HashSet<BsonDocument>();
             var computerShop = new ComputerShopMongoModel();
@@ -246,8 +209,7 @@ namespace ComputersFactory.Data.MongoDbWriter
                 computerShop = new ComputerShopMongoModel()
                 {
                     Id = ObjectId.GenerateNewId().ToString(),
-                    Name = names[i],
-                    Computers = computersCollection
+                    Name = names[i]
                 };
 
                 computerShops.Add(computerShop.ToBsonDocument());

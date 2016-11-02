@@ -34,17 +34,7 @@ namespace ComputersFactory.Data.Models
             get; set;
         }
 
-        public int MemoryId
-        {
-            get; set;
-        }
-
         public virtual Memory Memory
-        {
-            get; set;
-        }
-
-        public int MotherboardId
         {
             get; set;
         }
@@ -54,17 +44,7 @@ namespace ComputersFactory.Data.Models
             get; set;
         }
 
-        public int ProcessorId
-        {
-            get; set;
-        }
-
         public virtual Processor Processor
-        {
-            get; set;
-        }
-
-        public int VideocardId
         {
             get; set;
         }
@@ -84,11 +64,6 @@ namespace ComputersFactory.Data.Models
             {
                 this.hardDrives = value;
             }
-        }
-
-        public int ComputerShopId
-        {
-            get; set;
         }
 
         public virtual ComputerShop ComputerShop
