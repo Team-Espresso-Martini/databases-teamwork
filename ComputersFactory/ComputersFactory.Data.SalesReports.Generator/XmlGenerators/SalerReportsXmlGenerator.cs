@@ -12,6 +12,7 @@ namespace ComputersFactory.Data.SalesReports.Generator.XmlGenerators
     public class SalesReportsXmlGenerator : IXmlGenerator<SalesReport>
     {
         private const string FileNameFormat = "{0}{1}{2}{3}";
+        private const string RootDirectoryWithFileName = "../../../XmlSalesReports/SalesReports.xml";
         private const string RootDirectory = "../../../XmlSalesReports";
         private const string Separator = "/";
         private const string Extension = ".xml";
@@ -29,10 +30,11 @@ namespace ComputersFactory.Data.SalesReports.Generator.XmlGenerators
                 Directory.CreateDirectory(rootDirectoryInfo.FullName);
             }
 
-            var settings = new XmlWriterSettings() { Indent = true };
+            var settings = new XmlWriterSettings();
+            settings.Indent = true;
+            settings.Encoding = Encoding.UTF8;
 
-            var encoding = Encoding.UTF8;
-            using (var writer = XmlWriter.Create("../../../XmlSalesReports/SalesReports.xml", settings))
+            using (var writer = XmlWriter.Create(SalesReportsXmlGenerator.RootDirectoryWithFileName, settings))
             {
                 writer.WriteStartDocument();
                 writer.WriteStartElement("Reports");

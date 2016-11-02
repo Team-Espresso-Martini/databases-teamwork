@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 
 using ComputersFactory.Data.SalesReports.Generator.DataGenerators;
-using ComputersFactory.Models.Views;
 using ComputersFactory.Data.SalesReports.Generator.XmlGenerators;
+using ComputersFactory.Models.Views;
 
 namespace ComputersFactory.Data.SalesReports.Generator
 {
