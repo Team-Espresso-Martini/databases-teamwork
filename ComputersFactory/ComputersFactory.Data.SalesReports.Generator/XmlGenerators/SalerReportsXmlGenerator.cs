@@ -51,7 +51,7 @@ namespace ComputersFactory.Data.SalesReports.Generator.XmlGenerators
 
         private void GenerateReportXml(XmlWriter writer, SalesReport report)
         {
-            writer.WriteStartElement("Report");
+            writer.WriteStartElement("SalesReport");
 
             writer.WriteElementString("TotalAmount", report.TotalAmount.ToString());
             writer.WriteElementString("Date", report.Date.ToShortDateString());

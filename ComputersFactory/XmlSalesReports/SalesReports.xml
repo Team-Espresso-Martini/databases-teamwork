@@ -1,87 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Reports>
-  <Report>
-    <TotalAmount>6023.00</TotalAmount>
-    <Date>4/8/2014</Date>
-    <ComputerShop ComputerShopId="13">Cable Doctor Co.</ComputerShop>
+  <SalesReport>
+    <TotalAmount>8460.00</TotalAmount>
+    <Date>1/5/2014</Date>
+    <ComputerShop ComputerShopId="32">Thoughtworks Inc.</ComputerShop>
     <Sales>
       <Sale>
-        <Amount>1206.00</Amount>
-        <Computer ComputerId="7" />
+        <Amount>1211.00</Amount>
+        <Computer ComputerId="12" />
       </Sale>
       <Sale>
         <Amount>1205.00</Amount>
         <Computer ComputerId="6" />
-      </Sale>
-      <Sale>
-        <Amount>1204.00</Amount>
-        <Computer ComputerId="5" />
-      </Sale>
-      <Sale>
-        <Amount>1203.00</Amount>
-        <Computer ComputerId="4" />
-      </Sale>
-      <Sale>
-        <Amount>1205.00</Amount>
-        <Computer ComputerId="6" />
-      </Sale>
-    </Sales>
-  </Report>
-  <Report>
-    <TotalAmount>12089.00</TotalAmount>
-    <Date>6/21/2015</Date>
-    <ComputerShop ComputerShopId="14">Cimetrix</ComputerShop>
-    <Sales>
-      <Sale>
-        <Amount>1212.00</Amount>
-        <Computer ComputerId="13" />
-      </Sale>
-      <Sale>
-        <Amount>1208.00</Amount>
-        <Computer ComputerId="9" />
-      </Sale>
-      <Sale>
-        <Amount>1212.00</Amount>
-        <Computer ComputerId="13" />
-      </Sale>
-      <Sale>
-        <Amount>1210.00</Amount>
-        <Computer ComputerId="11" />
-      </Sale>
-      <Sale>
-        <Amount>1205.00</Amount>
-        <Computer ComputerId="6" />
-      </Sale>
-      <Sale>
-        <Amount>1209.00</Amount>
-        <Computer ComputerId="10" />
       </Sale>
       <Sale>
         <Amount>1216.00</Amount>
         <Computer ComputerId="17" />
       </Sale>
       <Sale>
+        <Amount>1216.00</Amount>
+        <Computer ComputerId="17" />
+      </Sale>
+      <Sale>
+        <Amount>1210.00</Amount>
+        <Computer ComputerId="11" />
+      </Sale>
+      <Sale>
+        <Amount>1201.00</Amount>
+        <Computer ComputerId="2" />
+      </Sale>
+      <Sale>
+        <Amount>1201.00</Amount>
+        <Computer ComputerId="2" />
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport>
+    <TotalAmount>4813.00</TotalAmount>
+    <Date>3/1/2014</Date>
+    <ComputerShop ComputerShopId="21">Thoughtworks Inc.</ComputerShop>
+    <Sales>
+      <Sale>
+        <Amount>1200.00</Amount>
+        <Computer ComputerId="1" />
+      </Sale>
+      <Sale>
+        <Amount>1202.00</Amount>
+        <Computer ComputerId="3" />
+      </Sale>
+      <Sale>
+        <Amount>1210.00</Amount>
+        <Computer ComputerId="11" />
+      </Sale>
+      <Sale>
+        <Amount>1201.00</Amount>
+        <Computer ComputerId="2" />
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport>
+    <TotalAmount>12070.00</TotalAmount>
+    <Date>9/14/2015</Date>
+    <ComputerShop ComputerShopId="9">Southway Systems Inc.</ComputerShop>
+    <Sales>
+      <Sale>
+        <Amount>1205.00</Amount>
+        <Computer ComputerId="6" />
+      </Sale>
+      <Sale>
         <Amount>1208.00</Amount>
         <Computer ComputerId="9" />
       </Sale>
       <Sale>
+        <Amount>1205.00</Amount>
+        <Computer ComputerId="6" />
+      </Sale>
+      <Sale>
+        <Amount>1200.00</Amount>
+        <Computer ComputerId="1" />
+      </Sale>
+      <Sale>
+        <Amount>1211.00</Amount>
+        <Computer ComputerId="12" />
+      </Sale>
+      <Sale>
+        <Amount>1214.00</Amount>
+        <Computer ComputerId="15" />
+      </Sale>
+      <Sale>
+        <Amount>1209.00</Amount>
+        <Computer ComputerId="10" />
+      </Sale>
+      <Sale>
         <Amount>1203.00</Amount>
         <Computer ComputerId="4" />
-      </Sale>
-      <Sale>
-        <Amount>1206.00</Amount>
-        <Computer ComputerId="7" />
-      </Sale>
-    </Sales>
-  </Report>
-  <Report>
-    <TotalAmount>6041.00</TotalAmount>
-    <Date>11/14/2015</Date>
-    <ComputerShop ComputerShopId="15">Cognitech Corporation</ComputerShop>
-    <Sales>
-      <Sale>
-        <Amount>1212.00</Amount>
-        <Computer ComputerId="13" />
       </Sale>
       <Sale>
         <Amount>1214.00</Amount>
@@ -91,148 +103,16 @@
         <Amount>1201.00</Amount>
         <Computer ComputerId="2" />
       </Sale>
-      <Sale>
-        <Amount>1202.00</Amount>
-        <Computer ComputerId="3" />
-      </Sale>
-      <Sale>
-        <Amount>1212.00</Amount>
-        <Computer ComputerId="13" />
-      </Sale>
     </Sales>
-  </Report>
-  <Report>
-    <TotalAmount>4842.00</TotalAmount>
-    <Date>10/3/2015</Date>
-    <ComputerShop ComputerShopId="29">Precision IT Group</ComputerShop>
+  </SalesReport>
+  <SalesReport>
+    <TotalAmount>12102.00</TotalAmount>
+    <Date>7/13/2015</Date>
+    <ComputerShop ComputerShopId="3">Cable Doctor Co.</ComputerShop>
     <Sales>
-      <Sale>
-        <Amount>1212.00</Amount>
-        <Computer ComputerId="13" />
-      </Sale>
-      <Sale>
-        <Amount>1210.00</Amount>
-        <Computer ComputerId="11" />
-      </Sale>
-      <Sale>
-        <Amount>1215.00</Amount>
-        <Computer ComputerId="16" />
-      </Sale>
-      <Sale>
-        <Amount>1205.00</Amount>
-        <Computer ComputerId="6" />
-      </Sale>
-    </Sales>
-  </Report>
-  <Report>
-    <TotalAmount>7209.00</TotalAmount>
-    <Date>7/25/2015</Date>
-    <ComputerShop ComputerShopId="2">Ansys Inc.</ComputerShop>
-    <Sales>
-      <Sale>
-        <Amount>1200.00</Amount>
-        <Computer ComputerId="1" />
-      </Sale>
-      <Sale>
-        <Amount>1200.00</Amount>
-        <Computer ComputerId="1" />
-      </Sale>
-      <Sale>
-        <Amount>1207.00</Amount>
-        <Computer ComputerId="8" />
-      </Sale>
-      <Sale>
-        <Amount>1201.00</Amount>
-        <Computer ComputerId="2" />
-      </Sale>
-      <Sale>
-        <Amount>1200.00</Amount>
-        <Computer ComputerId="1" />
-      </Sale>
-      <Sale>
-        <Amount>1201.00</Amount>
-        <Computer ComputerId="2" />
-      </Sale>
-    </Sales>
-  </Report>
-  <Report>
-    <TotalAmount>3630.00</TotalAmount>
-    <Date>6/3/2014</Date>
-    <ComputerShop ComputerShopId="4">Cimetrix</ComputerShop>
-    <Sales>
-      <Sale>
-        <Amount>1210.00</Amount>
-        <Computer ComputerId="11" />
-      </Sale>
-      <Sale>
-        <Amount>1216.00</Amount>
-        <Computer ComputerId="17" />
-      </Sale>
       <Sale>
         <Amount>1204.00</Amount>
         <Computer ComputerId="5" />
-      </Sale>
-    </Sales>
-  </Report>
-  <Report>
-    <TotalAmount>10889.00</TotalAmount>
-    <Date>11/8/2015</Date>
-    <ComputerShop ComputerShopId="28">NetIQ Corp</ComputerShop>
-    <Sales>
-      <Sale>
-        <Amount>1208.00</Amount>
-        <Computer ComputerId="9" />
-      </Sale>
-      <Sale>
-        <Amount>1212.00</Amount>
-        <Computer ComputerId="13" />
-      </Sale>
-      <Sale>
-        <Amount>1216.00</Amount>
-        <Computer ComputerId="17" />
-      </Sale>
-      <Sale>
-        <Amount>1200.00</Amount>
-        <Computer ComputerId="1" />
-      </Sale>
-      <Sale>
-        <Amount>1209.00</Amount>
-        <Computer ComputerId="10" />
-      </Sale>
-      <Sale>
-        <Amount>1212.00</Amount>
-        <Computer ComputerId="13" />
-      </Sale>
-      <Sale>
-        <Amount>1216.00</Amount>
-        <Computer ComputerId="17" />
-      </Sale>
-      <Sale>
-        <Amount>1209.00</Amount>
-        <Computer ComputerId="10" />
-      </Sale>
-      <Sale>
-        <Amount>1207.00</Amount>
-        <Computer ComputerId="8" />
-      </Sale>
-    </Sales>
-  </Report>
-  <Report>
-    <TotalAmount>14500.00</TotalAmount>
-    <Date>1/16/2015</Date>
-    <ComputerShop ComputerShopId="38">NetIQ Corp</ComputerShop>
-    <Sales>
-      <Sale>
-        <Amount>1211.00</Amount>
-        <Computer ComputerId="12" />
-      </Sale>
-      <Sale>
-        <Amount>1211.00</Amount>
-        <Computer ComputerId="12" />
-      </Sale>
-      <Sale>
-        <Amount>1209.00</Amount>
-        <Computer ComputerId="10" />
       </Sale>
       <Sale>
         <Amount>1208.00</Amount>
@@ -243,40 +123,25 @@
         <Computer ComputerId="3" />
       </Sale>
       <Sale>
-        <Amount>1212.00</Amount>
-        <Computer ComputerId="13" />
-      </Sale>
-      <Sale>
-        <Amount>1206.00</Amount>
-        <Computer ComputerId="7" />
-      </Sale>
-      <Sale>
-        <Amount>1209.00</Amount>
-        <Computer ComputerId="10" />
-      </Sale>
-      <Sale>
-        <Amount>1201.00</Amount>
-        <Computer ComputerId="2" />
-      </Sale>
-      <Sale>
-        <Amount>1214.00</Amount>
-        <Computer ComputerId="15" />
+        <Amount>1216.00</Amount>
+        <Computer ComputerId="17" />
       </Sale>
       <Sale>
         <Amount>1216.00</Amount>
         <Computer ComputerId="17" />
       </Sale>
       <Sale>
-        <Amount>1201.00</Amount>
-        <Computer ComputerId="2" />
+        <Amount>1213.00</Amount>
+        <Computer ComputerId="14" />
       </Sale>
-    </Sales>
-  </Report>
-  <Report>
-    <TotalAmount>13302.00</TotalAmount>
-    <Date>5/19/2015</Date>
-    <ComputerShop ComputerShopId="22">ABS Computer Tech Inc.</ComputerShop>
-    <Sales>
+      <Sale>
+        <Amount>1211.00</Amount>
+        <Computer ComputerId="12" />
+      </Sale>
+      <Sale>
+        <Amount>1204.00</Amount>
+        <Computer ComputerId="5" />
+      </Sale>
       <Sale>
         <Amount>1215.00</Amount>
         <Computer ComputerId="16" />
@@ -285,77 +150,272 @@
         <Amount>1213.00</Amount>
         <Computer ComputerId="14" />
       </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport>
+    <TotalAmount>14491.00</TotalAmount>
+    <Date>3/7/2014</Date>
+    <ComputerShop ComputerShopId="21">Thoughtworks Inc.</ComputerShop>
+    <Sales>
+      <Sale>
+        <Amount>1201.00</Amount>
+        <Computer ComputerId="2" />
+      </Sale>
+      <Sale>
+        <Amount>1208.00</Amount>
+        <Computer ComputerId="9" />
+      </Sale>
+      <Sale>
+        <Amount>1213.00</Amount>
+        <Computer ComputerId="14" />
+      </Sale>
+      <Sale>
+        <Amount>1201.00</Amount>
+        <Computer ComputerId="2" />
+      </Sale>
+      <Sale>
+        <Amount>1201.00</Amount>
+        <Computer ComputerId="2" />
+      </Sale>
+      <Sale>
+        <Amount>1200.00</Amount>
+        <Computer ComputerId="1" />
+      </Sale>
+      <Sale>
+        <Amount>1213.00</Amount>
+        <Computer ComputerId="14" />
+      </Sale>
+      <Sale>
+        <Amount>1212.00</Amount>
+        <Computer ComputerId="13" />
+      </Sale>
+      <Sale>
+        <Amount>1213.00</Amount>
+        <Computer ComputerId="14" />
+      </Sale>
+      <Sale>
+        <Amount>1212.00</Amount>
+        <Computer ComputerId="13" />
+      </Sale>
+      <Sale>
+        <Amount>1215.00</Amount>
+        <Computer ComputerId="16" />
+      </Sale>
+      <Sale>
+        <Amount>1202.00</Amount>
+        <Computer ComputerId="3" />
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport>
+    <TotalAmount>13298.00</TotalAmount>
+    <Date>6/16/2014</Date>
+    <ComputerShop ComputerShopId="30">Southway Systems Inc.</ComputerShop>
+    <Sales>
+      <Sale>
+        <Amount>1212.00</Amount>
+        <Computer ComputerId="13" />
+      </Sale>
+      <Sale>
+        <Amount>1208.00</Amount>
+        <Computer ComputerId="9" />
+      </Sale>
+      <Sale>
+        <Amount>1204.00</Amount>
+        <Computer ComputerId="5" />
+      </Sale>
+      <Sale>
+        <Amount>1206.00</Amount>
+        <Computer ComputerId="7" />
+      </Sale>
+      <Sale>
+        <Amount>1215.00</Amount>
+        <Computer ComputerId="16" />
+      </Sale>
+      <Sale>
+        <Amount>1202.00</Amount>
+        <Computer ComputerId="3" />
+      </Sale>
+      <Sale>
+        <Amount>1216.00</Amount>
+        <Computer ComputerId="17" />
+      </Sale>
+      <Sale>
+        <Amount>1206.00</Amount>
+        <Computer ComputerId="7" />
+      </Sale>
+      <Sale>
+        <Amount>1215.00</Amount>
+        <Computer ComputerId="16" />
+      </Sale>
+      <Sale>
+        <Amount>1212.00</Amount>
+        <Computer ComputerId="13" />
+      </Sale>
+      <Sale>
+        <Amount>1202.00</Amount>
+        <Computer ComputerId="3" />
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport>
+    <TotalAmount>6056.00</TotalAmount>
+    <Date>4/27/2015</Date>
+    <ComputerShop ComputerShopId="27">Fieldglass Inc.</ComputerShop>
+    <Sales>
       <Sale>
         <Amount>1207.00</Amount>
         <Computer ComputerId="8" />
       </Sale>
       <Sale>
+        <Amount>1207.00</Amount>
+        <Computer ComputerId="8" />
+      </Sale>
+      <Sale>
+        <Amount>1213.00</Amount>
+        <Computer ComputerId="14" />
+      </Sale>
+      <Sale>
+        <Amount>1213.00</Amount>
+        <Computer ComputerId="14" />
+      </Sale>
+      <Sale>
         <Amount>1216.00</Amount>
         <Computer ComputerId="17" />
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport>
+    <TotalAmount>9663.00</TotalAmount>
+    <Date>4/19/2015</Date>
+    <ComputerShop ComputerShopId="33">Xactware Solutions, Inc.</ComputerShop>
+    <Sales>
+      <Sale>
+        <Amount>1210.00</Amount>
+        <Computer ComputerId="11" />
+      </Sale>
+      <Sale>
+        <Amount>1205.00</Amount>
+        <Computer ComputerId="6" />
+      </Sale>
+      <Sale>
+        <Amount>1207.00</Amount>
+        <Computer ComputerId="8" />
+      </Sale>
+      <Sale>
+        <Amount>1212.00</Amount>
+        <Computer ComputerId="13" />
       </Sale>
       <Sale>
         <Amount>1203.00</Amount>
         <Computer ComputerId="4" />
       </Sale>
       <Sale>
-        <Amount>1204.00</Amount>
-        <Computer ComputerId="5" />
+        <Amount>1213.00</Amount>
+        <Computer ComputerId="14" />
       </Sale>
       <Sale>
-        <Amount>1204.00</Amount>
-        <Computer ComputerId="5" />
+        <Amount>1200.00</Amount>
+        <Computer ComputerId="1" />
       </Sale>
       <Sale>
-        <Amount>1207.00</Amount>
-        <Computer ComputerId="8" />
-      </Sale>
-      <Sale>
-        <Amount>1212.00</Amount>
-        <Computer ComputerId="13" />
-      </Sale>
-      <Sale>
-        <Amount>1209.00</Amount>
-        <Computer ComputerId="10" />
-      </Sale>
-      <Sale>
-        <Amount>1212.00</Amount>
-        <Computer ComputerId="13" />
+        <Amount>1213.00</Amount>
+        <Computer ComputerId="14" />
       </Sale>
     </Sales>
-  </Report>
-  <Report>
-    <TotalAmount>8466.00</TotalAmount>
-    <Date>2/21/2015</Date>
-    <ComputerShop ComputerShopId="21">Thoughtworks Inc.</ComputerShop>
+  </SalesReport>
+  <SalesReport>
+    <TotalAmount>10864.00</TotalAmount>
+    <Date>4/9/2014</Date>
+    <ComputerShop ComputerShopId="35">Cimetrix</ComputerShop>
     <Sales>
-      <Sale>
-        <Amount>1209.00</Amount>
-        <Computer ComputerId="10" />
-      </Sale>
       <Sale>
         <Amount>1212.00</Amount>
         <Computer ComputerId="13" />
       </Sale>
       <Sale>
-        <Amount>1216.00</Amount>
-        <Computer ComputerId="17" />
+        <Amount>1203.00</Amount>
+        <Computer ComputerId="4" />
       </Sale>
       <Sale>
-        <Amount>1207.00</Amount>
-        <Computer ComputerId="8" />
+        <Amount>1215.00</Amount>
+        <Computer ComputerId="16" />
       </Sale>
       <Sale>
-        <Amount>1207.00</Amount>
-        <Computer ComputerId="8" />
+        <Amount>1210.00</Amount>
+        <Computer ComputerId="11" />
+      </Sale>
+      <Sale>
+        <Amount>1200.00</Amount>
+        <Computer ComputerId="1" />
+      </Sale>
+      <Sale>
+        <Amount>1213.00</Amount>
+        <Computer ComputerId="14" />
+      </Sale>
+      <Sale>
+        <Amount>1206.00</Amount>
+        <Computer ComputerId="7" />
+      </Sale>
+      <Sale>
+        <Amount>1202.00</Amount>
+        <Computer ComputerId="3" />
+      </Sale>
+      <Sale>
+        <Amount>1203.00</Amount>
+        <Computer ComputerId="4" />
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport>
+    <TotalAmount>13300.00</TotalAmount>
+    <Date>10/5/2014</Date>
+    <ComputerShop ComputerShopId="3">Cable Doctor Co.</ComputerShop>
+    <Sales>
+      <Sale>
+        <Amount>1201.00</Amount>
+        <Computer ComputerId="2" />
+      </Sale>
+      <Sale>
+        <Amount>1213.00</Amount>
+        <Computer ComputerId="14" />
       </Sale>
       <Sale>
         <Amount>1211.00</Amount>
         <Computer ComputerId="12" />
       </Sale>
       <Sale>
-        <Amount>1204.00</Amount>
-        <Computer ComputerId="5" />
+        <Amount>1211.00</Amount>
+        <Computer ComputerId="12" />
+      </Sale>
+      <Sale>
+        <Amount>1209.00</Amount>
+        <Computer ComputerId="10" />
+      </Sale>
+      <Sale>
+        <Amount>1214.00</Amount>
+        <Computer ComputerId="15" />
+      </Sale>
+      <Sale>
+        <Amount>1208.00</Amount>
+        <Computer ComputerId="9" />
+      </Sale>
+      <Sale>
+        <Amount>1205.00</Amount>
+        <Computer ComputerId="6" />
+      </Sale>
+      <Sale>
+        <Amount>1208.00</Amount>
+        <Computer ComputerId="9" />
+      </Sale>
+      <Sale>
+        <Amount>1215.00</Amount>
+        <Computer ComputerId="16" />
+      </Sale>
+      <Sale>
+        <Amount>1205.00</Amount>
+        <Computer ComputerId="6" />
       </Sale>
     </Sales>
-  </Report>
+  </SalesReport>
 </Reports>
