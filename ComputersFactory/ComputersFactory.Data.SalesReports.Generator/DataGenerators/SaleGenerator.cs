@@ -8,29 +8,14 @@ using ComputersFactory.Models;
 
 namespace ComputersFactory.Data.SalesReports.Generator.DataGenerators
 {
-    public class SaleGenerator : DataGenerator, ISaleGenerator
+    public class SaleGenerator : DataGenerator<Sale>, ISaleGenerator
     {
-        public IEnumerable<Sale> GenerateSales(int salesCount, IList<Computer> availableComputers)
+        public override ICollection<Sale> GenerateData(int count, IList<Computer> availableComputers)
         {
-            if (availableComputers == null)
-            {
-                throw new ArgumentNullException(nameof(availableComputers));
-            }
-
-            if (availableComputers.Count == 0)
-            {
-                throw new ArgumentException("Available computers collection is empty.", nameof(availableComputers));
-            }
-
-            if (salesCount <= 0)
-            {
-                throw new ArgumentOutOfRangeException("Count must be larger than zero.");
-            }
-
+            var generatedSales = base.GenerateData(count, availableComputers);
             var availableComputersCount = availableComputers.Count;
 
-            var generatedSales = new List<Sale>();
-            for (int saleIndex = 0; saleIndex < salesCount; saleIndex++)
+            for (int saleIndex = 0; saleIndex < count; saleIndex++)
             {
                 var nextComputerId = base.RandomNumberProvider.Next(0, availableComputersCount);
                 var nextComputer = availableComputers[nextComputerId];

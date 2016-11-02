@@ -52,12 +52,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataGenerators\Abstract\DataGenerator.cs" />
+    <Compile Include="DataGenerators\Contracts\IDataGenerator.cs" />
+    <Compile Include="DataGenerators\Contracts\ISaleGenerator.cs" />
+    <Compile Include="DataGenerators\Contracts\ISalesReportGenerator.cs" />
+    <Compile Include="DataGenerators\SaleGenerator.cs" />
+    <Compile Include="DataGenerators\SalesReportGenerator.cs" />
     <Compile Include="SalesReportsGeneratorStartup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComputersFactory.Data\ComputersFactory.Data.csproj">
+      <Project>{e6065a6e-6f85-4922-946a-a16c5ea35efc}</Project>
+      <Name>ComputersFactory.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
+      <Project>{4fe099d3-b89f-4905-8f5b-3a5752fba06e}</Project>
+      <Name>ComputersFactory.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

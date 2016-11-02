@@ -7,6 +7,6 @@ namespace ComputersFactory.Data.SalesReports.Generator.DataGenerators.Contracts
 {
     public interface ISaleGenerator : IDataGenerator
     {
-        IEnumerable<Sale> GenerateSales(int salesCount, IList<Computer> availableComputers);
+        ICollection<Sale> GenerateData(int count, IList<Computer> availableComputers)
     }
 }
