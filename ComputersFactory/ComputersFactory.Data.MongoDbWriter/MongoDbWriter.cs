@@ -1,9 +1,11 @@
-﻿using MongoDB.Driver;
-using ComputersFactory.Data.MongoDbWriter.Models.Components;
-using MongoDB.Bson;
-using System.Collections.Generic;
-using ComputersFactory.Data.MongoDbWriter.Models;
+﻿using System.Collections.Generic;
 using System.Linq;
+
+using ComputersFactory.Data.MongoDbWriter.Models;
+using ComputersFactory.Data.MongoDbWriter.Models.Components;
+
+using MongoDB.Bson;
+using MongoDB.Driver;
 
 namespace ComputersFactory.Data.MongoDbWriter
 {
@@ -165,7 +167,6 @@ namespace ComputersFactory.Data.MongoDbWriter
             "Aspire", "TravelMate", "Acer Chromebook",  "MacBook", "MacBook Pro", "MacBook Air", "ROG Series", "Asus", "Chromebook", "Hewlett-Packard", "HP Elitebook", "HP Envy", "HP OMEN", "HP Chromebook","Lenovo  ThinkPad", "IdeaPad", "Portege", "Tecra" };
             int computersCount = models.Length;
             decimal price = 1200m;
-
             var hddsCollection = database.GetCollection<HardDriveMongoModel>("HardDrives").AsQueryable().ToList();
             var memoriesCollection = database.GetCollection<MemoryMongoModel>("Memories").AsQueryable().ToList();
             var motherboardsCollection = database.GetCollection<MotherboardMongoModel>("Motherboards").AsQueryable().ToList();
