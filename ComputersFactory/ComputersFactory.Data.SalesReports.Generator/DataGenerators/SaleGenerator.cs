@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using ComputersFactory.Data.Models;
 using ComputersFactory.Data.SalesReports.Generator.DataGenerators.Abstract;
 using ComputersFactory.Data.SalesReports.Generator.DataGenerators.Contracts;
 using ComputersFactory.Models;
+using ComputersFactory.Models.Views;
 
 namespace ComputersFactory.Data.SalesReports.Generator.DataGenerators
 {
     public class SaleGenerator : DataGenerator<Sale>, ISaleGenerator
     {
-        private readonly IList<Computer> availableComputers;
+        private readonly IList<ComputerIdPriceView> availableComputers;
 
-        public SaleGenerator(IList<Computer> availableComputers)
+        public SaleGenerator(IList<ComputerIdPriceView> availableComputers)
         {
             if (availableComputers == null)
             {
@@ -40,7 +40,7 @@ namespace ComputersFactory.Data.SalesReports.Generator.DataGenerators
                 var nextSale = new Sale()
                 {
                     Amount = nextComputer.Price,
-                    Computer = nextComputer
+                    ComputerId = nextComputer.Id
                 };
 
                 generatedSales.Add(nextSale);
