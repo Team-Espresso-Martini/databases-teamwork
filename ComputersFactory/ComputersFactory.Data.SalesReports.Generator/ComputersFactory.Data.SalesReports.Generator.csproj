@@ -72,6 +72,10 @@
       <Project>{146d25aa-5937-4532-bd73-b34fd33d59a4}</Project>
       <Name>ComputersFactory.Data.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.SalesReports\ComputersFactory.Data.SalesReports.csproj">
+      <Project>{41056A52-57A7-449E-9E1A-D291810EDEA0}</Project>
+      <Name>ComputersFactory.Data.SalesReports</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data\ComputersFactory.Data.csproj">
       <Project>{e6065a6e-6f85-4922-946a-a16c5ea35efc}</Project>
       <Name>ComputersFactory.Data</Name>

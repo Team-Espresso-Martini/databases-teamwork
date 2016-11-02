@@ -5,7 +5,7 @@ namespace ComputersFactory.Data.SalesReports.XmlModels
 {
     [Serializable]
     [XmlType(TypeName = "Sale")]
-    public class Sale
+    public class XmlSale
     {
         public decimal Amount { get; set; }
 

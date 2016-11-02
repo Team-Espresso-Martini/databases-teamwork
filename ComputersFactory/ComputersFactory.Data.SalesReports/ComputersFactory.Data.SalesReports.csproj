@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XmlModels\Sale.cs" />
-    <Compile Include="XmlModels\SalesReport.cs" />
+    <Compile Include="XmlDeserializers\Contracts\IXmlDeserializer.cs" />
+    <Compile Include="XmlDeserializers\XmlDeserializer.cs" />
+    <Compile Include="XmlModels\XmlSale.cs" />
+    <Compile Include="XmlModels\XmlSalesReport.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

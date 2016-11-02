@@ -54,7 +54,7 @@ namespace ComputersFactory.Data.SalesReports.Generator.XmlGenerators
             writer.WriteStartElement("SalesReport");
 
             writer.WriteElementString("TotalAmount", report.TotalAmount.ToString());
-            writer.WriteElementString("Date", report.Date.ToShortDateString());
+            writer.WriteElementString("Date", report.Date.ToString("o"));
 
             writer.WriteStartElement("ComputerShop");
             writer.WriteAttributeString("ComputerShopId", report.ComputerShopId.ToString());

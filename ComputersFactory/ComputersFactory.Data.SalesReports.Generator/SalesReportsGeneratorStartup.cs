@@ -2,6 +2,8 @@
 
 using ComputersFactory.Data.SalesReports.Generator.DataGenerators;
 using ComputersFactory.Data.SalesReports.Generator.XmlGenerators;
+using ComputersFactory.Data.SalesReports.XmlDeserializers;
+using ComputersFactory.Data.SalesReports.XmlModels;
 using ComputersFactory.Models.Views;
 
 namespace ComputersFactory.Data.SalesReports.Generator
@@ -9,6 +11,14 @@ namespace ComputersFactory.Data.SalesReports.Generator
     public class SalesReportsGeneratorStartup
     {
         public static void Main()
+        {
+            //SalesReportsGeneratorStartup.GenerateXmlReports();
+
+            var getXmlData = new XmlDeserializer();
+            var data = getXmlData.DeserializeXmlTo<XmlSalesReport>("../../../XmlSalesReports/SalesReports.xml", "Reports");
+        }
+
+        private static void GenerateXmlReports()
         {
             var context = new ComputersFactoryDbContext();
 

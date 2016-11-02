@@ -6,7 +6,7 @@ namespace ComputersFactory.Data.SalesReports.XmlModels
 {
     [Serializable]
     [XmlType(TypeName = "SalesReport")]
-    public class SalesReport
+    public class XmlSalesReport
     {
         public decimal TotalAmount { get; set; }
 
@@ -15,7 +15,9 @@ namespace ComputersFactory.Data.SalesReports.XmlModels
         [XmlAttribute]
         public int ComputerShopId { get; set; }
 
+        public string ComputerShop { get; set; }
+
         [XmlArrayItem(ElementName = "Sale")]
-        public List<Sale> Sales { get; set; }
+        public List<XmlSale> Sales { get; set; }
     }
 }
