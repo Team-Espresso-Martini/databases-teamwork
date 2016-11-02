@@ -60,6 +60,8 @@
     <Compile Include="DataGenerators\SalesReportGenerator.cs" />
     <Compile Include="SalesReportsGeneratorStartup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlGenerators\Contracts\IXmlGenerator.cs" />
+    <Compile Include="XmlGenerators\SalerReportsXmlGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
