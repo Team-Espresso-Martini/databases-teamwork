@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 
-using ComputersFactory.Models.Views;
 using ComputersFactory.Data.SalesReports.Generator.DataGenerators;
+using ComputersFactory.Models.Views;
 
 namespace ComputersFactory.Data.SalesReports.Generator
 {
@@ -11,9 +11,7 @@ namespace ComputersFactory.Data.SalesReports.Generator
         {
             var context = new ComputersFactoryDbContext();
 
-            var computerShopsIds = context.ComputersShops
-                .Select(cs => cs.Id)
-                .ToList();
+            var computerShopsIds = context.ComputersShops.ToList();
 
             var computers = context.Computers.Select(c => new ComputerIdPriceView
             {

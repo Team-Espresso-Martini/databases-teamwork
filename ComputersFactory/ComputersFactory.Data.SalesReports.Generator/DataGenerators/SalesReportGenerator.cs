@@ -14,27 +14,27 @@ namespace ComputersFactory.Data.SalesReports.Generator.DataGenerators
         private const int MaximumSalesCount = 15;
 
         private readonly ISaleGenerator saleGenerator;
-        private readonly IList<int> computerShopsIds;
+        private readonly IList<ComputerShop> computerShops;
 
-        public SalesReportGenerator(ISaleGenerator saleGenerator, IList<int> computerShopsIds)
+        public SalesReportGenerator(ISaleGenerator saleGenerator, IList<ComputerShop> computerShops)
         {
             if (saleGenerator == null)
             {
                 throw new ArgumentNullException(nameof(saleGenerator));
             }
 
-            if (computerShopsIds == null)
+            if (computerShops == null)
             {
-                throw new ArgumentNullException(nameof(computerShopsIds));
+                throw new ArgumentNullException(nameof(computerShops));
             }
 
-            if (computerShopsIds.Count == 0)
+            if (computerShops.Count == 0)
             {
-                throw new ArgumentException("No ComputerShops Ids.", nameof(computerShopsIds));
+                throw new ArgumentException("No ComputerShops Ids.", nameof(computerShops));
             }
 
             this.saleGenerator = saleGenerator;
-            this.computerShopsIds = computerShopsIds;
+            this.computerShops = computerShops;
         }
 
         public override ICollection<SalesReport> GenerateData(int count)
@@ -47,7 +47,8 @@ namespace ComputersFactory.Data.SalesReports.Generator.DataGenerators
                 nextSalesReport.Date = this.GenerateDate();
                 nextSalesReport.Sales = this.GenerateSales();
                 nextSalesReport.TotalAmount = this.GenerateSalesAmount(nextSalesReport.Sales);
-                nextSalesReport.ComputerShopId = this.GenerateComputerShopId();
+                nextSalesReport.ComputerShop = this.GenerateComputerShopId();
+                nextSalesReport.ComputerShopId = nextSalesReport.ComputerShop.Id;
 
                 generatedSalesReports.Add(nextSalesReport);
             }
@@ -70,13 +71,13 @@ namespace ComputersFactory.Data.SalesReports.Generator.DataGenerators
             return salesAmount;
         }
 
-        private int GenerateComputerShopId()
+        private ComputerShop GenerateComputerShopId()
         {
-            var computerShopIdsCount = this.computerShopsIds.Count;
-            var computerShopCollectionIndex = base.RandomNumberProvider.Next(0, computerShopIdsCount);
-            var computerShopId = this.computerShopsIds[computerShopCollectionIndex];
+            var computerShopsCount = this.computerShops.Count;
+            var computerShopCollectionIndex = base.RandomNumberProvider.Next(0, computerShopsCount);
+            var computerShop = this.computerShops[computerShopCollectionIndex];
 
-            return computerShopId;
+            return computerShop;
         }
 
         private DateTime GenerateDate()
