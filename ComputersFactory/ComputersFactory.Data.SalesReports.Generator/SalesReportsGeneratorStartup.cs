@@ -1,7 +1,8 @@
 ﻿using System.Linq;
 
-using ComputersFactory.Models.Views;
 using ComputersFactory.Data.SalesReports.Generator.DataGenerators;
+using ComputersFactory.Data.SalesReports.Generator.XmlGenerators;
+using ComputersFactory.Models.Views;
 
 namespace ComputersFactory.Data.SalesReports.Generator
 {
@@ -11,9 +12,7 @@ namespace ComputersFactory.Data.SalesReports.Generator
         {
             var context = new ComputersFactoryDbContext();
 
-            var computerShopsIds = context.ComputersShops
-                .Select(cs => cs.Id)
-                .ToList();
+            var computerShopsIds = context.ComputersShops.ToList();
 
             var computers = context.Computers.Select(c => new ComputerIdPriceView
             {
@@ -25,7 +24,10 @@ namespace ComputersFactory.Data.SalesReports.Generator
             var saleGenerator = new SaleGenerator(computers);
             var salesRepotsGenerator = new SalesReportGenerator(saleGenerator, computerShopsIds);
 
-            var generatedReports = salesRepotsGenerator.GenerateData(15);
+            var generatedReports = salesRepotsGenerator.GenerateData(10);
+
+            var xmlWriter = new SalesReportsXmlGenerator();
+            xmlWriter.GenererateXmlFiles(generatedReports);
         }
     }
 }
