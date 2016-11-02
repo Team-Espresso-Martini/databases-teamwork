@@ -10,32 +10,30 @@ namespace ComputersFactory.Data.SalesReports.Generator.DataGenerators
 {
     public class SaleGenerator : DataGenerator, ISaleGenerator
     {
-        private readonly IList<Computer> availableComputers;
-
-        public SaleGenerator(IList<Computer> availableComputers)
+        public IEnumerable<Sale> GenerateSales(int salesCount, IList<Computer> availableComputers)
         {
             if (availableComputers == null)
             {
                 throw new ArgumentNullException(nameof(availableComputers));
             }
 
-            this.availableComputers = availableComputers;
-        }
+            if (availableComputers.Count == 0)
+            {
+                throw new ArgumentException("Available computers collection is empty.", nameof(availableComputers));
+            }
 
-        public IEnumerable<Sale> GenerateSales(int salesCount)
-        {
             if (salesCount <= 0)
             {
                 throw new ArgumentOutOfRangeException("Count must be larger than zero.");
             }
 
-            var availableComputersCount = this.availableComputers.Count;
+            var availableComputersCount = availableComputers.Count;
 
             var generatedSales = new List<Sale>();
             for (int saleIndex = 0; saleIndex < salesCount; saleIndex++)
             {
                 var nextComputerId = base.RandomNumberProvider.Next(0, availableComputersCount);
-                var nextComputer = this.availableComputers[nextComputerId];
+                var nextComputer = availableComputers[nextComputerId];
 
                 var nextSale = new Sale()
                 {
