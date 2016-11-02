@@ -10,9 +10,26 @@ namespace ComputersFactory.Data.SalesReports.Generator.DataGenerators
 {
     public class SaleGenerator : DataGenerator<Sale>, ISaleGenerator
     {
-        public override ICollection<Sale> GenerateData(int count, IList<Computer> availableComputers)
+        private readonly IList<Computer> availableComputers;
+
+        public SaleGenerator(IList<Computer> availableComputers)
         {
-            var generatedSales = base.GenerateData(count, availableComputers);
+            if (availableComputers == null)
+            {
+                throw new ArgumentNullException(nameof(availableComputers));
+            }
+
+            if (availableComputers.Count == 0)
+            {
+                throw new ArgumentException("No AvialableComputers.", nameof(availableComputers));
+            }
+
+            this.availableComputers = availableComputers;
+        }
+
+        public override ICollection<Sale> GenerateData(int count)
+        {
+            var generatedSales = base.GenerateData(count);
             var availableComputersCount = availableComputers.Count;
 
             for (int saleIndex = 0; saleIndex < count; saleIndex++)
