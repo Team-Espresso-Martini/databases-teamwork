@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using ComputersFactory.Data.Models;
-
 namespace ComputersFactory.Models
 {
     public class SalesReport
