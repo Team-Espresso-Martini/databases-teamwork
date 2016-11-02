@@ -29,15 +29,17 @@ namespace ComputersFactory.Data.SalesReports.Generator.XmlGenerators
                 Directory.CreateDirectory(rootDirectoryInfo.FullName);
             }
 
+            var settings = new XmlWriterSettings() { Indent = true };
+
             var encoding = Encoding.UTF8;
-            using (var writer = new XmlTextWriter("../../../XmlSalesReports/SalesReports.xml", encoding))
+            using (var writer = XmlWriter.Create("../../../XmlSalesReports/SalesReports.xml", settings))
             {
                 writer.WriteStartDocument();
                 writer.WriteStartElement("Reports");
 
                 foreach (var report in salesReports)
                 {
-                    var reportFileName = this.ResolveFileName(report.Date);
+                    this.GenerateReportXml(writer, report);
                 }
 
                 writer.WriteEndElement();
@@ -50,7 +52,7 @@ namespace ComputersFactory.Data.SalesReports.Generator.XmlGenerators
             writer.WriteStartElement("Report");
 
             writer.WriteElementString("TotalAmount", report.TotalAmount.ToString());
-            writer.WriteElementString("Date", report.Date.ToString());
+            writer.WriteElementString("Date", report.Date.ToShortDateString());
 
             writer.WriteStartElement("ComputerShop");
             writer.WriteAttributeString("ComputerShopId", report.ComputerShopId.ToString());
@@ -75,7 +77,6 @@ namespace ComputersFactory.Data.SalesReports.Generator.XmlGenerators
 
             writer.WriteStartElement("Computer");
             writer.WriteAttributeString("ComputerId", sale.ComputerId.ToString());
-            writer.WriteString(sale.Computer.Model);
             writer.WriteEndElement();
 
             writer.WriteEndElement();

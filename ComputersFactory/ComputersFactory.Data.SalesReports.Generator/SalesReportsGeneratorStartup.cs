@@ -2,6 +2,7 @@
 
 using ComputersFactory.Data.SalesReports.Generator.DataGenerators;
 using ComputersFactory.Models.Views;
+using ComputersFactory.Data.SalesReports.Generator.XmlGenerators;
 
 namespace ComputersFactory.Data.SalesReports.Generator
 {
@@ -23,7 +24,10 @@ namespace ComputersFactory.Data.SalesReports.Generator
             var saleGenerator = new SaleGenerator(computers);
             var salesRepotsGenerator = new SalesReportGenerator(saleGenerator, computerShopsIds);
 
-            var generatedReports = salesRepotsGenerator.GenerateData(15);
+            var generatedReports = salesRepotsGenerator.GenerateData(10);
+
+            var xmlWriter = new SalesReportsXmlGenerator();
+            xmlWriter.GenererateXmlFiles(generatedReports);
         }
     }
 }
