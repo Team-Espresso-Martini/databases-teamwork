@@ -9,7 +9,7 @@ namespace ComputersFactory.Data.SalesReports.XmlDeserializers
 {
     public class XmlDeserializer : IXmlDeserializer
     {
-        public IEnumerable<TModel> DeserializeXmlTo<TModel>(string fileName, string rootElement)
+        public IList<TModel> DeserializeXmlTo<TModel>(string fileName, string rootElement)
         {
             if (string.IsNullOrEmpty(fileName))
             {
@@ -32,7 +32,7 @@ namespace ComputersFactory.Data.SalesReports.XmlDeserializers
 
             using (var fileStream = new FileStream(fileName, FileMode.Open))
             {
-                var result = (IEnumerable<TModel>)xmlSerializer.Deserialize(fileStream);
+                var result = (IList<TModel>)xmlSerializer.Deserialize(fileStream);
                 return result;
             }
         }

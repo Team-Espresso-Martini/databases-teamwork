@@ -14,7 +14,7 @@ namespace ComputersFactory.Data.SalesReports.Generator
     {
         public static void Main()
         {
-            SalesReportsGeneratorStartup.GenerateXmlReports();
+            //SalesReportsGeneratorStartup.GenerateXmlReports();
 
             var getXmlData = new XmlDeserializer();
             var data = getXmlData.DeserializeXmlTo<XmlSalesReport>("../../../XmlSalesReports/SalesReports.xml", "Reports");

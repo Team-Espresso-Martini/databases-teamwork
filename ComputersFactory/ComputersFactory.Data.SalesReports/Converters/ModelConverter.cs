@@ -9,7 +9,7 @@ namespace ComputersFactory.Data.SalesReports.Converters
 {
     public class ModelConverter : IModelConverter
     {
-        public IEnumerable<TModelOut> Convert<TModelIn, TModelOut>(IEnumerable<TModelIn> inputData)
+        public IList<TModelOut> Convert<TModelIn, TModelOut>(IEnumerable<TModelIn> inputData)
             where TModelOut : new()
         {
             if (inputData == null)
@@ -42,6 +42,7 @@ namespace ComputersFactory.Data.SalesReports.Converters
                     }
                     catch (ArgumentException)
                     {
+                        // It's a collection.
                     }
                 }
 
@@ -51,9 +52,9 @@ namespace ComputersFactory.Data.SalesReports.Converters
             return resultingCollection;
         }
 
-        private ICollection<T> InitializeCollection<T>()
+        private IList<T> InitializeCollection<T>()
         {
-            return new LinkedList<T>();
+            return new List<T>();
         }
 
         private IEnumerable<PropertyInfo> GetCommonProperties(Type getPropertiesFromType, Type commonPropertiesWithType)
