@@ -9,6 +9,7 @@ using ComputersFactory.Data.Migrations;
 using ComputersFactory.Data.Repositories.UnitsOfWork;
 using ComputersFactory.Models;
 using ComputersFactory.Models.Components;
+using ComputersFactory.Data.Models;
 
 namespace ComputersFactory.Data.Xml
 {
