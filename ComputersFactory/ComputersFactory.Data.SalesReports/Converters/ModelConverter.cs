@@ -17,11 +17,11 @@ namespace ComputersFactory.Data.SalesReports.Converters
                 throw new ArgumentNullException(nameof(inputData));
             }
 
-            var modelInProperties = this.GetCommonProperties(typeof(TModelIn), typeof(TModelOut));
-            var modelOutProperties = this.GetCommonProperties(typeof(TModelOut), typeof(TModelIn));
+            var modelInProperties = this.GetCommonPropertiesInfo(typeof(TModelIn), typeof(TModelOut));
+            var modelOutProperties = this.GetCommonPropertiesInfo(typeof(TModelOut), typeof(TModelIn));
 
             var resultingCollection = this.InitializeCollection<TModelOut>();
-            foreach (var item in inputData)
+            foreach (var modelInInstance in inputData)
             {
                 var nextModelOutInstance = new TModelOut();
                 foreach (var property in modelInProperties)
@@ -37,7 +37,7 @@ namespace ComputersFactory.Data.SalesReports.Converters
 
                     try
                     {
-                        var propertyValue = property.GetValue(item);
+                        var propertyValue = property.GetValue(modelInInstance);
                         matchingModelOutProperty.SetValue(nextModelOutInstance, propertyValue);
                     }
                     catch (ArgumentException)
@@ -57,7 +57,7 @@ namespace ComputersFactory.Data.SalesReports.Converters
             return new List<T>();
         }
 
-        private IEnumerable<PropertyInfo> GetCommonProperties(Type getPropertiesFromType, Type commonPropertiesWithType)
+        private IEnumerable<PropertyInfo> GetCommonPropertiesInfo(Type getPropertiesFromType, Type commonPropertiesWithType)
         {
             var secondPropertiesNames = commonPropertiesWithType.GetProperties().Select(prop => prop.Name);
 
