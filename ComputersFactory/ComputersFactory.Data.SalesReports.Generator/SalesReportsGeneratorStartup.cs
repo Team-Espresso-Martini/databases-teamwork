@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 
+using ComputersFactory.Data.SalesReports.Adapters;
 using ComputersFactory.Data.SalesReports.Converters;
 using ComputersFactory.Data.SalesReports.DataImporter;
 using ComputersFactory.Data.SalesReports.Generator.DataGenerators;
@@ -15,14 +16,16 @@ namespace ComputersFactory.Data.SalesReports.Generator
         {
             SalesReportsGeneratorStartup.GenerateXmlReports();
 
-            var getXmlData = new XmlDeserializer();
+            var xmlDeserializer = new XmlDeserializer();
             //var data = getXmlData.DeserializeXmlTo<XmlSalesReport>("../../../XmlSalesReports/SalesReports.xml", "Reports");
+            var adaptedXmlDeserializer = new AdaptedXmlDeserializer(xmlDeserializer);
 
-            var converter = new ModelConverter();
+            var modelConverter = new ModelConverter();
             //var result = converter.Convert<XmlSalesReport, SalesReport>(data);
+            var adaptedModelConverter = new AdaptedModelConverter(modelConverter);
 
             var context = new ComputersFactoryDbContext();
-            var reportImporter = new XmlSalesReportDataImporter(getXmlData, converter, context);
+            var reportImporter = new XmlSalesReportDataImporter(adaptedXmlDeserializer, adaptedModelConverter, context);
             reportImporter.ImportData("../../../XmlSalesReports/SalesReports.xml", "Reports");
         }
 

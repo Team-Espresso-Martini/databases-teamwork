@@ -9,7 +9,7 @@ namespace ComputersFactory.Data.SalesReports.XmlDeserializers
 {
     public class XmlDeserializer : IXmlDeserializer
     {
-        public IList<TModel> DeserializeXmlTo<TModel>(string fileName, string rootElement)
+        public IEnumerable<TModel> DeserializeXmlTo<TModel>(string fileName, string rootElement)
         {
             if (string.IsNullOrEmpty(fileName))
             {
