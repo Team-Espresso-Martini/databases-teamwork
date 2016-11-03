@@ -6,16 +6,17 @@ using ComputersFactory.Data.SalesReports.DataImporter.Contracts;
 using ComputersFactory.Data.SalesReports.XmlModels;
 using ComputersFactory.Data.SalesReports.XmlDeserializers.Contracts;
 using ComputersFactory.Models;
+using ComputersFactory.Data.SalesReports.Adapters.Contracts;
 
 namespace ComputersFactory.Data.SalesReports.DataImporter
 {
     public class XmlSalesReportDataImporter : IXmlDataImporter
     {
         private readonly IXmlDeserializer xmlDeserializer;
-        private readonly IModelConverter modelConverter;
+        private readonly IAdaptedModelConverter modelConverter;
         private readonly AbstractComputersFactoryDbContext context;
 
-        public XmlSalesReportDataImporter(IXmlDeserializer xmlDeserializer, IModelConverter modelConverter, AbstractComputersFactoryDbContext context)
+        public XmlSalesReportDataImporter(IXmlDeserializer xmlDeserializer, IAdaptedModelConverter modelConverter, AbstractComputersFactoryDbContext context)
         {
             if (xmlDeserializer == null)
             {
@@ -50,7 +51,7 @@ namespace ComputersFactory.Data.SalesReports.DataImporter
             }
 
             var salesReportsFromXml = this.xmlDeserializer.DeserializeXmlTo<XmlSalesReport>(fileName, rootElement);
-            var salesReportsWithoutNestedCollection = this.modelConverter.Convert<XmlSalesReport, SalesReport>(salesReportsFromXml);
+            var salesReportsWithoutNestedCollection = this.modelConverter.ConvertToIList<XmlSalesReport, SalesReport>(salesReportsFromXml);
 
             var reportsCount = salesReportsFromXml.Count;
             for (int reportIndex = 0; reportIndex < reportsCount; reportIndex++)
