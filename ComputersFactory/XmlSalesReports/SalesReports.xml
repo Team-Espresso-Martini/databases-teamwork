@@ -1,962 +1,185 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Reports>
-  <SalesReport ComputerShopId="2">
-    <TotalAmount>15713.00</TotalAmount>
-    <Date>2014-11-14T00:00:00.0000000</Date>
+  <SalesReport ComputerShopId="14">
+    <TotalAmount>6029.00</TotalAmount>
+    <Date>2014-01-21T00:00:00.0000000</Date>
     <Sales>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="34">
-    <TotalAmount>9672.00</TotalAmount>
-    <Date>2014-11-17T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="37">
-    <TotalAmount>7267.00</TotalAmount>
-    <Date>2015-01-12T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="24">
-    <TotalAmount>16907.00</TotalAmount>
-    <Date>2014-03-23T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
       <Sale ComputerId="7">
         <Amount>1206.00</Amount>
       </Sale>
       <Sale ComputerId="2">
         <Amount>1201.00</Amount>
       </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="31">
-    <TotalAmount>7236.00</TotalAmount>
-    <Date>2014-09-24T00:00:00.0000000</Date>
-    <Sales>
       <Sale ComputerId="13">
         <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
       </Sale>
       <Sale ComputerId="7">
         <Amount>1206.00</Amount>
       </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="23">
+    <TotalAmount>6029.00</TotalAmount>
+    <Date>2014-04-08T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
       </Sale>
       <Sale ComputerId="6">
         <Amount>1205.00</Amount>
       </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
       <Sale ComputerId="4">
         <Amount>1203.00</Amount>
       </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="33">
-    <TotalAmount>8443.00</TotalAmount>
-    <Date>2015-08-20T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
       </Sale>
     </Sales>
   </SalesReport>
   <SalesReport ComputerShopId="16">
-    <TotalAmount>6017.00</TotalAmount>
-    <Date>2014-11-07T00:00:00.0000000</Date>
+    <TotalAmount>16937.00</TotalAmount>
+    <Date>2015-09-16T00:00:00.0000000</Date>
     <Sales>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
       </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="31">
-    <TotalAmount>16924.00</TotalAmount>
-    <Date>2014-01-17T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
       </Sale>
       <Sale ComputerId="10">
         <Amount>1209.00</Amount>
       </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
       </Sale>
       <Sale ComputerId="14">
         <Amount>1213.00</Amount>
       </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
       </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="32">
+    <TotalAmount>16928.00</TotalAmount>
+    <Date>2014-05-21T00:00:00.0000000</Date>
+    <Sales>
       <Sale ComputerId="5">
         <Amount>1204.00</Amount>
       </Sale>
       <Sale ComputerId="16">
         <Amount>1215.00</Amount>
       </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
       </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
       </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="12">
+    <TotalAmount>12098.00</TotalAmount>
+    <Date>2014-11-05T00:00:00.0000000</Date>
+    <Sales>
       <Sale ComputerId="11">
         <Amount>1210.00</Amount>
       </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
       </Sale>
     </Sales>
   </SalesReport>
   <SalesReport ComputerShopId="19">
-    <TotalAmount>4828.00</TotalAmount>
-    <Date>2014-09-11T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="35">
-    <TotalAmount>4840.00</TotalAmount>
-    <Date>2014-03-14T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="5">
-    <TotalAmount>3620.00</TotalAmount>
-    <Date>2015-02-04T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="15">
-    <TotalAmount>3616.00</TotalAmount>
-    <Date>2015-01-07T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="23">
-    <TotalAmount>10852.00</TotalAmount>
-    <Date>2014-03-07T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="33">
-    <TotalAmount>15727.00</TotalAmount>
-    <Date>2015-09-07T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="16">
-    <TotalAmount>6032.00</TotalAmount>
-    <Date>2014-07-24T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="18">
-    <TotalAmount>14504.00</TotalAmount>
-    <Date>2015-05-20T00:00:00.0000000</Date>
+    <TotalAmount>6051.00</TotalAmount>
+    <Date>2015-09-21T00:00:00.0000000</Date>
     <Sales>
       <Sale ComputerId="16">
         <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="2">
-    <TotalAmount>9643.00</TotalAmount>
-    <Date>2014-03-17T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="30">
-    <TotalAmount>3634.00</TotalAmount>
-    <Date>2014-10-06T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="12">
-    <TotalAmount>10898.00</TotalAmount>
-    <Date>2014-09-15T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="25">
-    <TotalAmount>10866.00</TotalAmount>
-    <Date>2014-06-22T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="35">
-    <TotalAmount>7255.00</TotalAmount>
-    <Date>2015-11-16T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="16">
-    <TotalAmount>12066.00</TotalAmount>
-    <Date>2014-04-26T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="34">
-    <TotalAmount>12062.00</TotalAmount>
-    <Date>2014-04-13T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="18">
-    <TotalAmount>10881.00</TotalAmount>
-    <Date>2014-07-22T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="32">
-    <TotalAmount>4843.00</TotalAmount>
-    <Date>2015-07-05T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="16">
-    <TotalAmount>15686.00</TotalAmount>
-    <Date>2014-02-09T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="35">
-    <TotalAmount>4841.00</TotalAmount>
-    <Date>2014-08-05T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="33">
-    <TotalAmount>10878.00</TotalAmount>
-    <Date>2015-08-10T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="24">
-    <TotalAmount>13289.00</TotalAmount>
-    <Date>2015-10-15T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="2">
-    <TotalAmount>13314.00</TotalAmount>
-    <Date>2015-04-25T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="27">
-    <TotalAmount>3623.00</TotalAmount>
-    <Date>2014-08-08T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="27">
-    <TotalAmount>9669.00</TotalAmount>
-    <Date>2015-09-13T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="7">
-    <TotalAmount>6045.00</TotalAmount>
-    <Date>2014-11-03T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
       </Sale>
       <Sale ComputerId="16">
         <Amount>1215.00</Amount>
@@ -964,203 +187,26 @@
       <Sale ComputerId="7">
         <Amount>1206.00</Amount>
       </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="14">
-    <TotalAmount>13312.00</TotalAmount>
-    <Date>2015-03-09T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="24">
-    <TotalAmount>13271.00</TotalAmount>
-    <Date>2015-03-08T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="6">
-    <TotalAmount>10856.00</TotalAmount>
-    <Date>2014-01-14T00:00:00.0000000</Date>
-    <Sales>
       <Sale ComputerId="5">
         <Amount>1204.00</Amount>
       </Sale>
       <Sale ComputerId="12">
         <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
       </Sale>
     </Sales>
   </SalesReport>
   <SalesReport ComputerShopId="38">
-    <TotalAmount>14479.00</TotalAmount>
-    <Date>2015-03-17T00:00:00.0000000</Date>
+    <TotalAmount>7247.00</TotalAmount>
+    <Date>2014-05-14T00:00:00.0000000</Date>
     <Sales>
       <Sale ComputerId="5">
         <Amount>1204.00</Amount>
       </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
       </Sale>
       <Sale ComputerId="8">
         <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="37">
-    <TotalAmount>9679.00</TotalAmount>
-    <Date>2015-05-03T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="30">
-    <TotalAmount>15711.00</TotalAmount>
-    <Date>2015-02-25T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
       </Sale>
       <Sale ComputerId="16">
         <Amount>1215.00</Amount>
@@ -1168,1127 +214,101 @@
       <Sale ComputerId="2">
         <Amount>1201.00</Amount>
       </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
       </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="27">
+    <TotalAmount>12060.00</TotalAmount>
+    <Date>2015-05-22T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
       </Sale>
       <Sale ComputerId="13">
         <Amount>1212.00</Amount>
       </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
       <Sale ComputerId="11">
         <Amount>1210.00</Amount>
       </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="3">
-    <TotalAmount>10848.00</TotalAmount>
-    <Date>2015-09-09T00:00:00.0000000</Date>
-    <Sales>
       <Sale ComputerId="1">
         <Amount>1200.00</Amount>
       </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
       </Sale>
       <Sale ComputerId="8">
         <Amount>1207.00</Amount>
       </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="16">
-    <TotalAmount>8461.00</TotalAmount>
-    <Date>2014-01-06T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="24">
-    <TotalAmount>9669.00</TotalAmount>
-    <Date>2014-05-16T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="33">
-    <TotalAmount>7272.00</TotalAmount>
-    <Date>2015-04-26T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="25">
-    <TotalAmount>6049.00</TotalAmount>
-    <Date>2015-04-08T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="23">
-    <TotalAmount>13288.00</TotalAmount>
-    <Date>2014-02-24T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
       <Sale ComputerId="6">
         <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
       </Sale>
       <Sale ComputerId="5">
         <Amount>1204.00</Amount>
       </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="28">
-    <TotalAmount>16917.00</TotalAmount>
-    <Date>2014-04-12T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
       </Sale>
       <Sale ComputerId="1">
         <Amount>1200.00</Amount>
       </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="17">
+    <TotalAmount>13281.00</TotalAmount>
+    <Date>2014-10-15T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
       </Sale>
       <Sale ComputerId="15">
         <Amount>1214.00</Amount>
       </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="26">
-    <TotalAmount>9671.00</TotalAmount>
-    <Date>2014-09-27T00:00:00.0000000</Date>
-    <Sales>
       <Sale ComputerId="11">
         <Amount>1210.00</Amount>
       </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
       <Sale ComputerId="10">
         <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
       </Sale>
       <Sale ComputerId="6">
         <Amount>1205.00</Amount>
       </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
       <Sale ComputerId="8">
         <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="32">
-    <TotalAmount>8488.00</TotalAmount>
-    <Date>2015-11-08T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="2">
-    <TotalAmount>14492.00</TotalAmount>
-    <Date>2014-09-17T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="34">
-    <TotalAmount>16950.00</TotalAmount>
-    <Date>2014-03-18T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
       </Sale>
       <Sale ComputerId="9">
         <Amount>1208.00</Amount>
       </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
       </Sale>
       <Sale ComputerId="13">
         <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
       </Sale>
     </Sales>
   </SalesReport>
   <SalesReport ComputerShopId="36">
-    <TotalAmount>15696.00</TotalAmount>
-    <Date>2015-07-02T00:00:00.0000000</Date>
+    <TotalAmount>15698.00</TotalAmount>
+    <Date>2015-08-22T00:00:00.0000000</Date>
     <Sales>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="37">
-    <TotalAmount>13272.00</TotalAmount>
-    <Date>2014-02-13T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="15">
-    <TotalAmount>13290.00</TotalAmount>
-    <Date>2015-11-18T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
       <Sale ComputerId="4">
         <Amount>1203.00</Amount>
       </Sale>
       <Sale ComputerId="17">
         <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="2">
-    <TotalAmount>12065.00</TotalAmount>
-    <Date>2014-04-15T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="21">
-    <TotalAmount>9667.00</TotalAmount>
-    <Date>2015-01-23T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="6">
-    <TotalAmount>13281.00</TotalAmount>
-    <Date>2014-06-02T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="7">
-    <TotalAmount>3627.00</TotalAmount>
-    <Date>2014-08-12T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="11">
-    <TotalAmount>10893.00</TotalAmount>
-    <Date>2015-08-04T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="1">
-    <TotalAmount>9647.00</TotalAmount>
-    <Date>2015-06-15T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="34">
-    <TotalAmount>9660.00</TotalAmount>
-    <Date>2014-02-24T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
       </Sale>
       <Sale ComputerId="15">
         <Amount>1214.00</Amount>
       </Sale>
       <Sale ComputerId="6">
         <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="38">
-    <TotalAmount>16909.00</TotalAmount>
-    <Date>2014-08-01T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="22">
-    <TotalAmount>7238.00</TotalAmount>
-    <Date>2015-08-18T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="28">
-    <TotalAmount>10851.00</TotalAmount>
-    <Date>2015-02-22T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="27">
-    <TotalAmount>10875.00</TotalAmount>
-    <Date>2014-06-17T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="16">
-    <TotalAmount>7260.00</TotalAmount>
-    <Date>2015-02-01T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="16">
-    <TotalAmount>8455.00</TotalAmount>
-    <Date>2014-06-11T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="1">
-    <TotalAmount>14480.00</TotalAmount>
-    <Date>2014-07-17T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="26">
-    <TotalAmount>3625.00</TotalAmount>
-    <Date>2015-08-14T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="16">
-    <TotalAmount>16895.00</TotalAmount>
-    <Date>2015-01-23T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="34">
-    <TotalAmount>13276.00</TotalAmount>
-    <Date>2015-09-27T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="14">
-    <TotalAmount>13316.00</TotalAmount>
-    <Date>2015-06-08T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="24">
-    <TotalAmount>10896.00</TotalAmount>
-    <Date>2015-08-20T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
       </Sale>
       <Sale ComputerId="2">
         <Amount>1201.00</Amount>
@@ -2299,32 +319,8 @@
       <Sale ComputerId="14">
         <Amount>1213.00</Amount>
       </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="15">
-    <TotalAmount>15688.00</TotalAmount>
-    <Date>2014-04-07T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
       </Sale>
       <Sale ComputerId="2">
         <Amount>1201.00</Amount>
@@ -2332,491 +328,122 @@
       <Sale ComputerId="9">
         <Amount>1208.00</Amount>
       </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="10">
+    <TotalAmount>7257.00</TotalAmount>
+    <Date>2014-03-18T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
       </Sale>
       <Sale ComputerId="14">
         <Amount>1213.00</Amount>
       </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
       </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
       </Sale>
     </Sales>
   </SalesReport>
-  <SalesReport ComputerShopId="7">
-    <TotalAmount>10871.00</TotalAmount>
-    <Date>2014-06-27T00:00:00.0000000</Date>
+  <SalesReport ComputerShopId="18">
+    <TotalAmount>16903.00</TotalAmount>
+    <Date>2014-10-03T00:00:00.0000000</Date>
     <Sales>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
       </Sale>
       <Sale ComputerId="6">
         <Amount>1205.00</Amount>
       </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
       </Sale>
       <Sale ComputerId="14">
         <Amount>1213.00</Amount>
       </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="28">
-    <TotalAmount>15706.00</TotalAmount>
-    <Date>2014-01-16T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="34">
-    <TotalAmount>16894.00</TotalAmount>
-    <Date>2014-04-02T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="32">
-    <TotalAmount>10863.00</TotalAmount>
-    <Date>2015-06-18T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="2">
-    <TotalAmount>9657.00</TotalAmount>
-    <Date>2015-04-24T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="26">
-    <TotalAmount>9672.00</TotalAmount>
-    <Date>2015-11-26T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="6">
-    <TotalAmount>10868.00</TotalAmount>
-    <Date>2015-09-26T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="16">
-    <TotalAmount>10865.00</TotalAmount>
-    <Date>2014-09-11T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="34">
-    <TotalAmount>3631.00</TotalAmount>
-    <Date>2015-11-11T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="37">
-    <TotalAmount>13273.00</TotalAmount>
-    <Date>2015-07-22T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
       <Sale ComputerId="9">
         <Amount>1208.00</Amount>
       </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
       <Sale ComputerId="7">
         <Amount>1206.00</Amount>
       </Sale>
       <Sale ComputerId="16">
         <Amount>1215.00</Amount>
       </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="18">
+    <TotalAmount>13284.00</TotalAmount>
+    <Date>2015-07-01T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
       </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
       </Sale>
       <Sale ComputerId="14">
         <Amount>1213.00</Amount>
       </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="28">
-    <TotalAmount>3624.00</TotalAmount>
-    <Date>2014-08-19T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="13">
-    <TotalAmount>10882.00</TotalAmount>
-    <Date>2015-07-14T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
       </Sale>
       <Sale ComputerId="13">
         <Amount>1212.00</Amount>
       </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="3">
-    <TotalAmount>6038.00</TotalAmount>
-    <Date>2015-02-04T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="33">
-    <TotalAmount>14490.00</TotalAmount>
-    <Date>2015-05-14T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
       </Sale>
       <Sale ComputerId="10">
         <Amount>1209.00</Amount>
       </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
       </Sale>
       <Sale ComputerId="1">
         <Amount>1200.00</Amount>
       </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
       <Sale ComputerId="4">
         <Amount>1203.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="12">
-    <TotalAmount>4824.00</TotalAmount>
-    <Date>2015-02-03T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-      <Sale ComputerId="3">
-        <Amount>1202.00</Amount>
-      </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
       </Sale>
       <Sale ComputerId="9">
         <Amount>1208.00</Amount>
@@ -2824,47 +451,26 @@
     </Sales>
   </SalesReport>
   <SalesReport ComputerShopId="17">
-    <TotalAmount>10888.00</TotalAmount>
-    <Date>2015-11-24T00:00:00.0000000</Date>
+    <TotalAmount>3627.00</TotalAmount>
+    <Date>2014-03-07T00:00:00.0000000</Date>
     <Sales>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
       <Sale ComputerId="7">
         <Amount>1206.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
       </Sale>
       <Sale ComputerId="10">
         <Amount>1209.00</Amount>
       </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
     </Sales>
   </SalesReport>
-  <SalesReport ComputerShopId="7">
-    <TotalAmount>9672.00</TotalAmount>
-    <Date>2014-02-08T00:00:00.0000000</Date>
+  <SalesReport ComputerShopId="23">
+    <TotalAmount>7259.00</TotalAmount>
+    <Date>2015-07-05T00:00:00.0000000</Date>
     <Sales>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
-      </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
       </Sale>
       <Sale ComputerId="6">
         <Amount>1205.00</Amount>
@@ -2872,77 +478,197 @@
       <Sale ComputerId="17">
         <Amount>1216.00</Amount>
       </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
       </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="10">
-    <TotalAmount>15701.00</TotalAmount>
-    <Date>2015-02-24T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
       </Sale>
       <Sale ComputerId="5">
         <Amount>1204.00</Amount>
       </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
-      </Sale>
-      <Sale ComputerId="10">
-        <Amount>1209.00</Amount>
-      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="28">
+    <TotalAmount>6026.00</TotalAmount>
+    <Date>2014-05-14T00:00:00.0000000</Date>
+    <Sales>
       <Sale ComputerId="2">
         <Amount>1201.00</Amount>
       </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="35">
-    <TotalAmount>6060.00</TotalAmount>
-    <Date>2014-03-24T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
       </Sale>
       <Sale ComputerId="13">
         <Amount>1212.00</Amount>
       </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="4">
+    <TotalAmount>7237.00</TotalAmount>
+    <Date>2014-11-23T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
       <Sale ComputerId="7">
         <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="21">
+    <TotalAmount>3625.00</TotalAmount>
+    <Date>2015-09-06T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="38">
+    <TotalAmount>4841.00</TotalAmount>
+    <Date>2014-04-24T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="5">
+    <TotalAmount>6029.00</TotalAmount>
+    <Date>2015-09-23T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="4">
+    <TotalAmount>9648.00</TotalAmount>
+    <Date>2014-06-22T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="37">
+    <TotalAmount>13293.00</TotalAmount>
+    <Date>2015-02-11T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="11">
+    <TotalAmount>6037.00</TotalAmount>
+    <Date>2014-05-25T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
       </Sale>
       <Sale ComputerId="17">
         <Amount>1216.00</Amount>
@@ -2952,36 +678,78 @@
       </Sale>
     </Sales>
   </SalesReport>
-  <SalesReport ComputerShopId="8">
-    <TotalAmount>16869.00</TotalAmount>
-    <Date>2014-10-04T00:00:00.0000000</Date>
+  <SalesReport ComputerShopId="22">
+    <TotalAmount>12040.00</TotalAmount>
+    <Date>2015-09-20T00:00:00.0000000</Date>
     <Sales>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
       <Sale ComputerId="2">
         <Amount>1201.00</Amount>
       </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
       </Sale>
       <Sale ComputerId="7">
         <Amount>1206.00</Amount>
       </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
-      </Sale>
       <Sale ComputerId="11">
         <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
       </Sale>
       <Sale ComputerId="2">
         <Amount>1201.00</Amount>
       </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="14">
+    <TotalAmount>9671.00</TotalAmount>
+    <Date>2015-01-05T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
       <Sale ComputerId="13">
         <Amount>1212.00</Amount>
       </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
       </Sale>
-      <Sale ComputerId="13">
-        <Amount>1212.00</Amount>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="37">
+    <TotalAmount>7248.00</TotalAmount>
+    <Date>2015-09-27T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
       </Sale>
       <Sale ComputerId="2">
         <Amount>1201.00</Amount>
@@ -2989,11 +757,341 @@
       <Sale ComputerId="10">
         <Amount>1209.00</Amount>
       </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="16">
+    <TotalAmount>4842.00</TotalAmount>
+    <Date>2015-07-08T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="13">
+    <TotalAmount>6042.00</TotalAmount>
+    <Date>2015-02-10T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="19">
+    <TotalAmount>4842.00</TotalAmount>
+    <Date>2015-05-15T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="8">
+    <TotalAmount>15696.00</TotalAmount>
+    <Date>2015-05-17T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
       <Sale ComputerId="1">
         <Amount>1200.00</Amount>
       </Sale>
       <Sale ComputerId="1">
         <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="22">
+    <TotalAmount>13309.00</TotalAmount>
+    <Date>2015-01-06T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="20">
+    <TotalAmount>4825.00</TotalAmount>
+    <Date>2014-04-09T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="17">
+    <TotalAmount>13286.00</TotalAmount>
+    <Date>2015-02-02T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="22">
+    <TotalAmount>14482.00</TotalAmount>
+    <Date>2014-02-22T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="29">
+    <TotalAmount>7250.00</TotalAmount>
+    <Date>2015-05-14T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="27">
+    <TotalAmount>16904.00</TotalAmount>
+    <Date>2014-06-02T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="4">
+    <TotalAmount>4825.00</TotalAmount>
+    <Date>2014-02-04T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
       </Sale>
       <Sale ComputerId="5">
         <Amount>1204.00</Amount>
@@ -3001,11 +1099,83 @@
     </Sales>
   </SalesReport>
   <SalesReport ComputerShopId="4">
-    <TotalAmount>14514.00</TotalAmount>
-    <Date>2014-02-01T00:00:00.0000000</Date>
+    <TotalAmount>10866.00</TotalAmount>
+    <Date>2014-05-17T00:00:00.0000000</Date>
     <Sales>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="14">
+    <TotalAmount>13285.00</TotalAmount>
+    <Date>2014-10-07T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="4">
+    <TotalAmount>13285.00</TotalAmount>
+    <Date>2015-04-22T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
       </Sale>
       <Sale ComputerId="5">
         <Amount>1204.00</Amount>
@@ -3013,23 +1183,47 @@
       <Sale ComputerId="12">
         <Amount>1211.00</Amount>
       </Sale>
-      <Sale ComputerId="16">
-        <Amount>1215.00</Amount>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
       </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
       </Sale>
-      <Sale ComputerId="12">
-        <Amount>1211.00</Amount>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
       </Sale>
-      <Sale ComputerId="1">
-        <Amount>1200.00</Amount>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
       </Sale>
       <Sale ComputerId="10">
         <Amount>1209.00</Amount>
       </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="23">
+    <TotalAmount>7240.00</TotalAmount>
+    <Date>2015-07-22T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
       </Sale>
       <Sale ComputerId="14">
         <Amount>1213.00</Amount>
@@ -3037,14 +1231,161 @@
       <Sale ComputerId="9">
         <Amount>1208.00</Amount>
       </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="16">
+    <TotalAmount>15684.00</TotalAmount>
+    <Date>2014-07-26T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="12">
+    <TotalAmount>9637.00</TotalAmount>
+    <Date>2015-03-09T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
       <Sale ComputerId="7">
         <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
       </Sale>
     </Sales>
   </SalesReport>
   <SalesReport ComputerShopId="1">
-    <TotalAmount>13299.00</TotalAmount>
-    <Date>2014-07-16T00:00:00.0000000</Date>
+    <TotalAmount>12084.00</TotalAmount>
+    <Date>2015-11-26T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="5">
+    <TotalAmount>13280.00</TotalAmount>
+    <Date>2014-06-08T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="3">
+    <TotalAmount>15684.00</TotalAmount>
+    <Date>2015-03-22T00:00:00.0000000</Date>
     <Sales>
       <Sale ComputerId="13">
         <Amount>1212.00</Amount>
@@ -3052,134 +1393,575 @@
       <Sale ComputerId="3">
         <Amount>1202.00</Amount>
       </Sale>
-      <Sale ComputerId="15">
-        <Amount>1214.00</Amount>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
       </Sale>
       <Sale ComputerId="5">
         <Amount>1204.00</Amount>
       </Sale>
-      <Sale ComputerId="5">
-        <Amount>1204.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
-      </Sale>
-      <Sale ComputerId="17">
-        <Amount>1216.00</Amount>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
       </Sale>
       <Sale ComputerId="3">
         <Amount>1202.00</Amount>
       </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
       <Sale ComputerId="12">
         <Amount>1211.00</Amount>
       </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
       </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
       </Sale>
     </Sales>
   </SalesReport>
-  <SalesReport ComputerShopId="5">
-    <TotalAmount>3631.00</TotalAmount>
-    <Date>2015-09-26T00:00:00.0000000</Date>
+  <SalesReport ComputerShopId="7">
+    <TotalAmount>15700.00</TotalAmount>
+    <Date>2015-08-11T00:00:00.0000000</Date>
     <Sales>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
       <Sale ComputerId="14">
         <Amount>1213.00</Amount>
-      </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
-      </Sale>
-      <Sale ComputerId="9">
-        <Amount>1208.00</Amount>
-      </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="3">
-    <TotalAmount>3628.00</TotalAmount>
-    <Date>2014-10-18T00:00:00.0000000</Date>
-    <Sales>
-      <Sale ComputerId="2">
-        <Amount>1201.00</Amount>
       </Sale>
       <Sale ComputerId="15">
         <Amount>1214.00</Amount>
       </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
       </Sale>
     </Sales>
   </SalesReport>
-  <SalesReport ComputerShopId="17">
-    <TotalAmount>10854.00</TotalAmount>
-    <Date>2015-06-18T00:00:00.0000000</Date>
+  <SalesReport ComputerShopId="26">
+    <TotalAmount>10883.00</TotalAmount>
+    <Date>2015-04-22T00:00:00.0000000</Date>
     <Sales>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="12">
+    <TotalAmount>4841.00</TotalAmount>
+    <Date>2015-05-19T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="19">
+    <TotalAmount>8455.00</TotalAmount>
+    <Date>2014-07-23T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="3">
+    <TotalAmount>13288.00</TotalAmount>
+    <Date>2015-05-05T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="33">
+    <TotalAmount>6034.00</TotalAmount>
+    <Date>2015-04-03T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="22">
+    <TotalAmount>15667.00</TotalAmount>
+    <Date>2014-09-02T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="26">
+    <TotalAmount>7273.00</TotalAmount>
+    <Date>2014-10-11T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="6">
+    <TotalAmount>16913.00</TotalAmount>
+    <Date>2015-03-12T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="35">
+    <TotalAmount>9655.00</TotalAmount>
+    <Date>2015-10-05T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
       <Sale ComputerId="1">
         <Amount>1200.00</Amount>
       </Sale>
       <Sale ComputerId="9">
         <Amount>1208.00</Amount>
       </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="13">
+    <TotalAmount>9644.00</TotalAmount>
+    <Date>2014-05-11T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
       </Sale>
       <Sale ComputerId="4">
         <Amount>1203.00</Amount>
       </Sale>
-      <Sale ComputerId="7">
-        <Amount>1206.00</Amount>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
       </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
-      </Sale>
-      <Sale ComputerId="8">
-        <Amount>1207.00</Amount>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
       </Sale>
       <Sale ComputerId="5">
         <Amount>1204.00</Amount>
       </Sale>
-      <Sale ComputerId="14">
-        <Amount>1213.00</Amount>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
       </Sale>
-    </Sales>
-  </SalesReport>
-  <SalesReport ComputerShopId="34">
-    <TotalAmount>6035.00</TotalAmount>
-    <Date>2015-03-23T00:00:00.0000000</Date>
-    <Sales>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
       <Sale ComputerId="10">
         <Amount>1209.00</Amount>
       </Sale>
-      <Sale ComputerId="6">
-        <Amount>1205.00</Amount>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="7">
+    <TotalAmount>15705.00</TotalAmount>
+    <Date>2014-06-19T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
       </Sale>
-      <Sale ComputerId="11">
-        <Amount>1210.00</Amount>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
       </Sale>
       <Sale ComputerId="9">
         <Amount>1208.00</Amount>
       </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
       </Sale>
     </Sales>
   </SalesReport>
-  <SalesReport ComputerShopId="10">
-    <TotalAmount>8444.00</TotalAmount>
-    <Date>2015-10-25T00:00:00.0000000</Date>
+  <SalesReport ComputerShopId="18">
+    <TotalAmount>13289.00</TotalAmount>
+    <Date>2014-03-17T00:00:00.0000000</Date>
     <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
       <Sale ComputerId="11">
         <Amount>1210.00</Amount>
       </Sale>
       <Sale ComputerId="9">
         <Amount>1208.00</Amount>
       </Sale>
-      <Sale ComputerId="4">
-        <Amount>1203.00</Amount>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
       </Sale>
       <Sale ComputerId="6">
         <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="8">
+    <TotalAmount>10860.00</TotalAmount>
+    <Date>2014-05-23T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="37">
+    <TotalAmount>13305.00</TotalAmount>
+    <Date>2014-02-16T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="18">
+    <TotalAmount>10883.00</TotalAmount>
+    <Date>2015-11-06T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
       </Sale>
       <Sale ComputerId="10">
         <Amount>1209.00</Amount>
@@ -3187,8 +1969,1136 @@
       <Sale ComputerId="3">
         <Amount>1202.00</Amount>
       </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="25">
+    <TotalAmount>7242.00</TotalAmount>
+    <Date>2014-02-18T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="4">
+    <TotalAmount>10860.00</TotalAmount>
+    <Date>2015-05-17T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
       <Sale ComputerId="8">
         <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="13">
+    <TotalAmount>3617.00</TotalAmount>
+    <Date>2015-02-16T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="2">
+    <TotalAmount>9664.00</TotalAmount>
+    <Date>2014-07-21T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="21">
+    <TotalAmount>6038.00</TotalAmount>
+    <Date>2014-01-17T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="31">
+    <TotalAmount>9671.00</TotalAmount>
+    <Date>2014-09-18T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="2">
+    <TotalAmount>8439.00</TotalAmount>
+    <Date>2015-04-05T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="24">
+    <TotalAmount>3631.00</TotalAmount>
+    <Date>2014-07-09T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="25">
+    <TotalAmount>9664.00</TotalAmount>
+    <Date>2015-09-09T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="26">
+    <TotalAmount>8449.00</TotalAmount>
+    <Date>2014-07-14T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="10">
+    <TotalAmount>9685.00</TotalAmount>
+    <Date>2015-02-20T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="24">
+    <TotalAmount>13291.00</TotalAmount>
+    <Date>2014-06-12T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="22">
+    <TotalAmount>13281.00</TotalAmount>
+    <Date>2014-09-04T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="4">
+    <TotalAmount>3617.00</TotalAmount>
+    <Date>2014-01-05T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="15">
+    <TotalAmount>15705.00</TotalAmount>
+    <Date>2015-03-21T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="13">
+    <TotalAmount>12096.00</TotalAmount>
+    <Date>2014-09-05T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="33">
+    <TotalAmount>14501.00</TotalAmount>
+    <Date>2014-04-07T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="37">
+    <TotalAmount>4838.00</TotalAmount>
+    <Date>2014-07-18T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="22">
+    <TotalAmount>8450.00</TotalAmount>
+    <Date>2015-02-17T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="15">
+    <TotalAmount>15711.00</TotalAmount>
+    <Date>2015-08-16T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="38">
+    <TotalAmount>7238.00</TotalAmount>
+    <Date>2014-05-13T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="32">
+    <TotalAmount>4848.00</TotalAmount>
+    <Date>2015-05-23T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="7">
+    <TotalAmount>8458.00</TotalAmount>
+    <Date>2014-04-23T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="7">
+    <TotalAmount>15682.00</TotalAmount>
+    <Date>2015-06-09T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="13">
+    <TotalAmount>3639.00</TotalAmount>
+    <Date>2015-04-02T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="18">
+    <TotalAmount>7237.00</TotalAmount>
+    <Date>2015-08-10T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="6">
+    <TotalAmount>6032.00</TotalAmount>
+    <Date>2015-02-07T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="6">
+    <TotalAmount>14499.00</TotalAmount>
+    <Date>2014-10-26T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="23">
+    <TotalAmount>7244.00</TotalAmount>
+    <Date>2015-09-15T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="33">
+    <TotalAmount>6043.00</TotalAmount>
+    <Date>2014-04-06T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="28">
+    <TotalAmount>13301.00</TotalAmount>
+    <Date>2014-04-19T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="9">
+        <Amount>1208.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="19">
+    <TotalAmount>16897.00</TotalAmount>
+    <Date>2015-05-11T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="6">
+        <Amount>1205.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="3">
+    <TotalAmount>12094.00</TotalAmount>
+    <Date>2014-01-15T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="6">
+    <TotalAmount>7238.00</TotalAmount>
+    <Date>2014-02-17T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="5">
+        <Amount>1204.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="8">
+    <TotalAmount>13300.00</TotalAmount>
+    <Date>2015-07-13T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="7">
+        <Amount>1206.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="13">
+        <Amount>1212.00</Amount>
+      </Sale>
+      <Sale ComputerId="2">
+        <Amount>1201.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="4">
+        <Amount>1203.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="36">
+    <TotalAmount>9663.00</TotalAmount>
+    <Date>2015-10-21T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="11">
+        <Amount>1210.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="3">
+        <Amount>1202.00</Amount>
+      </Sale>
+      <Sale ComputerId="1">
+        <Amount>1200.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="3">
+    <TotalAmount>9679.00</TotalAmount>
+    <Date>2014-05-04T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="8">
+        <Amount>1207.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="10">
+        <Amount>1209.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+    </Sales>
+  </SalesReport>
+  <SalesReport ComputerShopId="11">
+    <TotalAmount>9709.00</TotalAmount>
+    <Date>2014-06-15T00:00:00.0000000</Date>
+    <Sales>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="17">
+        <Amount>1216.00</Amount>
+      </Sale>
+      <Sale ComputerId="16">
+        <Amount>1215.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="14">
+        <Amount>1213.00</Amount>
+      </Sale>
+      <Sale ComputerId="12">
+        <Amount>1211.00</Amount>
+      </Sale>
+      <Sale ComputerId="15">
+        <Amount>1214.00</Amount>
       </Sale>
     </Sales>
   </SalesReport>
