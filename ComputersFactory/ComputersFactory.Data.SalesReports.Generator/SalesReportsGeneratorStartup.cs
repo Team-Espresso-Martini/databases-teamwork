@@ -16,13 +16,13 @@ namespace ComputersFactory.Data.SalesReports.Generator
         {
             SalesReportsGeneratorStartup.GenerateXmlReports();
 
-            var getXmlData = new XmlDeserializer();
+            var xmlDeserializer = new XmlDeserializer();
             //var data = getXmlData.DeserializeXmlTo<XmlSalesReport>("../../../XmlSalesReports/SalesReports.xml", "Reports");
-            var adaptedXmlDeserializer = new AdaptedXmlDeserializer(getXmlData);
+            var adaptedXmlDeserializer = new AdaptedXmlDeserializer(xmlDeserializer);
 
-            var converter = new ModelConverter();
+            var modelConverter = new ModelConverter();
             //var result = converter.Convert<XmlSalesReport, SalesReport>(data);
-            var adaptedModelConverter = new AdaptedModelConverter(converter);
+            var adaptedModelConverter = new AdaptedModelConverter(modelConverter);
 
             var context = new ComputersFactoryDbContext();
             var reportImporter = new XmlSalesReportDataImporter(adaptedXmlDeserializer, adaptedModelConverter, context);
