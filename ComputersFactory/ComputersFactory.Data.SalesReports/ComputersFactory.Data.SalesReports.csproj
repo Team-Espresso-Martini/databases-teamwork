@@ -55,6 +55,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\Contracts\IAdaptedModelConverter.cs" />
+    <Compile Include="Adapters\Contracts\IAdapterXmlDeserializer.cs" />
     <Compile Include="Converters\Contracts\IModelConverter.cs" />
     <Compile Include="Converters\ModelConverter.cs" />
     <Compile Include="DataImporter\Contracts\IXmlDataImporter.cs" />

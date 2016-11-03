@@ -9,7 +9,7 @@ namespace ComputersFactory.Data.SalesReports.Converters
 {
     public class ModelConverter : IModelConverter
     {
-        public IList<TModelOut> Convert<TModelIn, TModelOut>(IEnumerable<TModelIn> inputData)
+        public IEnumerable<TModelOut> Convert<TModelIn, TModelOut>(IEnumerable<TModelIn> inputData)
             where TModelOut : new()
         {
             if (inputData == null)

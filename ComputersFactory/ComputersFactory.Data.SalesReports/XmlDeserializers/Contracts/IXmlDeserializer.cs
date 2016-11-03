@@ -4,6 +4,6 @@ namespace ComputersFactory.Data.SalesReports.XmlDeserializers.Contracts
 {
     public interface IXmlDeserializer
     {
-        IList<TModel> DeserializeXmlTo<TModel>(string fileName, string rootElement);
+        IEnumerable<TModel> DeserializeXmlTo<TModel>(string fileName, string rootElement);
     }
 }
