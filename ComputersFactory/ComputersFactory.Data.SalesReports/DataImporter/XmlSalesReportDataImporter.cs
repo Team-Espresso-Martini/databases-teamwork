@@ -9,7 +9,7 @@ using ComputersFactory.Models;
 
 namespace ComputersFactory.Data.SalesReports.DataImporter
 {
-    public class XmlSalesReportDataImporter : IXmlDataImporter<XmlSalesReport, SalesReport>
+    public class XmlSalesReportDataImporter : IXmlDataImporter
     {
         private readonly IXmlDeserializer xmlDeserializer;
         private readonly IModelConverter modelConverter;
