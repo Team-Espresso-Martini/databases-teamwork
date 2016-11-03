@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 
-
 using ComputersFactory.Data.SalesReports.Converters;
 using ComputersFactory.Data.SalesReports.DataImporter;
 using ComputersFactory.Data.SalesReports.Generator.DataGenerators;
