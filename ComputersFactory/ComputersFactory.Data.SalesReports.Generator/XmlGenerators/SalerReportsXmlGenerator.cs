@@ -51,15 +51,11 @@ namespace ComputersFactory.Data.SalesReports.Generator.XmlGenerators
 
         private void GenerateReportXml(XmlWriter writer, SalesReport report)
         {
-            writer.WriteStartElement("Report");
+            writer.WriteStartElement("SalesReport");
+            writer.WriteAttributeString("ComputerShopId", report.ComputerShopId.ToString());
 
             writer.WriteElementString("TotalAmount", report.TotalAmount.ToString());
-            writer.WriteElementString("Date", report.Date.ToShortDateString());
-
-            writer.WriteStartElement("ComputerShop");
-            writer.WriteAttributeString("ComputerShopId", report.ComputerShopId.ToString());
-            writer.WriteString(report.ComputerShop.Name);
-            writer.WriteEndElement();
+            writer.WriteElementString("Date", report.Date.ToString("o"));
 
             writer.WriteStartElement("Sales");
             foreach (var sale in report.Sales)
@@ -74,12 +70,9 @@ namespace ComputersFactory.Data.SalesReports.Generator.XmlGenerators
         private void GenerateSaleXml(XmlWriter writer, Sale sale)
         {
             writer.WriteStartElement("Sale");
+            writer.WriteAttributeString("ComputerId", sale.ComputerId.ToString());
 
             writer.WriteElementString("Amount", sale.Amount.ToString());
-
-            writer.WriteStartElement("Computer");
-            writer.WriteAttributeString("ComputerId", sale.ComputerId.ToString());
-            writer.WriteEndElement();
 
             writer.WriteEndElement();
         }
