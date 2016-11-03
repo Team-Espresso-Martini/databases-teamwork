@@ -63,7 +63,7 @@ namespace ComputersFactory.Data.SalesReports.DataImporter
 
                 this.context.SalesReports.Add(exportedReport);
 
-                if (reportIndex % 100 == 1)
+                if (reportIndex % 100 == 99)
                 {
                     context.SaveChanges();
                 }
