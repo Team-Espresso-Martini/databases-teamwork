@@ -1,22 +1,20 @@
 ﻿using System;
 
 using ComputersFactory.Data.Contracts;
-using ComputersFactory.Data.SalesReports.Converters.Contracts;
+using ComputersFactory.Data.SalesReports.Adapters.Contracts;
 using ComputersFactory.Data.SalesReports.DataImporter.Contracts;
 using ComputersFactory.Data.SalesReports.XmlModels;
-using ComputersFactory.Data.SalesReports.XmlDeserializers.Contracts;
 using ComputersFactory.Models;
-using ComputersFactory.Data.SalesReports.Adapters.Contracts;
 
 namespace ComputersFactory.Data.SalesReports.DataImporter
 {
     public class XmlSalesReportDataImporter : IXmlDataImporter
     {
-        private readonly IXmlDeserializer xmlDeserializer;
+        private readonly IAdaptedXmlDeserializer xmlDeserializer;
         private readonly IAdaptedModelConverter modelConverter;
         private readonly AbstractComputersFactoryDbContext context;
 
-        public XmlSalesReportDataImporter(IXmlDeserializer xmlDeserializer, IAdaptedModelConverter modelConverter, AbstractComputersFactoryDbContext context)
+        public XmlSalesReportDataImporter(IAdaptedXmlDeserializer xmlDeserializer, IAdaptedModelConverter modelConverter, AbstractComputersFactoryDbContext context)
         {
             if (xmlDeserializer == null)
             {
@@ -50,7 +48,7 @@ namespace ComputersFactory.Data.SalesReports.DataImporter
                 throw new ArgumentNullException(nameof(rootElement));
             }
 
-            var salesReportsFromXml = this.xmlDeserializer.DeserializeXmlTo<XmlSalesReport>(fileName, rootElement);
+            var salesReportsFromXml = this.xmlDeserializer.DeserializeXmlToIListOf<XmlSalesReport>(fileName, rootElement);
             var salesReportsWithoutNestedCollection = this.modelConverter.ConvertToIList<XmlSalesReport, SalesReport>(salesReportsFromXml);
 
             var reportsCount = salesReportsFromXml.Count;
@@ -59,7 +57,7 @@ namespace ComputersFactory.Data.SalesReports.DataImporter
                 var importedReport = salesReportsFromXml[reportIndex];
                 var exportedReport = salesReportsWithoutNestedCollection[reportIndex];
 
-                var sales = this.modelConverter.Convert<XmlSale, Sale>(importedReport.Sales);
+                var sales = this.modelConverter.ConvertToIList<XmlSale, Sale>(importedReport.Sales);
                 exportedReport.Sales = sales;
 
                 this.context.SalesReports.Add(exportedReport);
