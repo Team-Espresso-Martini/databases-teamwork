@@ -217,6 +217,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TaskFiveController.cs" />
+    <Compile Include="Controllers\TaskOneController.cs" />
     <Compile Include="CustomControllerFactories\ComputersFactoryControllersFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -270,6 +271,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\TaskFive\Index.cshtml" />
     <Content Include="Views\TaskFive\RunTask.cshtml" />
+    <Content Include="Views\TaskOne\Index.cshtml" />
+    <Content Include="Views\TaskOne\RunTask.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -286,6 +289,10 @@
     <ProjectReference Include="..\ComputersFactory.Data.Contracts\ComputersFactory.Data.Contracts.csproj">
       <Project>{146D25AA-5937-4532-BD73-B34FD33D59A4}</Project>
       <Name>ComputersFactory.Data.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.MongoDbWriter.Facade\ComputersFactory.Data.MongoDbWriter.Facade.csproj">
+      <Project>{51092E1E-F239-4EA1-88B9-D571114C8A9C}</Project>
+      <Name>ComputersFactory.Data.MongoDbWriter.Facade</Name>
     </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.SalesReports.MongoDbImport\ComputersFactory.Data.SalesReports.MongoDbImport.csproj">
       <Project>{21C4D11E-215E-42FF-8A38-9649A5FAD6B8}</Project>
