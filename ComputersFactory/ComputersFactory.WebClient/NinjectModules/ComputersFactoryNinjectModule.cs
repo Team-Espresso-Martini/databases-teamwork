@@ -4,7 +4,10 @@ using Ninject.Extensions.Conventions;
 using System.IO;
 using System.Reflection;
 using System.Web.Mvc;
-using ComputersFactory.WebClient.Controllers;
+
+using ComputersFactory.Data;
+using ComputersFactory.Data.Contracts;
+using ComputersFactory.Data.SalesReports.MongoDbImport;
 using ComputersFactory.Data.SalesReports.DataImporter.Contracts;
 using ComputersFactory.Data.SalesReports.DataImporter;
 using ComputersFactory.Data.SalesReports.Adapters.Contracts;
@@ -13,9 +16,7 @@ using ComputersFactory.Data.SalesReports.XmlDeserializers.Contracts;
 using ComputersFactory.Data.SalesReports.XmlDeserializers;
 using ComputersFactory.Data.SalesReports.Converters.Contracts;
 using ComputersFactory.Data.SalesReports.Converters;
-using System.Data.Entity;
-using ComputersFactory.Data;
-using ComputersFactory.Data.Contracts;
+using ComputersFactory.WebClient.Controllers;
 
 namespace ComputersFactory.WebClient.NinjectModules
 {
@@ -31,6 +32,7 @@ namespace ComputersFactory.WebClient.NinjectModules
                  .SelectAllClasses()
                  .BindDefaultInterface());
 
+            this.Bind<ISalesReportsMongoDbImporter>().To<SalesReportsMongoDbImporter>();
             this.Bind<IXmlDeserializer>().To<XmlDeserializer>();
             this.Bind<IModelConverter>().To<ModelConverter>();
             this.Bind<IAdaptedXmlDeserializer>().To<AdaptedXmlDeserializer>();

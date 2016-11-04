@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.WPFClient"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.WebClient", "ComputersFactory.WebClient\ComputersFactory.WebClient.csproj", "{E8EC7249-E65E-4CB3-9556-4300653C6F93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.SalesReports.MongoDbImport", "ComputersFactory.Data.SalesReports.MongoDbImport\ComputersFactory.Data.SalesReports.MongoDbImport.csproj", "{21C4D11E-215E-42FF-8A38-9649A5FAD6B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -116,6 +118,10 @@ Global
 		{E8EC7249-E65E-4CB3-9556-4300653C6F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8EC7249-E65E-4CB3-9556-4300653C6F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8EC7249-E65E-4CB3-9556-4300653C6F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C4D11E-215E-42FF-8A38-9649A5FAD6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C4D11E-215E-42FF-8A38-9649A5FAD6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C4D11E-215E-42FF-8A38-9649A5FAD6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C4D11E-215E-42FF-8A38-9649A5FAD6B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
