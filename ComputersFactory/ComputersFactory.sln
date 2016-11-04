@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Sales
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.SalesReports", "ComputersFactory.Data.SalesReports\ComputersFactory.Data.SalesReports.csproj", "{41056A52-57A7-449E-9E1A-D291810EDEA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.WPFClient", "ComputersFactory.WPFClient\ComputersFactory.WPFClient.csproj", "{BBD36B58-114F-47BC-9B0D-F48A750E2124}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{41056A52-57A7-449E-9E1A-D291810EDEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41056A52-57A7-449E-9E1A-D291810EDEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41056A52-57A7-449E-9E1A-D291810EDEA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBD36B58-114F-47BC-9B0D-F48A750E2124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBD36B58-114F-47BC-9B0D-F48A750E2124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBD36B58-114F-47BC-9B0D-F48A750E2124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD36B58-114F-47BC-9B0D-F48A750E2124}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
