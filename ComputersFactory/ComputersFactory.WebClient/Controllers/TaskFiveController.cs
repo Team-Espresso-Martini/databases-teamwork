@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 
 using ComputersFactory.Data.SalesReports.DataImporter.Contracts;
+using ComputersFactory.Data.SalesReports.MongoDbImport;
 
 namespace ComputersFactory.WebClient.Controllers
 {
@@ -10,13 +11,14 @@ namespace ComputersFactory.WebClient.Controllers
         private const string RootElement = "Reports";
 
         private readonly IXmlDataImporter xmlImporter;
+        private readonly ISalesReportsMongoDbImporter mongoImporter;
 
-        public TaskFiveController(IXmlDataImporter xmlImporter)
+        public TaskFiveController(IXmlDataImporter xmlImporter, ISalesReportsMongoDbImporter mongoImporter)
         {
             this.xmlImporter = xmlImporter;
+            this.mongoImporter = mongoImporter;
         }
 
-        // GET: TaskFive
         public ActionResult Index()
         {
             return View();
@@ -25,6 +27,7 @@ namespace ComputersFactory.WebClient.Controllers
         public ActionResult RunTask()
         {
             var result = this.xmlImporter.ImportData(ReportsFileLocation, RootElement);
+            this.mongoImporter.ImportSalesReports(result);
 
             return View(result);
         }
