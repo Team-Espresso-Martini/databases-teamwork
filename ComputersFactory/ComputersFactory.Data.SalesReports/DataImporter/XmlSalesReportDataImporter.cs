@@ -5,6 +5,7 @@ using ComputersFactory.Data.SalesReports.Adapters.Contracts;
 using ComputersFactory.Data.SalesReports.DataImporter.Contracts;
 using ComputersFactory.Data.SalesReports.XmlModels;
 using ComputersFactory.Models;
+using System.Collections.Generic;
 
 namespace ComputersFactory.Data.SalesReports.DataImporter
 {
@@ -36,7 +37,7 @@ namespace ComputersFactory.Data.SalesReports.DataImporter
             this.context = context;
         }
 
-        public void ImportData(string fileName, string rootElement)
+        public IList<SalesReport> ImportData(string fileName, string rootElement)
         {
             if (string.IsNullOrEmpty(fileName))
             {
@@ -51,6 +52,8 @@ namespace ComputersFactory.Data.SalesReports.DataImporter
             var salesReportsFromXml = this.xmlDeserializer.DeserializeXmlToIListOf<XmlSalesReport>(fileName, rootElement);
             var salesReportsWithoutNestedCollection = this.modelConverter.ConvertToIList<XmlSalesReport, SalesReport>(salesReportsFromXml);
 
+            var createdReports = new List<SalesReport>();
+
             var reportsCount = salesReportsFromXml.Count;
             for (int reportIndex = 0; reportIndex < reportsCount; reportIndex++)
             {
@@ -61,6 +64,7 @@ namespace ComputersFactory.Data.SalesReports.DataImporter
                 exportedReport.Sales = sales;
 
                 this.context.SalesReports.Add(exportedReport);
+                createdReports.Add(exportedReport);
 
                 if (reportIndex % 100 == 99)
                 {
@@ -69,6 +73,8 @@ namespace ComputersFactory.Data.SalesReports.DataImporter
             }
 
             context.SaveChanges();
+
+            return createdReports;
         }
     }
 }

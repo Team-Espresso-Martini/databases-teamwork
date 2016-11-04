@@ -216,6 +216,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TaskFiveController.cs" />
     <Compile Include="CustomControllerFactories\ComputersFactoryControllersFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -267,6 +268,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\TaskFive\Index.cshtml" />
+    <Content Include="Views\TaskFive\RunTask.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -278,6 +281,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComputersFactory.Data.Contracts\ComputersFactory.Data.Contracts.csproj">
+      <Project>{146D25AA-5937-4532-BD73-B34FD33D59A4}</Project>
+      <Name>ComputersFactory.Data.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.SalesReports\ComputersFactory.Data.SalesReports.csproj">
+      <Project>{41056A52-57A7-449E-9E1A-D291810EDEA0}</Project>
+      <Name>ComputersFactory.Data.SalesReports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data\ComputersFactory.Data.csproj">
+      <Project>{E6065A6E-6F85-4922-946A-A16C5EA35EFC}</Project>
+      <Name>ComputersFactory.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

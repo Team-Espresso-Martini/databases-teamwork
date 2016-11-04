@@ -1,7 +1,11 @@
-﻿namespace ComputersFactory.Data.SalesReports.DataImporter.Contracts
+﻿using System.Collections.Generic;
+
+using ComputersFactory.Models;
+
+namespace ComputersFactory.Data.SalesReports.DataImporter.Contracts
 {
     public interface IXmlDataImporter
     {
-        void ImportData(string fileName, string rootElement);
+        IList<SalesReport> ImportData(string fileName, string rootElement);
     }
 }
