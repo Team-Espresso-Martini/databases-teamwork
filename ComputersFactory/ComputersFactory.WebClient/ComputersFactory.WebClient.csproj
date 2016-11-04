@@ -295,6 +295,10 @@
       <Project>{E6065A6E-6F85-4922-946A-A16C5EA35EFC}</Project>
       <Name>ComputersFactory.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
+      <Project>{4fe099d3-b89f-4905-8f5b-3a5752fba06e}</Project>
+      <Name>ComputersFactory.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

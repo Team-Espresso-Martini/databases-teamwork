@@ -24,9 +24,9 @@ namespace ComputersFactory.WebClient.Controllers
 
         public ActionResult RunTask()
         {
-            this.xmlImporter.ImportData(ReportsFileLocation, RootElement);
+            var result = this.xmlImporter.ImportData(ReportsFileLocation, RootElement);
 
-            return View();
+            return View(result);
         }
     }
 }
