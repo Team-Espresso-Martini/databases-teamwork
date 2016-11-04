@@ -10,7 +10,7 @@ namespace ComputersFactory.Data.SalesReports.Converters
     public class ModelConverter : IModelConverter
     {
         public IEnumerable<TModelOut> Convert<TModelIn, TModelOut>(IEnumerable<TModelIn> inputData)
-            where TModelOut : new()
+            where TModelOut : new() 
         {
             if (inputData == null)
             {
