@@ -95,6 +95,9 @@ namespace ComputersFactory.WebClient.NinjectModules
             this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
                 .WhenInjectedInto<SqlServerExcelSalesReportsImporter>().InSingletonScope();
 
+            this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
+                .WhenInjectedInto<MongoDbDataFacade>().InSingletonScope();
+
             this.Bind<IMySqlDatabaseContext>().To<ComputersFactoryMySqlDbContext>()
                 .WhenInjectedInto<WriteJsonReportsFacade>().InSingletonScope();
 
