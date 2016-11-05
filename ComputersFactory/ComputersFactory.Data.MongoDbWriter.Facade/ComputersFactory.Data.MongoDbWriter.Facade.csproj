@@ -30,7 +30,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.3.0\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.3.0\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.3.0\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.GridFS, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.GridFS.2.3.0\lib\net45\MongoDB.Driver.GridFS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,14 +70,30 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComputersFactory.Data.Contracts\ComputersFactory.Data.Contracts.csproj">
+      <Project>{146D25AA-5937-4532-BD73-B34FD33D59A4}</Project>
+      <Name>ComputersFactory.Data.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.MongoDbWriter\ComputersFactory.Data.MongoDbWriter.csproj">
       <Project>{b508354c-435e-49f2-8693-00a2771e425e}</Project>
       <Name>ComputersFactory.Data.MongoDbWriter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.Repositories\ComputersFactory.Data.Repositories.csproj">
+      <Project>{3D93C677-0EB5-4D59-B97E-DE6851800264}</Project>
+      <Name>ComputersFactory.Data.Repositories</Name>
     </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.TransferToSql\ComputersFactory.Data.TransferToSql.csproj">
       <Project>{FE7B0854-B357-4BDF-8CAA-F65E2A514271}</Project>
       <Name>ComputersFactory.Data.TransferToSql</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
+      <Project>{4FE099D3-B89F-4905-8F5B-3A5752FBA06E}</Project>
+      <Name>ComputersFactory.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

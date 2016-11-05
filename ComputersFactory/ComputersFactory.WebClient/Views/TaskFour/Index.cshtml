@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Task 4";
+}
+
+<h2>Task 4</h2>
+<button class="btn btn-primary">@Html.ActionLink("Run Task", "RunTask", "TaskFour")</button>
+
+Problem 4 - JSON Reports
+
+Your task is to write a program to create report for each product in JSON format and save all reports in MySQL. All reports may look like the sample below and should be saved in the MySQL database as well as in the file system (in a folder called “Json-Reports”, in files named “XX.json” where XX is the ID).
+Sample product report in JSON format:
+3.json
+
+{
+  "product-id" : 3,
+  "product-name" : "Beer “Beck’s”",
+  "vendor-name" : "Zagorka Corp.",
+  "total-quantity-sold" : 236,
+  "total-incomes" : 262.95,
+}
+1.json
+
+{
+  "product-id" : 1,
+  "product-name" : "Beer “Zagorka”",
+  "vendor-name" : "Zagorka Corp.",
+  "total-quantity-sold" : 673,
+  "total-incomes" : 609.24,
+}
+4.json
+
+{
+  "product-id" : 4,
+  "product-name" : "Chocolate “Milka”",
+  "vendor-name" : "Nestle Sofia Corp.",
+  "total-quantity-sold" : 47,
+  "total-incomes" : 135.70,
+}
+2.json
+
+{
+  "product-id" : 2,
+  "product-name" : "Vodka “Targovishte”",
+  "vendor-name" : "Targovishte Bottling Company Ltd.",
+  "total-quantity-sold" : 144,
+  "total-incomes" : 1155.90,
+}
+Input:
+SQL Server database
+Output:
+a set of JSON files
+data loaded in MySQL database

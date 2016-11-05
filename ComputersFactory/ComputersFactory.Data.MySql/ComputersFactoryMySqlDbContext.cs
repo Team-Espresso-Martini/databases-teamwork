@@ -1,17 +1,20 @@
 ﻿using System.Data.Entity;
 
+using ComputersFactory.Models;
+
 using MySql.Data.Entity;
-using ComputersFactory.Data.Models;
-using ComputersFactory.Data.Contracts;
 
 namespace ComputersFactory.Data.MySql
 {
-    [DbConfigurationType(typeof(MySqlEFConfiguration))]
-    public class ComputersFactoryMySqlDbContext : AbstractComputersFactoryDbContext
+    //[DbConfigurationType(typeof(MySqlEFConfiguration))]
+    public class ComputersFactoryMySqlDbContext : DbContext, IMySqlDatabaseContext
     {
         public ComputersFactoryMySqlDbContext()
-            : base("MySqlConnection")
+            : base("name=ComputersFactoryMySql")
         {
+            Database.SetInitializer<ComputersFactoryMySqlDbContext>(null);
         }
+
+        public virtual IDbSet<MySqlReport> Reports { get; set; }
     }
 }

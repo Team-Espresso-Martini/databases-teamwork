@@ -58,6 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComputersFactoryMySqlDbContext.cs" />
+    <Compile Include="IMySqlContext.cs" />
+    <Compile Include="Migrations\201611050140487_init.cs" />
+    <Compile Include="Migrations\201611050140487_init.Designer.cs">
+      <DependentUpon>201611050140487_init.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\DbMigrationsConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +83,11 @@
       <Project>{4fe099d3-b89f-4905-8f5b-3a5752fba06e}</Project>
       <Name>ComputersFactory.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611050140487_init.resx">
+      <DependentUpon>201611050140487_init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
