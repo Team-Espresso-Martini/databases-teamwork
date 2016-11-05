@@ -24,7 +24,7 @@ namespace ComputersFactory.ConsoleClient
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersFactoryDbContext, Configuration>());
 
             var dbContext = new ComputersFactoryDbContext();
-            //var worker = new ComputersFactoryUnitOfWork(dbContext);
+            var worker = new ComputersFactoryUnitOfWork(dbContext);
 
             var mongoClient = new MongoClient(MongoDbHost);
             var mongoDatabase = mongoClient.GetDatabase(MongoDbName);
@@ -74,7 +74,7 @@ namespace ComputersFactory.ConsoleClient
             migrator.TransferComputerShopDataToSQL(computerShopsRepository, computerShopsMongoRepository);
             RefreshContext(dbContext);
 
-            migrator.TransferComputerDataToSQL(computersRepository, computersMongoRepository);
+            migrator.TransferComputerDataToSQL(hardDrivesRepository, memoriesRepository, motherboardsRepository, processorsRepository, videoCardsRepository, computerShopsRepository, computersRepository, computersMongoRepository);
             RefreshContext(dbContext);
         }
 

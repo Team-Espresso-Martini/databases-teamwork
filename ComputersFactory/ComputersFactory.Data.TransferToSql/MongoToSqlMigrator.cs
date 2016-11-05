@@ -90,46 +90,42 @@ namespace ComputersFactory.Data.TransferToSql
             }
         }
 
-        public void TransferComputerDataToSQL(IRepository<Computer> computersRepository, IMongoRepository<ComputerMongoModel> computersMongoRepository)
+        public void TransferComputerDataToSQL(IRepository<HardDrive> hardDrivesRepository, IRepository<Memory> memoriesRepository, IRepository<Motherboard> motherboardsRepository, IRepository<Processor> processorsRepository, IRepository<VideoCard> videoCardsRepository, IRepository<ComputerShop> computerShopsRepository, IRepository<Computer> computersRepository, IMongoRepository<ComputerMongoModel> computersMongoRepository)
         {
-            var computersMongoCollection = computersMongoRepository.GetAll();
-            foreach (var computerMongo in computersMongoCollection)
+            var mongoComputers = computersMongoRepository.GetAll();
+            foreach (var mongoComputer in mongoComputers)
             {
-                computersRepository.Add(
-                    new Computer
-                    {
-                        Model = computerMongo.Model,
-                        Price = computerMongo.Price,
-                        Memory = new Memory
-                        {
-                            Manufacturer = computerMongo.Memory.Manufacturer,
-                            Price = computerMongo.Memory.Price,
-                            CapacityInGb = computerMongo.Memory.CapacityInGb
-                        },
-                        Motherboard = new Motherboard
-                        {
-                            Manufacturer = computerMongo.Motherboard.Manufacturer,
-                            Model = computerMongo.Motherboard.Model,
-                            Price = computerMongo.Motherboard.Price
-                        },
-                        Processor = new Processor
-                        {
-                            Model = computerMongo.Processor.Model,
-                            Manufacturer = computerMongo.Processor.Manufacturer,
-                            Price = computerMongo.Processor.Price,
-                            FrequencyInMhz = computerMongo.Processor.FrequencyInMhz
-                        },
-                        Videocard = new VideoCard
-                        {
-                            Model = computerMongo.Videocard.Model,
-                            Manufacturer = computerMongo.Videocard.Manufacturer,
-                            Price = computerMongo.Videocard.Price
-                        },
-                        ComputerShop = new ComputerShop
-                        {
-                            Name = computerMongo.ComputerShop.Name
-                        }
-                    });
+                var memory = mongoComputer.Memory;
+                var motherboard = mongoComputer.Motherboard;
+                var processor = mongoComputer.Processor;
+                var videoCard = mongoComputer.Videocard;
+                var computerShop = mongoComputer.ComputerShop;
+
+                computersRepository.Add(new Computer
+                {
+                    Model = mongoComputer.Model,
+                    Price = mongoComputer.Price,
+                    MemoryId = memoriesRepository.GetAll()
+                               .Where(m => m.Manufacturer == memory.Manufacturer && m.Price == memory.Price && m.CapacityInGb == memory.CapacityInGb)
+                               .Select(m => m.Id)
+                               .First(),
+                    MotherboardId = motherboardsRepository.GetAll()
+                               .Where(m => m.Model == motherboard.Model && m.Manufacturer == motherboard.Manufacturer && m.Price == motherboard.Price)
+                               .Select(m => m.Id)
+                               .First(),
+                    ProcessorId = processorsRepository.GetAll()
+                               .Where(p => p.Model == processor.Model && p.Manufacturer == processor.Manufacturer && p.Price == processor.Price && p.FrequencyInMhz == processor.FrequencyInMhz)
+                               .Select(p => p.Id)
+                               .First(),
+                    VideocardId = videoCardsRepository.GetAll()
+                               .Where(v => v.Model == videoCard.Model && v.Manufacturer == videoCard.Manufacturer && v.Price == videoCard.Price)
+                               .Select(v => v.Id)
+                               .First(),
+                    ComputerShopId = computerShopsRepository.GetAll()
+                                .Where(sh => sh.Name == computerShop.Name)
+                                .Select(sh => sh.Id)
+                                .First()
+                });
             }
         }
 
