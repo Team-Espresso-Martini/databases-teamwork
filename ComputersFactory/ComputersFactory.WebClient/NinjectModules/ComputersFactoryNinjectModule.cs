@@ -53,6 +53,9 @@ namespace ComputersFactory.WebClient.NinjectModules
             this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
                 .WhenInjectedInto<XmlSalesReportDataImporter>().InSingletonScope();
 
+            this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
+                .WhenInjectedInto<WriteXmlReportsFacade>().InSingletonScope();
+
             this.Bind<IXmlDataImporter>().To<XmlSalesReportDataImporter>();
         }
     }
