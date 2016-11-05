@@ -9,42 +9,81 @@ using MongoDB.Driver;
 using ComputersFactory.Data.Repositories.Repositories.Base;
 using ComputersFactory.Data.MongoDbWriter.Models.Components;
 using ComputersFactory.Data.MongoDbWriter.Models;
+using ComputersFactory.Models.Components;
+using ComputersFactory.Models;
+using ComputersFactory.Data.Models;
 
 namespace ComputersFactory.ConsoleClient
 {
     public class StartUp
     {
+        private const string MongoDbHost = "mongodb://localhost";
+        private const string MongoDbName = "ComputersFactory";
         public static void Main()
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersFactoryDbContext, Configuration>());
 
-            var db = new ComputersFactoryDbContext();
-            var worker = new ComputersFactoryUnitOfWork(db);
+            var dbContext = new ComputersFactoryDbContext();
+            //var worker = new ComputersFactoryUnitOfWork(dbContext);
 
-            //MongoToSqlMigrator.TransferData();
+            var mongoClient = new MongoClient(MongoDbHost);
+            var mongoDatabase = mongoClient.GetDatabase(MongoDbName);
 
-            string dbHost = "mongodb://localhost";
-            string dbName = "ComputersFactory";
-
-            var client = new MongoClient(dbHost);
-            var database = client.GetDatabase(dbName);
-
-            var hardDrivesRepository = new GenericMongoRepository<HardDriveMongoModel>(database);
-            var memoriesRepository = new GenericMongoRepository<MemoryMongoModel>(database);
-            var motherboardsRepository = new GenericMongoRepository<MotherboardMongoModel>(database);
-            var processorsRepository = new GenericMongoRepository<ProcessorMongoModel>(database);
-            var videoCardsRepository = new GenericMongoRepository<VideoCardMongoModel>(database);
-            var computerShopsRepository = new GenericMongoRepository<ComputerShopMongoModel>(database);
-            var computersRepository = new GenericMongoRepository<ComputerMongoModel>(database);
+            var hardDrivesMongoRepository = new GenericMongoRepository<HardDriveMongoModel>(mongoDatabase);
+            var memoriesMongoRepository = new GenericMongoRepository<MemoryMongoModel>(mongoDatabase);
+            var motherboardsMongoRepository = new GenericMongoRepository<MotherboardMongoModel>(mongoDatabase);
+            var processorsMongoRepository = new GenericMongoRepository<ProcessorMongoModel>(mongoDatabase);
+            var videoCardsMongoRepository = new GenericMongoRepository<VideoCardMongoModel>(mongoDatabase);
+            var computerShopsMongoRepository = new GenericMongoRepository<ComputerShopMongoModel>(mongoDatabase);
+            var computersMongoRepository = new GenericMongoRepository<ComputerMongoModel>(mongoDatabase);
 
             var writer = new MongoDbWriter();
-            writer.GenerateHardDrives(hardDrivesRepository);
-            writer.GenerateMemories(memoriesRepository);
-            writer.GenerateMotherboards(motherboardsRepository);
-            writer.GenerateProcessors(processorsRepository);
-            writer.GenerateVideoCards(videoCardsRepository);
-            writer.GenerateComputerShops(computerShopsRepository);
-            writer.GenerateComputers(hardDrivesRepository, memoriesRepository, motherboardsRepository, processorsRepository, videoCardsRepository, computerShopsRepository, computersRepository);
+            writer.GenerateHardDrives(hardDrivesMongoRepository);
+            writer.GenerateMemories(memoriesMongoRepository);
+            writer.GenerateMotherboards(motherboardsMongoRepository);
+            writer.GenerateProcessors(processorsMongoRepository);
+            writer.GenerateVideoCards(videoCardsMongoRepository);
+            writer.GenerateComputerShops(computerShopsMongoRepository);
+            writer.GenerateComputers(hardDrivesMongoRepository, memoriesMongoRepository, motherboardsMongoRepository, processorsMongoRepository, videoCardsMongoRepository, computerShopsMongoRepository, computersMongoRepository);
+
+            var hardDrivesRepository = new GenericRepository<HardDrive>(dbContext);
+            var memoriesRepository = new GenericRepository<Memory>(dbContext);
+            var motherboardsRepository = new GenericRepository<Motherboard>(dbContext);
+            var processorsRepository = new GenericRepository<Processor>(dbContext);
+            var videoCardsRepository = new GenericRepository<VideoCard>(dbContext);
+            var computerShopsRepository = new GenericRepository<ComputerShop>(dbContext);
+            var computersRepository = new GenericRepository<Computer>(dbContext);
+
+
+            var migrator = new MongoToSqlMigrator();
+            migrator.TransferHardDriveDataToSQL(hardDrivesRepository, hardDrivesMongoRepository);
+            RefreshContext(dbContext);
+
+            migrator.TransferMemoryDataToSQL(memoriesRepository, memoriesMongoRepository);
+            RefreshContext(dbContext);
+
+            migrator.TransferMotherboardDataToSQL(motherboardsRepository, motherboardsMongoRepository);
+            RefreshContext(dbContext);
+
+            migrator.TransferProcessorDataToSQL(processorsRepository, processorsMongoRepository);
+            RefreshContext(dbContext);
+
+            migrator.TransferVideoCardDataToSQL(videoCardsRepository, videoCardsMongoRepository);
+            RefreshContext(dbContext);
+
+            migrator.TransferComputerShopDataToSQL(computerShopsRepository, computerShopsMongoRepository);
+            RefreshContext(dbContext);
+
+            migrator.TransferComputerDataToSQL(computersRepository, computersMongoRepository);
+            RefreshContext(dbContext);
+        }
+
+        private static ComputersFactoryDbContext RefreshContext(ComputersFactoryDbContext context)
+        {
+            context.SaveChanges();
+            context = new ComputersFactoryDbContext();
+
+            return context;
         }
     }
 }
