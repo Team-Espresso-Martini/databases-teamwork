@@ -78,9 +78,17 @@
       <Project>{b508354c-435e-49f2-8693-00a2771e425e}</Project>
       <Name>ComputersFactory.Data.MongoDbWriter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.Repositories\ComputersFactory.Data.Repositories.csproj">
+      <Project>{3D93C677-0EB5-4D59-B97E-DE6851800264}</Project>
+      <Name>ComputersFactory.Data.Repositories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.TransferToSql\ComputersFactory.Data.TransferToSql.csproj">
       <Project>{FE7B0854-B357-4BDF-8CAA-F65E2A514271}</Project>
       <Name>ComputersFactory.Data.TransferToSql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
+      <Project>{4FE099D3-B89F-4905-8F5B-3A5752FBA06E}</Project>
+      <Name>ComputersFactory.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
