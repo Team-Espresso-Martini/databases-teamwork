@@ -60,6 +60,8 @@ namespace ComputersFactory.Data.SalesReports.Excel
                 }
             }
 
+            context.SaveChanges();
+
             return reports.ToList();
         }
     }
