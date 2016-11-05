@@ -17,8 +17,8 @@ namespace ComputersFactory.ConsoleClient
             var db = new ComputersFactoryDbContext();
             var worker = new ComputersFactoryUnitOfWork(db);
 
-            MongoDbWriter.GenerateData();
-            MongoToSqlMigrator.TransferData();
+            //MongoDbWriter.GenerateData();
+            //MongoToSqlMigrator.TransferData();
         }
     }
 }
