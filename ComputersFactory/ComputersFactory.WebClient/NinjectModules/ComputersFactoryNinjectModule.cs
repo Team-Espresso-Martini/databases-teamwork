@@ -18,6 +18,7 @@ using ComputersFactory.Data.SalesReports.Converters.Contracts;
 using ComputersFactory.Data.SalesReports.Converters;
 using ComputersFactory.WebClient.Controllers;
 using ComputersFactory.Data.MongoDbWriter.Facade;
+using ComputersFactory.Data.Xml.Facade;
 
 namespace ComputersFactory.WebClient.NinjectModules
 {
@@ -25,6 +26,7 @@ namespace ComputersFactory.WebClient.NinjectModules
     {
         private const string HomeControllerName = "Home";
         private const string TaskOneControllerName = "TaskOne";
+        private const string TaskThreeControllerName = "TaskThree";
         private const string TaskFiveControllerName = "TaskFive";
 
         public override void Load()
@@ -41,13 +43,18 @@ namespace ComputersFactory.WebClient.NinjectModules
             this.Bind<IAdaptedModelConverter>().To<AdaptedModelConverter>();
 
             this.Bind<IMongoDbDataFacade>().To<MongoDbDataFacade>();
+            this.Bind<IWriteXmlReportsFacade>().To<WriteXmlReportsFacade>();
 
             this.Bind<Controller>().To<HomeController>().Named(HomeControllerName);
             this.Bind<Controller>().To<TaskOneController>().Named(TaskOneControllerName);
+            this.Bind<Controller>().To<TaskThreeController>().Named(TaskThreeControllerName);
             this.Bind<Controller>().To<TaskFiveController>().Named(TaskFiveControllerName);
 
             this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
                 .WhenInjectedInto<XmlSalesReportDataImporter>().InSingletonScope();
+
+            this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
+                .WhenInjectedInto<WriteXmlReportsFacade>().InSingletonScope();
 
             this.Bind<IXmlDataImporter>().To<XmlSalesReportDataImporter>();
         }
