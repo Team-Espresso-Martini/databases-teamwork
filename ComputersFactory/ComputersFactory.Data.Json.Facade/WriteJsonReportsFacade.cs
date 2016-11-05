@@ -47,8 +47,8 @@ namespace ComputersFactory.Data.Json.Facade
                 this.mySqlContext.Reports.Add(newReport);
             }
 
-            this.jsonService.SaveModelDataToFileSystemAsJson<MySqlReport>(reports, RootDirectory);
             this.mySqlContext.SaveChanges();
+            this.jsonService.SaveModelDataToFileSystemAsJson<MySqlReport>(reports, RootDirectory);
 
             return reports;
         }

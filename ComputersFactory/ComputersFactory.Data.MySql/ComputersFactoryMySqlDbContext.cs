@@ -6,12 +6,13 @@ using MySql.Data.Entity;
 
 namespace ComputersFactory.Data.MySql
 {
-    [DbConfigurationType(typeof(MySqlEFConfiguration))]
+    //[DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class ComputersFactoryMySqlDbContext : DbContext, IMySqlDatabaseContext
     {
         public ComputersFactoryMySqlDbContext()
             : base("name=ComputersFactoryMySql")
         {
+            Database.SetInitializer<ComputersFactoryMySqlDbContext>(null);
         }
 
         public virtual IDbSet<MySqlReport> Reports { get; set; }

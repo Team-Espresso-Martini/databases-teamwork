@@ -26,6 +26,7 @@ using ComputersFactory.Data.FileSystem.Contracts;
 using ComputersFactory.Data.FileSystem;
 using ComputersFactory.Data.Json.Facade;
 using ComputersFactory.Data.MySql;
+using ComputersFactory.Data.FileSystem.FileSystemProviders;
 
 namespace ComputersFactory.WebClient.NinjectModules
 {
@@ -43,6 +44,11 @@ namespace ComputersFactory.WebClient.NinjectModules
                  ctx.FromAssembliesInPath(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location))
                  .SelectAllClasses()
                  .BindDefaultInterface());
+
+            this.Bind<IFileSystemProvider>().To<FileSystemProvider>()
+                .WhenInjectedInto<ResolveMissingPathFileSystemProvider>();
+            this.Bind<IFileSystemProvider>().To<ResolveMissingPathFileSystemProvider>()
+                .WhenInjectedInto<FileSystemService>();
 
             this.Bind<IFileSystemService>().To<FileSystemService>();
             this.Bind<IJsonProvider>().To<NewtonsoftJsonProvider>();
