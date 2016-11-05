@@ -1,0 +1,16 @@
+﻿
+@using ComputersFactory.Models
+@model IList<ComputersFactory.Models.MySqlReport>
+
+@{
+    ViewBag.Title = "Task 4";
+}
+
+<h2>Task 5 Completed</h2>
+<h3>Number of Reports: @Model.Count</h3>
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">Model: @item.Model, Total Amount: $@item.TotalSales</li>
+    }
+</ul>

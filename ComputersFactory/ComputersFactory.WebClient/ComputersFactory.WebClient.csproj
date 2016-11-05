@@ -217,6 +217,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TaskFiveController.cs" />
+    <Compile Include="Controllers\TaskFourController.cs" />
     <Compile Include="Controllers\TaskOneController.cs" />
     <Compile Include="Controllers\TaskThreeController.cs" />
     <Compile Include="CustomControllerFactories\ComputersFactoryControllersFactory.cs" />
@@ -279,6 +280,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\TaskFour\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -6,6 +6,6 @@ namespace ComputersFactory.Data.Json.Facade
 {
     public interface IWriteJsonReportsFacade
     {
-        IEnumerable<MySqlReport> GenerateXmlReports();
+        IList<MySqlReport> GenerateJsonReports();
     }
 }

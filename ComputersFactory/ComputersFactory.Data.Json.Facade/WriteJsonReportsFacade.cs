@@ -26,7 +26,7 @@ namespace ComputersFactory.Data.Json.Facade
             this.sqlServercontext = sqlServercontext;
         }
 
-        public IEnumerable<MySqlReport> GenerateXmlReports()
+        public IList<MySqlReport> GenerateJsonReports()
         {
             var computers = this.sqlServercontext.Computers.ToList();
 

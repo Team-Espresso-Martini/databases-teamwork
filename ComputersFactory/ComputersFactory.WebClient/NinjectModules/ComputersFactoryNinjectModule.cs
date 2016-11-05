@@ -34,6 +34,7 @@ namespace ComputersFactory.WebClient.NinjectModules
         private const string HomeControllerName = "Home";
         private const string TaskOneControllerName = "TaskOne";
         private const string TaskThreeControllerName = "TaskThree";
+        private const string TaskFourControllerName = "TaskFour";
         private const string TaskFiveControllerName = "TaskFive";
 
         public override void Load()
@@ -60,6 +61,7 @@ namespace ComputersFactory.WebClient.NinjectModules
             this.Bind<Controller>().To<HomeController>().Named(HomeControllerName);
             this.Bind<Controller>().To<TaskOneController>().Named(TaskOneControllerName);
             this.Bind<Controller>().To<TaskThreeController>().Named(TaskThreeControllerName);
+            this.Bind<Controller>().To<TaskFourController>().Named(TaskFourControllerName);
             this.Bind<Controller>().To<TaskFiveController>().Named(TaskFiveControllerName);
 
             this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
