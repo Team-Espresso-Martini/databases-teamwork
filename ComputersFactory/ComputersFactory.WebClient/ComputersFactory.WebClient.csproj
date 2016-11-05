@@ -325,6 +325,10 @@
       <Project>{4df6e47f-c8ae-4a9a-80af-89e73fc479dc}</Project>
       <Name>ComputersFactory.Data.MySql</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.SalesReports.Excel\ComputersFactory.Data.SalesReports.Excel.csproj">
+      <Project>{3BEDDD3F-2E69-4402-BE27-1455C776E6DC}</Project>
+      <Name>ComputersFactory.Data.SalesReports.Excel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.SalesReports.MongoDbImport\ComputersFactory.Data.SalesReports.MongoDbImport.csproj">
       <Project>{21C4D11E-215E-42FF-8A38-9649A5FAD6B8}</Project>
       <Name>ComputersFactory.Data.SalesReports.MongoDbImport</Name>

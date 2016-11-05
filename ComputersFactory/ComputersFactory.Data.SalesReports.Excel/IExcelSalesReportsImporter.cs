@@ -1,7 +1,10 @@
-﻿namespace ComputersFactory.Data.SalesReports.Excel
+﻿using ComputersFactory.Models;
+using System.Collections.Generic;
+
+namespace ComputersFactory.Data.SalesReports.Excel
 {
     public interface IExcelSalesReportsImporter
     {
-        void ImportSalesReportsFromExcel(string fileName, string tempFileName);
+        IList<SalesReport> ImportSalesReportsFromExcel(string fileName, string tempFileName);
     }
 }
