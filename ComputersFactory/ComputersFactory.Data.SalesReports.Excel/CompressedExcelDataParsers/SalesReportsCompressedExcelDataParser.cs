@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.IO.Compression;
 
 using ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers.Contracts;
 using ComputersFactory.Data.SalesReports.Excel.ExcelDataReaders.Contracts;
 using ComputersFactory.Data.SalesReports.Excel.ExcelDataParsers.Contracts;
 
 using ComputersFactory.Models;
-using System.IO.Compression;
-using System.IO;
 
 namespace ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers
 {
