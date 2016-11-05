@@ -3,7 +3,10 @@
 using ComputersFactory.Data.Contracts;
 using ComputersFactory.Data.Repositories.Repositories.Contracts;
 using ComputersFactory.Data.Repositories.UnitsOfWork.Contracts;
-using ComputersFactory.Data.Repositories.Repositories;
+using ComputersFactory.Data.Models;
+using ComputersFactory.Data.Repositories.Repositories.Base;
+using ComputersFactory.Models.Components;
+using ComputersFactory.Models;
 
 namespace ComputersFactory.Data.Repositories.UnitsOfWork
 {
@@ -20,25 +23,28 @@ namespace ComputersFactory.Data.Repositories.UnitsOfWork
 
             this.dbContext = dbContext;
 
-            this.Computers = new ComputersRepository(dbContext);
-            this.HardDrives = new HardDriveRespository(dbContext);
-            this.Memory = new MemoryRepository(dbContext);
-            this.Motherboards = new MotherboardsRepository(dbContext);
-            this.Processors = new ProcessorsRepository(dbContext);
-            this.VideoCards = new VideoCardsRepository(dbContext);
+            this.Computers = new GenericRepository<Computer>(dbContext);
+            this.HardDrives = new GenericRepository<HardDrive>(dbContext);
+            this.Memory = new GenericRepository<Memory>(dbContext);
+            this.Motherboards = new GenericRepository<Motherboard>(dbContext);
+            this.Processors = new GenericRepository<Processor>(dbContext);
+            this.VideoCards = new GenericRepository<VideoCard>(dbContext);
+            this.ComputerShops = new GenericRepository<ComputerShop>(dbContext);
         }
 
-        public IComputersRepository Computers { get; private set; }
+        public IRepository<Computer> Computers { get; private set; }
 
-        public IHardDrivesRepository HardDrives { get; private set; }
+        public IRepository<HardDrive> HardDrives { get; private set; }
 
-        public IMemoryRepository Memory { get; private set; }
+        public IRepository<Memory> Memory { get; private set; }
 
-        public IMotherboardsRepository Motherboards { get; private set; }
+        public IRepository<Motherboard> Motherboards { get; private set; }
 
-        public IProcessorsRepository Processors { get; private set; }
+        public IRepository<Processor> Processors { get; private set; }
 
-        public IVideoCardsRepository VideoCards { get; private set; }
+        public IRepository<VideoCard> VideoCards { get; private set; }
+
+        public IRepository<ComputerShop> ComputerShops { get; private set; }
 
         public int SaveChanges()
         {
