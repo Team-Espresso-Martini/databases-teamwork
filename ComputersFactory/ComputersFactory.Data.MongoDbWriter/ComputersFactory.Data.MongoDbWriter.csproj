@@ -71,6 +71,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComputersFactory.Data.Repositories\ComputersFactory.Data.Repositories.csproj">
+      <Project>{3d93c677-0eb5-4d59-b97e-de6851800264}</Project>
+      <Name>ComputersFactory.Data.Repositories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
       <Project>{4fe099d3-b89f-4905-8f5b-3a5752fba06e}</Project>
       <Name>ComputersFactory.Models</Name>

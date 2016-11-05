@@ -74,6 +74,10 @@
       <Project>{b508354c-435e-49f2-8693-00a2771e425e}</Project>
       <Name>ComputersFactory.Data.MongoDbWriter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.Repositories\ComputersFactory.Data.Repositories.csproj">
+      <Project>{3d93c677-0eb5-4d59-b97e-de6851800264}</Project>
+      <Name>ComputersFactory.Data.Repositories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data\ComputersFactory.Data.csproj">
       <Project>{e6065a6e-6f85-4922-946a-a16c5ea35efc}</Project>
       <Name>ComputersFactory.Data</Name>
