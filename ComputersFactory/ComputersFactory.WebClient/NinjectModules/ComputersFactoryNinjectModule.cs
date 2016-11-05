@@ -48,6 +48,7 @@ namespace ComputersFactory.WebClient.NinjectModules
         private const string TaskThreeControllerName = "TaskThree";
         private const string TaskFourControllerName = "TaskFour";
         private const string TaskFiveControllerName = "TaskFive";
+        private const string TaskSixControllerName = "TaskSix";
 
         public override void Load()
         {
@@ -88,6 +89,7 @@ namespace ComputersFactory.WebClient.NinjectModules
             this.Bind<Controller>().To<TaskThreeController>().Named(TaskThreeControllerName);
             this.Bind<Controller>().To<TaskFourController>().Named(TaskFourControllerName);
             this.Bind<Controller>().To<TaskFiveController>().Named(TaskFiveControllerName);
+            this.Bind<Controller>().To<TaskSixController>().Named(TaskSixControllerName);
 
             this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
                 .WhenInjectedInto<XmlSalesReportDataImporter>().InSingletonScope();

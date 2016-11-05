@@ -240,6 +240,7 @@
     <Compile Include="Controllers\TaskFiveController.cs" />
     <Compile Include="Controllers\TaskFourController.cs" />
     <Compile Include="Controllers\TaskOneController.cs" />
+    <Compile Include="Controllers\TaskSixController.cs" />
     <Compile Include="Controllers\TaskThreeController.cs" />
     <Compile Include="CustomControllerFactories\ComputersFactoryControllersFactory.cs" />
     <Compile Include="Global.asax.cs">
@@ -305,6 +306,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\TaskSix\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

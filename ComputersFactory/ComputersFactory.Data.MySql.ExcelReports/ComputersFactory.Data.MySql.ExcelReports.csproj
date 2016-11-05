@@ -56,6 +56,7 @@
     <Compile Include="ExcelFileGenerators\Contracts\IExcelFileGenerator.cs" />
     <Compile Include="ExcelFileGenerators\ExcelFileGenerator.cs" />
     <Compile Include="ExcelReportsFromMySqlProvider.cs" />
+    <Compile Include="IExcelReportsFromMySqlProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
