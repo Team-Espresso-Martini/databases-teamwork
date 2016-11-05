@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ComputerShop>
+  <Computer ComuterID="1">
+    <ComputerPrice>1500.50</ComputerPrice>
+    <Components>
+      <Motherboard>
+        <Price>101.60</Price>
+        <Manufacturer>Gigabyte</Manufacturer>
+        <Model>Pesho554</Model>
+      </Motherboard>
+      <Memory>
+        <Price>51.10</Price>
+        <Manufacturer>Dell</Manufacturer>
+        <CapacityInGb>512</CapacityInGb>
+      </Memory>
+      <Processor>
+        <Price>500.40</Price>
+        <Manufacturer>Intel</Manufacturer>
+        <Model>i7</Model>
+        <FrequencyInMhz>1000</FrequencyInMhz>
+      </Processor>
+      <VideoCard>
+        <Price>1000.50</Price>
+        <Manufacturer>NVidia</Manufacturer>
+        <Model>GTX 1050</Model>
+      </VideoCard>
+      <HardDrives>
+        <HardDrive>
+          <Capacity>1000</Capacity>
+          <Manufacturer>Ivancho</Manufacturer>
+          <Model>Mariq</Model>
+          <Price>0.65</Price>
+        </HardDrive>
+        <HardDrive>
+          <Capacity>500</Capacity>
+          <Manufacturer>Samsung</Manufacturer>
+          <Model>ssd</Model>
+          <Price>23.75</Price>
+        </HardDrive>
+      </HardDrives>
+    </Components>
+  </Computer>
+</ComputerShop>
