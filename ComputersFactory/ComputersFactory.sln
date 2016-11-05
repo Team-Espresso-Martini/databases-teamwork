@@ -50,6 +50,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Xml.F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Json.Facade", "ComputersFactory.Data.Json.Facade\ComputersFactory.Data.Json.Facade.csproj", "{241265B0-E73A-46E3-B4C8-A1BCABF96B28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.SalesReports.Excel", "ComputersFactory.Data.SalesReports.Excel\ComputersFactory.Data.SalesReports.Excel.csproj", "{3BEDDD3F-2E69-4402-BE27-1455C776E6DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -140,6 +142,10 @@ Global
 		{241265B0-E73A-46E3-B4C8-A1BCABF96B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{241265B0-E73A-46E3-B4C8-A1BCABF96B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{241265B0-E73A-46E3-B4C8-A1BCABF96B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BEDDD3F-2E69-4402-BE27-1455C776E6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEDDD3F-2E69-4402-BE27-1455C776E6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEDDD3F-2E69-4402-BE27-1455C776E6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEDDD3F-2E69-4402-BE27-1455C776E6DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
