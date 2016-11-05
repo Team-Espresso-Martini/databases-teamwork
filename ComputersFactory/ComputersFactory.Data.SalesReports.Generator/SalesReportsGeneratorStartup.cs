@@ -10,6 +10,7 @@ using ComputersFactory.Models.Views;
 using ComputersFactory.Data.SalesReports.Excel.ExcelDataReaders;
 using System.IO;
 using ComputersFactory.Data.SalesReports.Excel.ExcelDataParsers;
+using ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers;
 
 namespace ComputersFactory.Data.SalesReports.Generator
 {
@@ -31,15 +32,13 @@ namespace ComputersFactory.Data.SalesReports.Generator
             //var reportImporter = new XmlSalesReportDataImporter(adaptedXmlDeserializer, adaptedModelConverter, context);
             //reportImporter.ImportData("../../../XmlSalesReports/SalesReports.xml", "Reports");
 
-            using (var fs = new FileStream(@"D:\TeamWorkFiles\XlsReports\report-1-05-05-2015.xls", FileMode.Open, FileAccess.Read))
-            {
 
-                var readerProvider = new ExcelDataReaderProvider();
-                var reader = readerProvider.CreateExcelBinaryReader(fs);
+            var readerProvider = new ExcelDataReaderProvider();
 
-                var parser = new SalesReportsExcelDataParser();
-                var data = parser.ParseExcelDataReader(reader);
-            }
+            var parser = new SalesReportsExcelDataParser();
+
+            var extractor = new SalesReportsCompressedExcelDataParser(readerProvider, parser);
+            extractor.ParseCompressedExcelData(@"D:\TeamWorkFiles\XlsReports\reports.zip", @"D:\TeamWorkFiles\XlsReports\temp.xls");
         }
 
         private static void GenerateXmlReports()

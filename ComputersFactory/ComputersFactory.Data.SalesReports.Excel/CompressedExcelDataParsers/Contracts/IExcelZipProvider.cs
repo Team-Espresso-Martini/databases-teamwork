@@ -4,6 +4,6 @@ namespace ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers.Co
 {
     public interface ICompressedExcelDataParser<TModel>
     {
-        IEnumerable<TModel> ParseCompressedExcelData(string fileName);
+        IEnumerable<TModel> ParseCompressedExcelData(string fileName, string tempFileName);
     }
 }
