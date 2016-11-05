@@ -27,6 +27,14 @@ using ComputersFactory.Data.FileSystem;
 using ComputersFactory.Data.Json.Facade;
 using ComputersFactory.Data.MySql;
 using ComputersFactory.Data.FileSystem.FileSystemProviders;
+using ComputersFactory.Data.SalesReports.Excel.ExcelDataReaders.Contracts;
+using ComputersFactory.Data.SalesReports.Excel.ExcelDataReaders;
+using ComputersFactory.Models;
+using ComputersFactory.Data.SalesReports.Excel.ExcelDataParsers.Contracts;
+using ComputersFactory.Data.SalesReports.Excel.ExcelDataParsers;
+using ComputersFactory.Data.SalesReports.Excel;
+using ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers.Contracts;
+using ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers;
 
 namespace ComputersFactory.WebClient.NinjectModules
 {
@@ -49,6 +57,11 @@ namespace ComputersFactory.WebClient.NinjectModules
                 .WhenInjectedInto<ResolveMissingPathFileSystemProvider>();
             this.Bind<IFileSystemProvider>().To<ResolveMissingPathFileSystemProvider>()
                 .WhenInjectedInto<FileSystemService>();
+
+            this.Bind<IExcelDataReaderProvider>().To<ExcelDataReaderProvider>();
+            this.Bind<IExcelDataParser<SalesReport>>().To<SalesReportsExcelDataParser>();
+            this.Bind<ICompressedExcelDataParser<SalesReport>>().To<SalesReportsCompressedExcelDataParser>();
+            this.Bind<IExcelSalesReportsImporter>().To<SqlServerExcelSalesReportsImporter>();
 
             this.Bind<IFileSystemService>().To<FileSystemService>();
             this.Bind<IJsonProvider>().To<NewtonsoftJsonProvider>();
@@ -78,6 +91,9 @@ namespace ComputersFactory.WebClient.NinjectModules
 
             this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
                 .WhenInjectedInto<WriteJsonReportsFacade>().InSingletonScope();
+
+            this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
+                .WhenInjectedInto<SqlServerExcelSalesReportsImporter>().InSingletonScope();
 
             this.Bind<IMySqlDatabaseContext>().To<ComputersFactoryMySqlDbContext>()
                 .WhenInjectedInto<WriteJsonReportsFacade>().InSingletonScope();
