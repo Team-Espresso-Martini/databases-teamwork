@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IWriteJsonReportsFacade.cs" />
     <Compile Include="WriteJsonReportsFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -52,6 +62,18 @@
       <Project>{3CF23CDE-1411-4C29-8F49-76880B063B45}</Project>
       <Name>ComputersFactory.Data.Json</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.MySql\ComputersFactory.Data.MySql.csproj">
+      <Project>{4DF6E47F-C8AE-4A9A-80AF-89E73FC479DC}</Project>
+      <Name>ComputersFactory.Data.MySql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Models\ComputersFactory.Models.csproj">
+      <Project>{4fe099d3-b89f-4905-8f5b-3a5752fba06e}</Project>
+      <Name>ComputersFactory.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

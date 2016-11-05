@@ -55,6 +55,7 @@ namespace ComputersFactory.WebClient.NinjectModules
 
             this.Bind<IMongoDbDataFacade>().To<MongoDbDataFacade>();
             this.Bind<IWriteXmlReportsFacade>().To<WriteXmlReportsFacade>();
+            this.Bind<IWriteJsonReportsFacade>().To<WriteJsonReportsFacade>();
 
             this.Bind<Controller>().To<HomeController>().Named(HomeControllerName);
             this.Bind<Controller>().To<TaskOneController>().Named(TaskOneControllerName);

@@ -1,5 +1,7 @@
 ﻿using System.Data.Entity;
 
+using ComputersFactory.Models;
+
 using MySql.Data.Entity;
 
 namespace ComputersFactory.Data.MySql
@@ -11,5 +13,7 @@ namespace ComputersFactory.Data.MySql
             : base("name=ComputersFactoryMySql")
         {
         }
+
+        public virtual IDbSet<MySqlReport> Reports { get; set; }
     }
 }
