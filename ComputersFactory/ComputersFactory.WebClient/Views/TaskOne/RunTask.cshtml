@@ -12,6 +12,6 @@
 <ul class="list-group">
     @foreach (var item in Model)
     {
-        <li class="list-group-item">Date: @item.Date, Total Amount: $@item.TotalAmount</li>
+        <li class="list-group-item">Date: @item.Date.ToShortDateString(), Total Amount: $@item.TotalAmount</li>
     }
 </ul>

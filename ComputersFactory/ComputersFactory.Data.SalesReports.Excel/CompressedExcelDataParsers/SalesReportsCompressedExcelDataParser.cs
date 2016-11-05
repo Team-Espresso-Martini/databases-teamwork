@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
+using System.Linq;
 
 using ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers.Contracts;
 using ComputersFactory.Data.SalesReports.Excel.ExcelDataReaders.Contracts;
@@ -63,6 +64,8 @@ namespace ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers
 
                         var date = this.ExtractDateFromFileName(entryNameWords);
                         salesReport.Date = date;
+
+                        salesReport.TotalAmount = salesReport.Sales.Select(s => s.Amount).Sum();
 
                         salesReports.Add(salesReport);
                     }
