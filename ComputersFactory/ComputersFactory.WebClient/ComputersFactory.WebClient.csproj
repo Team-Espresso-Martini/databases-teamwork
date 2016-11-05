@@ -271,8 +271,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\TaskFive\Index.cshtml" />
-    <Content Include="Views\TaskFive\RunTask.cshtml" />
+    <Content Include="Views\TaskFour\Index.cshtml" />
+    <Content Include="Views\TaskFour\RunTask.cshtml" />
     <Content Include="Views\TaskOne\Index.cshtml" />
     <Content Include="Views\TaskOne\RunTask.cshtml" />
     <Content Include="Views\TaskThree\Index.cshtml" />
@@ -280,7 +280,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\TaskFour\" />
+    <Folder Include="Views\TaskFive\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
