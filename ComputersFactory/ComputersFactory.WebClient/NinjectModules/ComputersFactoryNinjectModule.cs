@@ -19,6 +19,13 @@ using ComputersFactory.Data.SalesReports.Converters;
 using ComputersFactory.WebClient.Controllers;
 using ComputersFactory.Data.MongoDbWriter.Facade;
 using ComputersFactory.Data.Xml.Facade;
+using ComputersFactory.Data.Json.Contracts;
+using ComputersFactory.Data.Json;
+using ComputersFactory.Data.Json.JsonProviders;
+using ComputersFactory.Data.FileSystem.Contracts;
+using ComputersFactory.Data.FileSystem;
+using ComputersFactory.Data.Json.Facade;
+using ComputersFactory.Data.MySql;
 
 namespace ComputersFactory.WebClient.NinjectModules
 {
@@ -35,6 +42,10 @@ namespace ComputersFactory.WebClient.NinjectModules
                  ctx.FromAssembliesInPath(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location))
                  .SelectAllClasses()
                  .BindDefaultInterface());
+
+            this.Bind<IFileSystemService>().To<FileSystemService>();
+            this.Bind<IJsonProvider>().To<NewtonsoftJsonProvider>();
+            this.Bind<IJsonService>().To<JsonService>();
 
             this.Bind<ISalesReportsMongoDbImporter>().To<SalesReportsMongoDbImporter>();
             this.Bind<IXmlDeserializer>().To<XmlDeserializer>();
@@ -55,6 +66,12 @@ namespace ComputersFactory.WebClient.NinjectModules
 
             this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
                 .WhenInjectedInto<WriteXmlReportsFacade>().InSingletonScope();
+
+            this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
+                .WhenInjectedInto<WriteJsonReportsFacade>().InSingletonScope();
+
+            this.Bind<IMySqlDatabaseContext>().To<ComputersFactoryMySqlDbContext>()
+                .WhenInjectedInto<WriteJsonReportsFacade>().InSingletonScope();
 
             this.Bind<IXmlDataImporter>().To<XmlSalesReportDataImporter>();
         }

@@ -1,16 +1,14 @@
 ﻿using System.Data.Entity;
 
 using MySql.Data.Entity;
-using ComputersFactory.Data.Models;
-using ComputersFactory.Data.Contracts;
 
 namespace ComputersFactory.Data.MySql
 {
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
-    public class ComputersFactoryMySqlDbContext : AbstractComputersFactoryDbContext
+    public class ComputersFactoryMySqlDbContext : DbContext, IMySqlDatabaseContext
     {
         public ComputersFactoryMySqlDbContext()
-            : base("MySqlConnection")
+            : base("name=ComputersFactoryMySql")
         {
         }
     }
