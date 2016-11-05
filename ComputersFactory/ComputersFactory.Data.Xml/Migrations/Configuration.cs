@@ -1,17 +1,19 @@
+using System.Collections.Generic;
+using System.Data.Entity.Migrations;
+using System.Linq;
+
+using ComputersFactory.Data.Models;
+using ComputersFactory.Models;
+using ComputersFactory.Models.Components;
+
 namespace ComputersFactory.Data.Xml.Migrations
 {
-    using System.Collections.Generic;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-    using Models;
-    using Models.Components;
-
     public sealed class Configuration : DbMigrationsConfiguration<ComputersFactorySqlDbContext>
     {
         public Configuration()
         {
             this.AutomaticMigrationsEnabled = true;
-            this.AutomaticMigrationDataLossAllowed = false;
+            this.AutomaticMigrationDataLossAllowed = true;
             ContextKey = "ComputersFactory.Data.Xml.ComputersFactorySqlDbContext";
         }
 
@@ -79,7 +81,7 @@ namespace ComputersFactory.Data.Xml.Migrations
 
             shop.Computers.Add(computer);
 
-            // factory do not have ComutersShops
+            //TODO: factory do not have ComutersShops
             context.ComputersShops.Add(shop);
 
             context.SaveChanges();

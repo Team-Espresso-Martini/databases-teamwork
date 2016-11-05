@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.Migrations;
-using System.Data.Entity.Migrations.Infrastructure;
-using System.Diagnostics;
+using System.Data.Entity;
 using System.Linq;
 using System.Xml.Linq;
-using ComputersFactory.Data.Migrations;
+using ComputersFactory.Data.Models;
 using ComputersFactory.Data.Repositories.UnitsOfWork;
-using ComputersFactory.Models;
 using ComputersFactory.Models.Components;
 
 namespace ComputersFactory.Data.Xml
@@ -19,17 +15,21 @@ namespace ComputersFactory.Data.Xml
 
         static void Main()
         {
-            Configuration configuration = new Configuration();
-            configuration.ContextType = typeof(ComputersFactorySqlDbContext);
-            var migrator = new DbMigrator(configuration);
 
-            //This will get the SQL script which will update the DB and write it to debug
-            var scriptor = new MigratorScriptingDecorator(migrator);
-            string script = scriptor.ScriptUpdate(sourceMigration: null, targetMigration: null).ToString();
-            Debug.Write(script);
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersFactorySqlDbContext, ComputersFactory.Data.Xml.Migrations.Configuration>());
+            new ComputersFactorySqlDbContext().Database.Initialize(true);
 
-            //This will run the migration update script and will run Seed() method
-            migrator.Update();
+            //Configuration configuration = new Configuration();
+            //configuration.ContextType = typeof(ComputersFactorySqlDbContext);
+            //var migrator = new DbMigrator(configuration);
+
+            ////This will get the SQL script which will update the DB and write it to debug
+            //var scriptor = new MigratorScriptingDecorator(migrator);
+            //string script = scriptor.ScriptUpdate(sourceMigration: null, targetMigration: null).ToString();
+            //Debug.Write(script);
+
+            ////This will run the migration update script and will run Seed() method
+            //migrator.Update();
 
 
             using (var context = new ComputersFactorySqlDbContext())
