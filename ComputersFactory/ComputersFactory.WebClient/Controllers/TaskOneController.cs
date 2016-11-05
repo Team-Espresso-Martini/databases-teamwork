@@ -27,7 +27,7 @@ namespace ComputersFactory.WebClient.Controllers
             this.mongoDbData.TransferDataFromMongoDbToSqlServer();
             var importedReports = this.excelImporter.ImportSalesReportsFromExcel(null, null);
 
-            return View();
+            return View(importedReports);
         }
     }
 }
