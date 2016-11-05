@@ -49,13 +49,15 @@ namespace ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers
             {
                 foreach (var entry in archive.Entries)
                 {
+                    File.Delete(tempFileName);
+
                     entry.ExtractToFile(tempFileName);
                     using (var stream = new FileStream(tempFileName, FileMode.Open, FileAccess.Read))
                     {
                         var excelReader = this.readerProvider.CreateExcelBinaryReader(stream);
                         var salesReport = this.dataParser.ParseExcelDataReader(excelReader);
 
-                        var entryNameWords = entry.Name.Split('-');
+                        var entryNameWords = entry.Name.Split(new[] { '-', '.' }, StringSplitOptions.RemoveEmptyEntries);
                         var computerShopId = this.ExtractComputerShopIdFromFileName(entryNameWords);
                         salesReport.ComputerShopId = computerShopId;
 
@@ -65,8 +67,6 @@ namespace ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers
                         salesReports.Add(salesReport);
                     }
                 }
-
-                File.Delete(tempFileName);
             }
 
             return salesReports;
@@ -75,9 +75,9 @@ namespace ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers
         private DateTime ExtractDateFromFileName(IList<string> words)
         {
             var wordsLength = words.Count;
-            var year = int.Parse(words[wordsLength - 1]);
-            var month = int.Parse(words[wordsLength - 2]);
-            var day = int.Parse(words[wordsLength - 3]);
+            var year = int.Parse(words[wordsLength - 2]);
+            var month = int.Parse(words[wordsLength - 3]);
+            var day = int.Parse(words[wordsLength - 4]);
 
             var date = new DateTime(year, month, day);
 
@@ -87,7 +87,7 @@ namespace ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers
         private int ExtractComputerShopIdFromFileName(IList<string> words)
         {
             var wordsLength = words.Count;
-            var computerShopId = int.Parse(words[wordsLength - 4]);
+            var computerShopId = int.Parse(words[wordsLength - 5]);
 
             return computerShopId;
         }
