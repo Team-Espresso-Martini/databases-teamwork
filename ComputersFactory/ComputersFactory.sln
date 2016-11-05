@@ -52,6 +52,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Json.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.SalesReports.Excel", "ComputersFactory.Data.SalesReports.Excel\ComputersFactory.Data.SalesReports.Excel.csproj", "{3BEDDD3F-2E69-4402-BE27-1455C776E6DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.SQLite.Connection", "ComputersFactory.Data.SQLite.Connection\ComputersFactory.Data.SQLite.Connection.csproj", "{74FEA7B7-EAB0-439C-BEF2-1E2F5D6E8479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.SQLite.Models", "ComputersFactory.Data.SQLite.Models\ComputersFactory.Data.SQLite.Models.csproj", "{3DC6BE6B-4342-4319-B7CF-6604E86C7E63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -146,6 +150,14 @@ Global
 		{3BEDDD3F-2E69-4402-BE27-1455C776E6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BEDDD3F-2E69-4402-BE27-1455C776E6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BEDDD3F-2E69-4402-BE27-1455C776E6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FEA7B7-EAB0-439C-BEF2-1E2F5D6E8479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FEA7B7-EAB0-439C-BEF2-1E2F5D6E8479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FEA7B7-EAB0-439C-BEF2-1E2F5D6E8479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FEA7B7-EAB0-439C-BEF2-1E2F5D6E8479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC6BE6B-4342-4319-B7CF-6604E86C7E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC6BE6B-4342-4319-B7CF-6604E86C7E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC6BE6B-4342-4319-B7CF-6604E86C7E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC6BE6B-4342-4319-B7CF-6604E86C7E63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
