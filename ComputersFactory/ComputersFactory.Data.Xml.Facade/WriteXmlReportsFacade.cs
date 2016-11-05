@@ -6,7 +6,7 @@ namespace ComputersFactory.Data.Xml.Facade
 {
     public class WriteXmlReportsFacade: IWriteXmlReportsFacade
     {
-        private const string BaseFileName = @"D:\TeamWorkFiles\GeneratedReports\Report\";
+        private const string BaseFileName = @"D:\TeamWorkFiles\GeneratedReports\Report";
 
         private readonly AbstractComputersFactoryDbContext context;
 

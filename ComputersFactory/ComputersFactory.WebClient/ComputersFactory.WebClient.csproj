@@ -218,6 +218,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TaskFiveController.cs" />
     <Compile Include="Controllers\TaskOneController.cs" />
+    <Compile Include="Controllers\TaskThreeController.cs" />
     <Compile Include="CustomControllerFactories\ComputersFactoryControllersFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -276,6 +277,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\TaskThree\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -301,6 +303,10 @@
     <ProjectReference Include="..\ComputersFactory.Data.SalesReports\ComputersFactory.Data.SalesReports.csproj">
       <Project>{41056A52-57A7-449E-9E1A-D291810EDEA0}</Project>
       <Name>ComputersFactory.Data.SalesReports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.Xml.Facade\ComputersFactory.Data.Xml.Facade.csproj">
+      <Project>{927B15A9-3B36-4DF5-8BB6-DC5E4CCCCC66}</Project>
+      <Name>ComputersFactory.Data.Xml.Facade</Name>
     </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data\ComputersFactory.Data.csproj">
       <Project>{E6065A6E-6F85-4922-946A-A16C5EA35EFC}</Project>
