@@ -17,12 +17,14 @@ using ComputersFactory.Data.SalesReports.XmlDeserializers;
 using ComputersFactory.Data.SalesReports.Converters.Contracts;
 using ComputersFactory.Data.SalesReports.Converters;
 using ComputersFactory.WebClient.Controllers;
+using ComputersFactory.Data.MongoDbWriter.Facade;
 
 namespace ComputersFactory.WebClient.NinjectModules
 {
     public class ComputersFactoryNinjectModule : NinjectModule
     {
         private const string HomeControllerName = "Home";
+        private const string TaskOneControllerName = "TaskOne";
         private const string TaskFiveControllerName = "TaskFive";
 
         public override void Load()
@@ -38,7 +40,10 @@ namespace ComputersFactory.WebClient.NinjectModules
             this.Bind<IAdaptedXmlDeserializer>().To<AdaptedXmlDeserializer>();
             this.Bind<IAdaptedModelConverter>().To<AdaptedModelConverter>();
 
+            this.Bind<IMongoDbDataFacade>().To<MongoDbDataFacade>();
+
             this.Bind<Controller>().To<HomeController>().Named(HomeControllerName);
+            this.Bind<Controller>().To<TaskOneController>().Named(TaskOneControllerName);
             this.Bind<Controller>().To<TaskFiveController>().Named(TaskFiveControllerName);
 
             this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
