@@ -43,7 +43,7 @@ namespace ComputersFactory.Data.SalesReports.Excel
 
             if (string.IsNullOrEmpty(tempFileName))
             {
-                fileName = SqlServerExcelSalesReportsImporter.DefaultTempFileName;
+                tempFileName = SqlServerExcelSalesReportsImporter.DefaultTempFileName;
             }
 
             var reports = this.dataParser.ParseCompressedExcelData(fileName, tempFileName);
