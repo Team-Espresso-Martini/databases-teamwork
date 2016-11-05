@@ -46,6 +46,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Sales
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.MongoDbWriter.Facade", "ComputersFactory.Data.MongoDbWriter.Facade\ComputersFactory.Data.MongoDbWriter.Facade.csproj", "{51092E1E-F239-4EA1-88B9-D571114C8A9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Xml.Facade", "ComputersFactory.Data.Xml.Facade\ComputersFactory.Data.Xml.Facade.csproj", "{927B15A9-3B36-4DF5-8BB6-DC5E4CCCCC66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -128,6 +130,10 @@ Global
 		{51092E1E-F239-4EA1-88B9-D571114C8A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51092E1E-F239-4EA1-88B9-D571114C8A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51092E1E-F239-4EA1-88B9-D571114C8A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927B15A9-3B36-4DF5-8BB6-DC5E4CCCCC66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927B15A9-3B36-4DF5-8BB6-DC5E4CCCCC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927B15A9-3B36-4DF5-8BB6-DC5E4CCCCC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927B15A9-3B36-4DF5-8BB6-DC5E4CCCCC66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

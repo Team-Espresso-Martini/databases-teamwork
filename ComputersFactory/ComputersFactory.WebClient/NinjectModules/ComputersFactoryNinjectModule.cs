@@ -18,6 +18,7 @@ using ComputersFactory.Data.SalesReports.Converters.Contracts;
 using ComputersFactory.Data.SalesReports.Converters;
 using ComputersFactory.WebClient.Controllers;
 using ComputersFactory.Data.MongoDbWriter.Facade;
+using ComputersFactory.Data.Xml.Facade;
 
 namespace ComputersFactory.WebClient.NinjectModules
 {
@@ -41,6 +42,7 @@ namespace ComputersFactory.WebClient.NinjectModules
             this.Bind<IAdaptedModelConverter>().To<AdaptedModelConverter>();
 
             this.Bind<IMongoDbDataFacade>().To<MongoDbDataFacade>();
+            this.Bind<IWriteXmlReportsFacade>().To<WriteXmlReportsFacade>();
 
             this.Bind<Controller>().To<HomeController>().Named(HomeControllerName);
             this.Bind<Controller>().To<TaskOneController>().Named(TaskOneControllerName);

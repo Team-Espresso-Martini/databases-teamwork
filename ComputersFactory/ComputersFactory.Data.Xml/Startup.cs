@@ -13,7 +13,7 @@ using ComputersFactory.Data.Models;
 
 namespace ComputersFactory.Data.Xml
 {
-    public class Startup
+    public class XmlReports
     {
         private const string Url = "../../XmlReports/ComputerShop.xml";
         private const string FormatDecimal = "{0:0.00}";
@@ -39,14 +39,14 @@ namespace ComputersFactory.Data.Xml
 
                 Computer computer = factory.Computers.GetAll().FirstOrDefault(comp => comp.Price > 100);
 
-                GenerateComputerShopXmlReport(computer);
+                GenerateComputerShopXmlReport(computer, Url);
             }
 
             Console.WriteLine("---***---  DATABASE DONE  ---***---");
 
         }
 
-        private static void GenerateComputerShopXmlReport(Computer computer)
+        public static void GenerateComputerShopXmlReport(Computer computer, string url)
         {
             XElement hardDrivesInCurrentComp = new XElement("HardDrives");
             foreach (HardDrive hardDrive in computer.HardDrives)
@@ -90,7 +90,7 @@ namespace ComputersFactory.Data.Xml
                  .Select(comp => comp.Element("Components")).ToList();
             components[0].Add(hardDrivesInCurrentComp);
             
-            xmlDocument.Save(Url);
+            xmlDocument.Save(url);
         }
     }
 }
