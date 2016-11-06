@@ -1,4 +1,5 @@
 ﻿using ComputersFactory.Data.Contracts;
+using ComputersFactory.Data.Generator;
 using ComputersFactory.Data.Models;
 using ComputersFactory.Data.MongoDbWriter.Models;
 using ComputersFactory.Data.MongoDbWriter.Models.Components;
@@ -37,13 +38,13 @@ namespace ComputersFactory.Data.MongoDbWriter.Facade
             var computersMongoRepository = new GenericMongoRepository<ComputerMongoModel>(mongoDatabase);
 
             var writer = new MongoDbWriter();
-            writer.GenerateHardDrives(hardDrivesMongoRepository);
-            writer.GenerateMemories(memoriesMongoRepository);
-            writer.GenerateMotherboards(motherboardsMongoRepository);
-            writer.GenerateProcessors(processorsMongoRepository);
-            writer.GenerateVideoCards(videoCardsMongoRepository);
-            writer.GenerateComputerShops(computerShopsMongoRepository);
-            writer.GenerateComputers(hardDrivesMongoRepository, memoriesMongoRepository, motherboardsMongoRepository, processorsMongoRepository, videoCardsMongoRepository, computerShopsMongoRepository, computersMongoRepository);
+            writer.GenerateHardDrives(hardDrivesMongoRepository, RandomGenerator.Create);
+            writer.GenerateMemories(memoriesMongoRepository, RandomGenerator.Create);
+            writer.GenerateMotherboards(motherboardsMongoRepository, RandomGenerator.Create);
+            writer.GenerateProcessors(processorsMongoRepository, RandomGenerator.Create);
+            writer.GenerateVideoCards(videoCardsMongoRepository, RandomGenerator.Create);
+            writer.GenerateComputerShops(computerShopsMongoRepository, RandomGenerator.Create);
+            writer.GenerateComputers(hardDrivesMongoRepository, memoriesMongoRepository, motherboardsMongoRepository, processorsMongoRepository, videoCardsMongoRepository, computerShopsMongoRepository, computersMongoRepository, RandomGenerator.Create);
         }
 
         public void TransferDataFromMongoDbToSqlServer()

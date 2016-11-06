@@ -95,6 +95,7 @@ namespace ComputersFactory.Data.TransferToSql
             var mongoComputers = computersMongoRepository.GetAll();
             foreach (var mongoComputer in mongoComputers)
             {
+                var hardDrives = mongoComputer.HardDrives;
                 var memory = mongoComputer.Memory;
                 var motherboard = mongoComputer.Motherboard;
                 var processor = mongoComputer.Processor;
@@ -124,7 +125,10 @@ namespace ComputersFactory.Data.TransferToSql
                     ComputerShopId = computerShopsRepository.GetAll()
                                 .Where(sh => sh.Name == computerShop.Name)
                                 .Select(sh => sh.Id)
-                                .First()
+                                .First(),
+                    HardDrives = hardDrivesRepository.GetAll()
+                                .Where(h => hardDrives.Any(hdds => hdds.Model == h.Model && hdds.Manufacturer == h.Manufacturer && hdds.Price == h.Price))
+                                .ToList()
                 });
             }
         }

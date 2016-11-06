@@ -5,13 +5,15 @@ using ComputersFactory.Data.Migrations;
 using ComputersFactory.Data.MongoDbWriter;
 using ComputersFactory.Data.Repositories.UnitsOfWork;
 using ComputersFactory.Data.TransferToSql;
-using MongoDB.Driver;
 using ComputersFactory.Data.Repositories.Repositories.Base;
 using ComputersFactory.Data.MongoDbWriter.Models.Components;
 using ComputersFactory.Data.MongoDbWriter.Models;
 using ComputersFactory.Models.Components;
 using ComputersFactory.Models;
 using ComputersFactory.Data.Models;
+using ComputersFactory.Data.Generator;
+
+using MongoDB.Driver;
 
 namespace ComputersFactory.ConsoleClient
 {
@@ -19,6 +21,7 @@ namespace ComputersFactory.ConsoleClient
     {
         private const string MongoDbHost = "mongodb://localhost";
         private const string MongoDbName = "ComputersFactory";
+
         public static void Main()
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersFactoryDbContext, Configuration>());
@@ -38,13 +41,14 @@ namespace ComputersFactory.ConsoleClient
             var computersMongoRepository = new GenericMongoRepository<ComputerMongoModel>(mongoDatabase);
 
             var writer = new MongoDbWriter();
-            writer.GenerateHardDrives(hardDrivesMongoRepository);
-            writer.GenerateMemories(memoriesMongoRepository);
-            writer.GenerateMotherboards(motherboardsMongoRepository);
-            writer.GenerateProcessors(processorsMongoRepository);
-            writer.GenerateVideoCards(videoCardsMongoRepository);
-            writer.GenerateComputerShops(computerShopsMongoRepository);
-            writer.GenerateComputers(hardDrivesMongoRepository, memoriesMongoRepository, motherboardsMongoRepository, processorsMongoRepository, videoCardsMongoRepository, computerShopsMongoRepository, computersMongoRepository);
+            var randomGenerator = RandomGenerator.Create;
+            writer.GenerateHardDrives(hardDrivesMongoRepository, randomGenerator);
+            writer.GenerateMemories(memoriesMongoRepository, randomGenerator);
+            writer.GenerateMotherboards(motherboardsMongoRepository, randomGenerator);
+            writer.GenerateProcessors(processorsMongoRepository, randomGenerator);
+            writer.GenerateVideoCards(videoCardsMongoRepository, randomGenerator);
+            writer.GenerateComputerShops(computerShopsMongoRepository, randomGenerator);
+            writer.GenerateComputers(hardDrivesMongoRepository, memoriesMongoRepository, motherboardsMongoRepository, processorsMongoRepository, videoCardsMongoRepository, computerShopsMongoRepository, computersMongoRepository, randomGenerator);
 
             var hardDrivesRepository = new GenericRepository<HardDrive>(dbContext);
             var memoriesRepository = new GenericRepository<Memory>(dbContext);

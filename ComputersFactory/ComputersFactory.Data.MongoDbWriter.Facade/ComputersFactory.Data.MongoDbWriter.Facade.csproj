@@ -74,6 +74,10 @@
       <Project>{146D25AA-5937-4532-BD73-B34FD33D59A4}</Project>
       <Name>ComputersFactory.Data.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.Generator\ComputersFactory.Data.Generator.csproj">
+      <Project>{86DE102F-FCC7-4416-A955-A5206668D2B5}</Project>
+      <Name>ComputersFactory.Data.Generator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.MongoDbWriter\ComputersFactory.Data.MongoDbWriter.csproj">
       <Project>{b508354c-435e-49f2-8693-00a2771e425e}</Project>
       <Name>ComputersFactory.Data.MongoDbWriter</Name>

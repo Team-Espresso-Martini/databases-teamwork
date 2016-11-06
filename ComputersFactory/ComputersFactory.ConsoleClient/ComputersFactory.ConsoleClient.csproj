@@ -72,6 +72,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComputersFactory.Data.Generator\ComputersFactory.Data.Generator.csproj">
+      <Project>{86de102f-fcc7-4416-a955-a5206668d2b5}</Project>
+      <Name>ComputersFactory.Data.Generator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.MongoDbWriter\ComputersFactory.Data.MongoDbWriter.csproj">
       <Project>{b508354c-435e-49f2-8693-00a2771e425e}</Project>
       <Name>ComputersFactory.Data.MongoDbWriter</Name>
