@@ -16,8 +16,7 @@ namespace ComputersFactory.Data.Xml
 
         static void Main()
         {
-
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersFactorySqlDbContext, ComputersFactory.Data.Xml.Migrations.Configuration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersFactorySqlDbContext, Migrations.Configuration>());
             new ComputersFactorySqlDbContext().Database.Initialize(true);
 
             //Configuration configuration = new Configuration();
@@ -32,7 +31,6 @@ namespace ComputersFactory.Data.Xml
             ////This will run the migration update script and will run Seed() method
             //migrator.Update();
 
-
             using (var context = new ComputersFactorySqlDbContext())
             {
                 ComputersFactoryUnitOfWork factory = new ComputersFactoryUnitOfWork(context);
@@ -43,7 +41,6 @@ namespace ComputersFactory.Data.Xml
             }
 
             Console.WriteLine("---***---  DATABASE DONE  ---***---");
-
         }
 
         public static void GenerateComputerShopXmlReport(Computer computer, string url)
@@ -84,7 +81,6 @@ namespace ComputersFactory.Data.Xml
                                     new XElement("Manufacturer", computer.Videocard.Manufacturer),
                                     new XElement("Model", computer.Videocard.Model))
             ))));
-
 
             var components = xmlDocument.Root.Elements("Computer")
                  .Select(comp => comp.Element("Components")).ToList();
