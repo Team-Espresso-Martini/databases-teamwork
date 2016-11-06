@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
 using ComputersFactory.Data.Contracts;
 using ComputersFactory.Data.SalesReports.Adapters.Contracts;
 using ComputersFactory.Data.SalesReports.DataImporter.Contracts;
 using ComputersFactory.Data.SalesReports.XmlModels;
 using ComputersFactory.Models;
-using System.Collections.Generic;
 
 namespace ComputersFactory.Data.SalesReports.DataImporter
 {
