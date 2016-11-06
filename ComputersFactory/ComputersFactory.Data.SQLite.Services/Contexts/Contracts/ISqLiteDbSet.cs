@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data.SQLite;
 
 namespace ComputersFactory.Data.SQLite.Services.Contexts.Contracts
 {

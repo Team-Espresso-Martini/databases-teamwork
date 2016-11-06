@@ -1,11 +1,10 @@
-﻿using ComputersFactory.Data.Models;
+﻿using System.Collections.Generic;
+using System.Linq;
+
+using ComputersFactory.Data.Models;
 using ComputersFactory.Data.SQLite.Services.Contexts.Contracts;
 using ComputersFactory.Data.SQLite.Services.Factories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SQLite;
 
 namespace ComputersFactory.Data.SQLite.Services.Contexts
 {
@@ -17,12 +16,14 @@ namespace ComputersFactory.Data.SQLite.Services.Contexts
         private readonly IConnectionFactory connectionFactory;
         private readonly ICommandFactory commandFactory;
 
+        private readonly ICollection<SQLiteCommand> commands;
+
         public SqLiteComputersDbSet(IConnectionFactory connectionFactory, ICommandFactory commandFactory)
         {
             this.connectionFactory = connectionFactory;
             this.commandFactory = commandFactory;
         }
-
+        
         public void Add(SqLiteComputer entity)
         {
             var query =
@@ -33,6 +34,7 @@ namespace ComputersFactory.Data.SQLite.Services.Contexts
             var connection = this.connectionFactory.CreateSQLiteConnection(ConnectionString);
             command.Connection = connection;
 
+            connection.Open();
             using (connection)
             {
                 command.ExecuteNonQuery();
@@ -49,6 +51,7 @@ namespace ComputersFactory.Data.SQLite.Services.Contexts
             var connection = this.connectionFactory.CreateSQLiteConnection(ConnectionString);
             command.Connection = connection;
 
+            connection.Open();
             using (connection)
             {
                 var reader = command.ExecuteReader();
@@ -83,6 +86,7 @@ namespace ComputersFactory.Data.SQLite.Services.Contexts
             var connection = this.connectionFactory.CreateSQLiteConnection(ConnectionString);
             command.Connection = connection;
 
+            connection.Open();
             using (connection)
             {
                 command.ExecuteNonQuery();
@@ -100,6 +104,7 @@ namespace ComputersFactory.Data.SQLite.Services.Contexts
             var connection = this.connectionFactory.CreateSQLiteConnection(ConnectionString);
             command.Connection = connection;
 
+            connection.Open();
             using (connection)
             {
                 var reader = command.ExecuteReader();
