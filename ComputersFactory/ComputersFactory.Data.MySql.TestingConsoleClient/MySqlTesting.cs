@@ -15,27 +15,27 @@ namespace ComputersFactory.Data.MySql.TestingConsoleClient
 
         public static void Main()
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersFactoryMySqlDbContext, MySqlEntityConfiguration>());
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersFactoryMySqlDbContext, MySqlEntityConfiguration>());
 
-            var db = new ComputersFactoryMySqlDbContext();
-            db.Database.CreateIfNotExists();
+            //var db = new ComputersFactoryMySqlDbContext();
+            //db.Database.CreateIfNotExists();
 
-            var worker = new ComputersFactoryUnitOfWork(db);
+            //var worker = new ComputersFactoryUnitOfWork(db);
 
-            var count = worker.Memory.GetAll().Count();
+            //var count = worker.Memory.GetAll().Count();
 
-            //var service = new EntitiyDatabaseService(db);
+            ////var service = new EntitiyDatabaseService(db);
 
-            //var memory = new Memory
-            //{
-            //    CapacityInGb = 2,
-            //    Price = 55.00M,
-            //    Manufacturer = "IBM"
-            //};
+            ////var memory = new Memory
+            ////{
+            ////    CapacityInGb = 2,
+            ////    Price = 55.00M,
+            ////    Manufacturer = "IBM"
+            ////};
 
-            //service.SaveDataToDatabase<Memory>(new List<Memory>() { memory });
+            ////service.SaveDataToDatabase<Memory>(new List<Memory>() { memory });
 
-            Console.WriteLine(count);
+            //Console.WriteLine(count);
         }
     }
 }

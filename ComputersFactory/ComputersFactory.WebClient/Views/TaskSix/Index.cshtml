@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Task 6";
+}
+
+<h2>Task 6</h2>
+<button class="btn btn-primary">@Html.ActionLink("Run Task", "RunTask", "TaskSix")</button>
+
+<p>
+    Problem 6 - Excel data
+
+    You are given a SQLite database holding more information for each product.
+    For example:
+    Product Name	Tax
+    Beer “Beck’s”	20%
+    Beer “Zagorka”	20%
+    Chocolate “Milka”	18%
+    Vodka “Targovishte”	25%
+    Write a program to read the MySQL database of reports, read the information from SQLite and generate a single Excel file holding some information by your choice.
+    For example:
+    Vendor	Incomes	Expenses	Taxes	Financial Result
+    Nestle Sofia Corp.	135.70	30	24.43	81.27
+    Targovishte Bottling Company Ltd.	1155.90	200	288.98	666.92
+    Zagorka Corp.	872.19	120	174.44	577.75
+    You are not allowed to connect to the SQL Server or MongoDB databases to read information.
+    Input:
+    SQLite database
+    MySQL database
+    Output:
+    Excel file (.xlsx)
+</p>

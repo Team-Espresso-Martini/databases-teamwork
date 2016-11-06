@@ -1,4 +1,7 @@
-﻿
+﻿@using ComputersFactory.Models
+@model IList<ComputersFactory.Models.SalesReport>
+
+
 @{
     ViewBag.Title = "RunTask";
 }
@@ -6,3 +9,9 @@
 <h2>Task 1 Completed</h2>
 <h3>Check MongoDb and SLQ Server for data</h3>
 
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">Date: @item.Date.ToShortDateString(), Total Amount: $@item.TotalAmount</li>
+    }
+</ul>

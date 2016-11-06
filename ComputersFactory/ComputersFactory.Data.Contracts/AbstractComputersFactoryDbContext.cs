@@ -11,6 +11,7 @@ namespace ComputersFactory.Data.Contracts
         protected AbstractComputersFactoryDbContext(string connectionStringName)
             : base(connectionStringName)
         {
+            Database.SetInitializer<AbstractComputersFactoryDbContext>(null);
         }
 
         public virtual IDbSet<Memory> Memories { get; set; }
