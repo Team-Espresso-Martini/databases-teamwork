@@ -1,24 +1,23 @@
-﻿using System.IO;
-using System.Data;
-using System.Reflection;
-using iTextSharp.text.pdf;
-using iTextSharp.text;
-
-namespace ComputersFactory.ExportToPdf
+﻿namespace ComputersFactory.ExportToPdf
 {
-    class Program
+    using System.IO;
+    using System.Data;
+    using iTextSharp.text.pdf;
+    using iTextSharp.text;
+
+    public class Export
     {
         public void ExportToPdf(DataTable dt)
         {
             Document document = new Document();
-            PdfWriter writer = PdfWriter.GetInstance(document, new FileStream("c://sample.pdf", FileMode.Create));
+            PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(".../ExportedSQL", FileMode.Create));
             document.Open();
-            iTextSharp.text.Font font5 = iTextSharp.text.FontFactory.GetFont(FontFactory.HELVETICA, 5);
+            Font font5 = FontFactory.GetFont(FontFactory.HELVETICA, 5);
 
             PdfPTable table = new PdfPTable(dt.Columns.Count);
-            float[] widths = new float[] { 4f, 4f, 4f, 4f };
+            float[] width = new float[] { 4f, 4f, 4f, 4f };
 
-            table.SetWidths(widths);
+            table.SetWidths(width);
 
             table.WidthPercentage = 100;
             PdfPCell cell = new PdfPCell(new Phrase("Products"));
