@@ -1,0 +1,2 @@
+C:\Users\krist\Desktop\databases-teamwork-master\databases-teamwork-master\ComputersFactory\ComputersFactory.ExportToPdf\bin\Debug\ComputersFactory.ExportToPdf.exe.config
+C:\Users\krist\Desktop\databases-teamwork-master\databases-teamwork-master\ComputersFactory\ComputersFactory.ExportToPdf\obj\Debug\ComputersFactory.ExportToPdf.csprojResolveAssemblyReference.cache
