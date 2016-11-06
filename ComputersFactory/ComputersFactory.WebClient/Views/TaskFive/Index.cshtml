@@ -6,32 +6,32 @@
 <h2>Task 5</h2>
 <button class="btn btn-primary">@Html.ActionLink("Run Task", "RunTask", "TaskFive")</button>
 
-<p>
-    Problem 5 - Load data from XML
-
-    You must create XML file holding additional information by your choice.
-    For example:
-    Vendors-Expenses.xml
-
-    <?xml version="1.0" encoding="utf-8">
-        <expenses-by-month>
-            <vendor name="Nestle Sofia Corp.">
-                <expenses month="Jul-2013">30.00</expenses>
-                <expenses month="Aug-2013">40.00</expenses>
-            </vendor>
-            <vendor name="Targovishte Bottling Company Ltd.">
-                <expenses month="Jul-2013">200.00</expenses>
-                <expenses month="Aug-2013">180.00</expenses>
-            </vendor>
-            <vendor name="Zagorka Corp.">
-                <expenses month="Jul-2013">120.00</expenses>
-                <expenses month="Aug-2013">180.00</expenses>
-            </vendor>
-            <expenses-by-month>
-                Your task is to read the XML file, parse it and save the data in the MongoDB database and in the SQL Server. Please think how your database schema / document model will support the additional data.
-                Input:
-                XML file
-                Output:
-                data loaded in the SQL Server
-                data loaded in the MongoDB
-</p>
+<h2 id="problem-5---load-data-from-xml">Problem 5 - Load data from XML</h2>
+<ul>
+    <li>You must create <strong>XML</strong> file holding additional information by your choice.</li>
+    <li><em>For example:</em></li>
+</ul>
+<p><strong>Vendors-Expenses.xml</strong></p>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;&gt;
+&lt;expenses-by-month&gt;
+  &lt;vendor name=&quot;Nestle Sofia Corp.&quot;&gt;
+    &lt;expenses month=&quot;Jul-2013&quot;&gt;30.00&lt;/expenses&gt;
+    &lt;expenses month=&quot;Aug-2013&quot;&gt;40.00&lt;/expenses&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name=&quot;Targovishte Bottling Company Ltd.&quot;&gt;
+    &lt;expenses month=&quot;Jul-2013&quot;&gt;200.00&lt;/expenses&gt;
+    &lt;expenses month=&quot;Aug-2013&quot;&gt;180.00&lt;/expenses&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name=&quot;Zagorka Corp.&quot;&gt;
+    &lt;expenses month=&quot;Jul-2013&quot;&gt;120.00&lt;/expenses&gt;
+    &lt;expenses month=&quot;Aug-2013&quot;&gt;180.00&lt;/expenses&gt;
+  &lt;/vendor&gt;
+&lt;expenses-by-month&gt;</code></pre>
+<ul>
+    <li>Your task is to <strong>read the XML file</strong>, parse it and <strong>save the data</strong> in the <strong>MongoDB</strong> database and in the <strong>SQL Server</strong>. Please think how your database schema / document model will support the additional data.</li>
+    <li><strong>Input</strong>:</li>
+    <li>XML file</li>
+    <li><strong>Output</strong>:</li>
+    <li>data loaded in the SQL Server</li>
+    <li>data loaded in the MongoDB</li>
+</ul>

@@ -6,54 +6,597 @@
 <h2>Task 2</h2>
 <button class="btn btn-primary">@Html.ActionLink("Run Task", "RunTask", "TaskTwo")</button>
 
-<p>
-    Problem 2 - Generate PDF Reports
-
-    Your task is to generate a PDF reports summarizing information from the SQL Server.
-    For example:
-    the PDF report may contain a table like the sample below:
-    Aggregated Sales Report
-    Date: 20-Jul-2013
-    Product	Quantity	Unit Price	Location	Sum
-    Beer "Beck’s"	40 liters	1.20	Supermarket "Kaspichan – Center"	48.00
-    Beer "Zagorka"	37 liters	1.00	Supermarket "Bourgas – Plaza"	37.00
-    Chocolate "Milka"	7 pieces	2.85	Supermarket "Bay Ivan" – Zmeyovo	19.95
-    Vodka "Targovishte"	14 liters	8.50	Supermarket "Bourgas – Plaza"	119.00
-    Chocolate "Milka"	12 pieces	2.90	Supermarket "Kaspichan – Center"	34.80
-    Beer "Zagorka"	65 liters	0.92	Supermarket "Kaspichan – Center"	59.80
-    Vodka "Targovishte"	4 liters	7.80	Supermarket "Bay Ivan" – Zmeyovo	31.20
-    …	…	…	…	…
-    Total sum for 20-Jul-2012:	349.75
-    Date: 21-Jul-2013
-    Product	Quantity	Unit Price	Location	Sum
-    Beer "Zagorka"	11 liters	1.00	Supermarket "Bourgas – Plaza"	11.00
-    Beer "Zagorka"	78 liters	0.92	Supermarket "Kaspichan – Center"	71.76
-    Beer "Zagorka"	146 liters	0.88	Supermarket "Plovdiv – Stolipinovo"	128.48
-    Vodka "Targovishte"	20 liters	8.50	Supermarket "Bourgas – Plaza"	170.00
-    Vodka "Targovishte"	67 liters	7.70	Supermarket "Plovdiv – Stolipinovo"	515.90
-    Vodka "Targovishte"	3 liters	7.80	Supermarket "Bay Ivan" – Zmeyovo	23.40
-    Beer "Beck’s"	43 liters	1.20	Supermarket "Kaspichan – Center"	51.60
-    Beer "Beck’s"	75 liters	1.05	Supermarket "Plovdiv – Stolipinovo"	78.75
-    Chocolate "Milka"	9 pieces	2.90	Supermarket "Kaspichan – Center"	26.10
-    Chocolate "Milka"	5 pieces	2.85	Supermarket "Bay Ivan" – Zmeyovo	14.25
-    …	…	…	…	…
-    Total sum for 21-Jul-2012:	1091.24
-    Date: 22-Jul-2013
-    Product	Quantity	Unit Price	Location	Sum
-    Beer "Zagorka"	16.00	1.00	Supermarket "Bourgas – Plaza"	16.00
-    Beer "Zagorka"	90.00	0.92	Supermarket "Kaspichan – Center"	82.80
-    Beer "Zagorka"	230.00	0.88	Supermarket "Plovdiv – Stolipinovo"	202.40
-    Vodka "Targovishte"	24.00	8.50	Supermarket "Bourgas – Plaza"	204.00
-    Vodka "Targovishte"	12.00	7.70	Supermarket "Plovdiv – Stolipinovo"	92.40
-    Beer "Beck’s"	18.00	1.20	Supermarket "Kaspichan – Center"	21.60
-    Beer "Beck’s"	60.00	1.05	Supermarket "Plovdiv – Stolipinovo"	63.00
-    Chocolate "Milka"	14.00	2.90	Supermarket "Kaspichan – Center"	40.60
-    …	…	…	…	…
-    Total sum for 21-Jul-2012:	722.80
-    Grand total:	2163.79
-    A sample PDF report is also available: Sample-Aggregated-Sales-Report.pdf.
-    Input:
-    SQL Server database
-    Output:
-    PDF report
-</p>
+<h2 id="problem-2---generate-pdf-reports">Problem 2 - Generate PDF Reports</h2>
+<ul>
+    <li>Your task is to generate a PDF reports summarizing information from the SQL Server.</li>
+    <li><em>For example:</em></li>
+    <li>the PDF report may contain a table like the sample below:</li>
+</ul>
+<table>
+    <tr>
+        <td colspan="5">
+            <strong>Aggregated Sales Report</strong>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="5">
+            Date: 20-Jul-2013
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Product</strong>
+        </td>
+        <td>
+            <strong>Quantity</strong>
+        </td>
+        <td>
+            <strong>Unit Price</strong>
+        </td>
+        <td>
+            <strong>Location</strong>
+        </td>
+        <td>
+            <strong>Sum</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Beck’s&quot;
+        </td>
+        <td>
+            40 liters
+        </td>
+        <td>
+            1.20
+        </td>
+        <td>
+            Supermarket &quot;Kaspichan – Center&quot;
+        </td>
+        <td align="right">
+            48.00
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Zagorka&quot;
+        </td>
+        <td>
+            37 liters
+        </td>
+        <td>
+            1.00
+        </td>
+        <td>
+            Supermarket &quot;Bourgas – Plaza&quot;
+        </td>
+        <td align="right">
+            37.00
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Chocolate &quot;Milka&quot;
+        </td>
+        <td>
+            7 pieces
+        </td>
+        <td>
+            2.85
+        </td>
+        <td>
+            Supermarket &quot;Bay Ivan&quot; – Zmeyovo
+        </td>
+        <td align="right">
+            19.95
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Vodka &quot;Targovishte&quot;
+        </td>
+        <td>
+            14 liters
+        </td>
+        <td>
+            8.50
+        </td>
+        <td>
+            Supermarket &quot;Bourgas – Plaza&quot;
+        </td>
+        <td align="right">
+            119.00
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Chocolate &quot;Milka&quot;
+        </td>
+        <td>
+            12 pieces
+        </td>
+        <td>
+            2.90
+        </td>
+        <td>
+            Supermarket &quot;Kaspichan – Center&quot;
+        </td>
+        <td align="right">
+            34.80
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Zagorka&quot;
+        </td>
+        <td>
+            65 liters
+        </td>
+        <td>
+            0.92
+        </td>
+        <td>
+            Supermarket &quot;Kaspichan – Center&quot;
+        </td>
+        <td align="right">
+            59.80
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Vodka &quot;Targovishte&quot;
+        </td>
+        <td>
+            4 liters
+        </td>
+        <td>
+            7.80
+        </td>
+        <td>
+            Supermarket &quot;Bay Ivan&quot; – Zmeyovo
+        </td>
+        <td align="right">
+            31.20
+        </td>
+    </tr>
+    <tr>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" align="right">
+            Total sum for 20-Jul-2012:
+        </td>
+        <td align="right">
+            <strong>349.75</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Date: 21-Jul-2013
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Product</strong>
+        </td>
+        <td>
+            <strong>Quantity</strong>
+        </td>
+        <td>
+            <strong>Unit Price</strong>
+        </td>
+        <td>
+            <strong>Location</strong>
+        </td>
+        <td>
+            <strong>Sum</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Zagorka&quot;
+        </td>
+        <td>
+            11 liters
+        </td>
+        <td>
+            1.00
+        </td>
+        <td>
+            Supermarket &quot;Bourgas – Plaza&quot;
+        </td>
+        <td align="right">
+            11.00
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Zagorka&quot;
+        </td>
+        <td>
+            78 liters
+        </td>
+        <td>
+            0.92
+        </td>
+        <td>
+            Supermarket &quot;Kaspichan – Center&quot;
+        </td>
+        <td align="right">
+            71.76
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Zagorka&quot;
+        </td>
+        <td>
+            146 liters
+        </td>
+        <td>
+            0.88
+        </td>
+        <td>
+            Supermarket &quot;Plovdiv – Stolipinovo&quot;
+        </td>
+        <td align="right">
+            128.48
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Vodka &quot;Targovishte&quot;
+        </td>
+        <td>
+            20 liters
+        </td>
+        <td>
+            8.50
+        </td>
+        <td>
+            Supermarket &quot;Bourgas – Plaza&quot;
+        </td>
+        <td align="right">
+            170.00
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Vodka &quot;Targovishte&quot;
+        </td>
+        <td>
+            67 liters
+        </td>
+        <td>
+            7.70
+        </td>
+        <td>
+            Supermarket &quot;Plovdiv – Stolipinovo&quot;
+        </td>
+        <td align="right">
+            515.90
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Vodka &quot;Targovishte&quot;
+        </td>
+        <td>
+            3 liters
+        </td>
+        <td>
+            7.80
+        </td>
+        <td>
+            Supermarket &quot;Bay Ivan&quot; – Zmeyovo
+        </td>
+        <td align="right">
+            23.40
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Beck’s&quot;
+        </td>
+        <td>
+            43 liters
+        </td>
+        <td>
+            1.20
+        </td>
+        <td>
+            Supermarket &quot;Kaspichan – Center&quot;
+        </td>
+        <td align="right">
+            51.60
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Beck’s&quot;
+        </td>
+        <td>
+            75 liters
+        </td>
+        <td>
+            1.05
+        </td>
+        <td>
+            Supermarket &quot;Plovdiv – Stolipinovo&quot;
+        </td>
+        <td align="right">
+            78.75
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Chocolate &quot;Milka&quot;
+        </td>
+        <td>
+            9 pieces
+        </td>
+        <td>
+            2.90
+        </td>
+        <td>
+            Supermarket &quot;Kaspichan – Center&quot;
+        </td>
+        <td align="right">
+            26.10
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Chocolate &quot;Milka&quot;
+        </td>
+        <td>
+            5 pieces
+        </td>
+        <td>
+            2.85
+        </td>
+        <td>
+            Supermarket &quot;Bay Ivan&quot; – Zmeyovo
+        </td>
+        <td align="right">
+            14.25
+        </td>
+    </tr>
+    <tr>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" align="right">
+            Total sum for 21-Jul-2012:
+        </td>
+        <td colspan="4" align="right">
+            <strong>1091.24</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Date: 22-Jul-2013
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Product</strong>
+        </td>
+        <td>
+            <strong>Quantity</strong>
+        </td>
+        <td>
+            <strong>Unit Price</strong>
+        </td>
+        <td>
+            <strong>Location</strong>
+        </td>
+        <td>
+            <strong>Sum</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Zagorka&quot;
+        </td>
+        <td>
+            16.00
+        </td>
+        <td>
+            1.00
+        </td>
+        <td>
+            Supermarket &quot;Bourgas – Plaza&quot;
+        </td>
+        <td align="right">
+            16.00
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Zagorka&quot;
+        </td>
+        <td>
+            90.00
+        </td>
+        <td>
+            0.92
+        </td>
+        <td>
+            Supermarket &quot;Kaspichan – Center&quot;
+        </td>
+        <td align="right">
+            82.80
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Zagorka&quot;
+        </td>
+        <td>
+            230.00
+        </td>
+        <td>
+            0.88
+        </td>
+        <td>
+            Supermarket &quot;Plovdiv – Stolipinovo&quot;
+        </td>
+        <td align="right">
+            202.40
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Vodka &quot;Targovishte&quot;
+        </td>
+        <td>
+            24.00
+        </td>
+        <td>
+            8.50
+        </td>
+        <td>
+            Supermarket &quot;Bourgas – Plaza&quot;
+        </td>
+        <td align="right">
+            204.00
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Vodka &quot;Targovishte&quot;
+        </td>
+        <td>
+            12.00
+        </td>
+        <td>
+            7.70
+        </td>
+        <td>
+            Supermarket &quot;Plovdiv – Stolipinovo&quot;
+        </td>
+        <td align="right">
+            92.40
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Beck’s&quot;
+        </td>
+        <td>
+            18.00
+        </td>
+        <td>
+            1.20
+        </td>
+        <td>
+            Supermarket &quot;Kaspichan – Center&quot;
+        </td>
+        <td align="right">
+            21.60
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Beer &quot;Beck’s&quot;
+        </td>
+        <td>
+            60.00
+        </td>
+        <td>
+            1.05
+        </td>
+        <td>
+            Supermarket &quot;Plovdiv – Stolipinovo&quot;
+        </td>
+        <td align="right">
+            63.00
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Chocolate &quot;Milka&quot;
+        </td>
+        <td>
+            14.00
+        </td>
+        <td>
+            2.90
+        </td>
+        <td>
+            Supermarket &quot;Kaspichan – Center&quot;
+        </td>
+        <td align="right">
+            40.60
+        </td>
+    </tr>
+    <tr>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+        <td>
+            …
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" align="right">
+            Total sum for 21-Jul-2012:
+        </td>
+        <td align="right">
+            <strong>722.80</strong>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" align="right">
+            Grand total:
+        </td>
+        <td align="right">
+            <strong>2163.79</strong>
+        </td>
+    </tr>
+</table>
+<ul>
+    <li>A sample PDF report is also available: <a href="Sample-Aggregated-Sales-Report.pdf">Sample-Aggregated-Sales-Report.pdf</a>.</li>
+    <li><strong>Input</strong>:</li>
+    <li>SQL Server database</li>
+    <li><strong>Output</strong>:</li>
+    <li>PDF report</li>
+</ul>
