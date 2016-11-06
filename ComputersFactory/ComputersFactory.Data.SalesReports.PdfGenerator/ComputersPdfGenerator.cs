@@ -34,6 +34,11 @@ namespace ComputersFactory.Data.SalesReports.PdfGenerator
                 fileName = ComputersPdfGenerator.DefaultFileName;
             }
 
+            if (File.Exists(fileName))
+            {
+                File.Delete(fileName);
+            }
+
             var computers = this.context.Computers.ToList();
 
             var pdf = new Document();
@@ -41,7 +46,7 @@ namespace ComputersFactory.Data.SalesReports.PdfGenerator
             {
                 PdfWriter.GetInstance(pdf, fs);
 
-                var computersTable = new PdfPTable(3);
+                var computersTable = new PdfPTable(2);
                 var headingCell = new PdfPCell(new Phrase("Available Computers"));
                 headingCell.Colspan = 2;
                 headingCell.HorizontalAlignment = 1;
