@@ -30,16 +30,15 @@ namespace ComputersFactory.Data.Repositories.Repositories.Base
             }
         }
 
-        public TEntity Get(int id)
-        {
-            var entity = this.entityContext.Set<TEntity>().Find(id);
+        //public TEntity Get(int id)
+        //{
+        //    var entity = this.entityContext.Set<TEntity>().Find(id);
 
-            return entity;
-        }
+        //    return entity;
+        //}
 
         public IEnumerable<TEntity> GetAll()
         {
-            //// TODO: IQueryable 
             var entities = this.entityContext.Set<TEntity>().ToList();
             return entities;
         }
@@ -55,14 +54,14 @@ namespace ComputersFactory.Data.Repositories.Repositories.Base
         }
 
 
-        public void Remove(TEntity entity)
-        {
-            if (entity == null)
-            {
-                throw new ArgumentNullException(nameof(entity));
-            }
+        //public void Remove(TEntity entity)
+        //{
+        //    if (entity == null)
+        //    {
+        //        throw new ArgumentNullException(nameof(entity));
+        //    }
 
-            this.entityContext.Set<TEntity>().Remove(entity);
-        }
+        //    this.entityContext.Set<TEntity>().Remove(entity);
+        //}
     }
 }

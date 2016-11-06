@@ -6,11 +6,8 @@ namespace ComputersFactory.Data.MongoDbWriter.Models.Components
 {
     public class ProcessorMongoModel
     {
-        private ICollection<ComputerMongoModel> computers;
-
         public ProcessorMongoModel()
         {
-            this.computers = new HashSet<ComputerMongoModel>();
         }
 
         [BsonId]
@@ -41,18 +38,6 @@ namespace ComputersFactory.Data.MongoDbWriter.Models.Components
         public string Manufacturer
         {
             get; set;
-        }
-
-        public virtual ICollection<ComputerMongoModel> Computers
-        {
-            get
-            {
-                return this.computers;
-            }
-            set
-            {
-                this.computers = value;
-            }
         }
     }
 }

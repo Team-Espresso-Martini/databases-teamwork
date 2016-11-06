@@ -7,288 +7,143 @@ using ComputersFactory.Models;
 using ComputersFactory.Models.Components;
 
 using MongoDB.Driver;
+using ComputersFactory.Data.Repositories.Repositories.Contracts;
 
 namespace ComputersFactory.Data.TransferToSql
 {
     public class MongoToSqlMigrator
     {
-        public static void TransferData()
+        public void TransferHardDriveDataToSQL(IRepository<HardDrive> hardDrivesRepository, IMongoRepository<HardDriveMongoModel> hardDrivesMongoRepository)
         {
-            string mongoDbHost = "mongodb://localhost";
-            string mongoDbName = "ComputersFactory";
-
-            var mongoClient = new MongoClient(mongoDbHost);
-            var mongoDatabase = mongoClient.GetDatabase(mongoDbName);
-            var context = new ComputersFactoryDbContext();
-
-            TransferHardDriveDataToSQL(context, mongoDatabase);
-            context = RefreshContext(context);
-
-            TransferMemoryDataToSQL(context, mongoDatabase);
-            context = RefreshContext(context);
-
-            TransferMotherboardDataToSQL(context, mongoDatabase);
-            context = RefreshContext(context);
-
-            TransferProcessorDataToSQL(context, mongoDatabase);
-            context = RefreshContext(context);
-
-            TransferVideoCardDataToSQL(context, mongoDatabase);
-            context = RefreshContext(context);
-
-            TransferComputerShopDataToSQL(context, mongoDatabase);
-            context = RefreshContext(context);
-
-            // If we don't save changes before transfering the computers, there are going to be some FK issues.
-            TransferComputerDataToSQL(context, mongoDatabase);
-            context = RefreshContext(context);
-
-            // Not necessary and causing issues.
-            //AddComputersSetToHardDrives(context, mongoDatabase);
-            //context = RefreshContext(context);
-
-            //AddComputersSetToMemories(context, mongoDatabase);
-            //context = RefreshContext(context);
-
-            //AddComputersSetToMotherboards(context, mongoDatabase);
-            //context = RefreshContext(context);
-
-            //AddComputersSetToProcessors(context, mongoDatabase);
-            //context = RefreshContext(context);
-
-            //AddComputersSetToVideoCards(context, mongoDatabase);
-            //context = RefreshContext(context);
-
-            //AddComputersSetToVideoCards(context, mongoDatabase);
-            //context = RefreshContext(context);
-        }
-
-        private static ComputersFactoryDbContext RefreshContext(ComputersFactoryDbContext context)
-        {
-            context.SaveChanges();
-            context = new ComputersFactoryDbContext();
-            return context;
-        }
-
-        private static void TransferHardDriveDataToSQL(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
-        {
-            var mongoHardDrives = mongoDatabase.GetCollection<HardDriveMongoModel>("HardDrives").AsQueryable().ToList();
-            foreach (var mongoHdd in mongoHardDrives)
+            var hardDrivesMongoCollection = hardDrivesMongoRepository.GetAll();
+            foreach (var hddMongo in hardDrivesMongoCollection)
             {
-                context.HardDrives.Add(
+                hardDrivesRepository.Add(
                     new HardDrive
                     {
-                        Model = mongoHdd.Model,
-                        Price = mongoHdd.Price,
-                        CapacityInGb = mongoHdd.CapacityInGb,
-                        Manufacturer = mongoHdd.Manufacturer
+                        Model = hddMongo.Model,
+                        Price = hddMongo.Price,
+                        CapacityInGb = hddMongo.CapacityInGb,
+                        Manufacturer = hddMongo.Manufacturer
                     });
             }
         }
 
-        private static void TransferMemoryDataToSQL(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
+        public void TransferMemoryDataToSQL(IRepository<Memory> memoriesRepository, IMongoRepository<MemoryMongoModel> memoriesMongoRepository)
         {
-            var mongoMemories = mongoDatabase.GetCollection<MemoryMongoModel>("Memories").AsQueryable().ToList();
-            foreach (var mongoMemory in mongoMemories)
+            var memoriesMongoCollection = memoriesMongoRepository.GetAll();
+            foreach (var memoryMongo in memoriesMongoCollection)
             {
-                context.Memories.Add(
+                memoriesRepository.Add(
                     new Memory
                     {
-                        CapacityInGb = mongoMemory.CapacityInGb,
-                        Price = mongoMemory.Price,
-                        Manufacturer = mongoMemory.Manufacturer
+                        CapacityInGb = memoryMongo.CapacityInGb,
+                        Price = memoryMongo.Price,
+                        Manufacturer = memoryMongo.Manufacturer
                     });
             }
         }
 
-        private static void TransferMotherboardDataToSQL(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
+        public void TransferMotherboardDataToSQL(IRepository<Motherboard> motherboardsRepository, IMongoRepository<MotherboardMongoModel> motherboardsMongoRepository)
         {
-            var mongoMotherboards = mongoDatabase.GetCollection<MotherboardMongoModel>("Motherboards").AsQueryable().ToList();
-            foreach (var mongoMotherboard in mongoMotherboards)
+            var motherboardsMongoCollection = motherboardsMongoRepository.GetAll();
+            foreach (var motherboardMongo in motherboardsMongoCollection)
             {
-                context.MotherBoards.Add(
+                motherboardsRepository.Add(
                     new Motherboard
                     {
-                        Model = mongoMotherboard.Model,
-                        Price = mongoMotherboard.Price,
-                        Manufacturer = mongoMotherboard.Manufacturer
+                        Model = motherboardMongo.Model,
+                        Price = motherboardMongo.Price,
+                        Manufacturer = motherboardMongo.Manufacturer
                     });
             }
         }
 
-        private static void TransferProcessorDataToSQL(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
+        public void TransferProcessorDataToSQL(IRepository<Processor> processorsRepository, IMongoRepository<ProcessorMongoModel> processorsMongoRepository)
         {
-            var mongoProcessors = mongoDatabase.GetCollection<ProcessorMongoModel>("Processors").AsQueryable().ToList();
-            foreach (var mongoProcessor in mongoProcessors)
+            var processorsMongoCollection = processorsMongoRepository.GetAll();
+            foreach (var processorMongo in processorsMongoCollection)
             {
-                context.Procesors.Add(
+                processorsRepository.Add(
                     new Processor
                     {
-                        Model = mongoProcessor.Model,
-                        Price = mongoProcessor.Price,
-                        FrequencyInMhz = mongoProcessor.FrequencyInMhz,
-                        Manufacturer = mongoProcessor.Manufacturer
+                        Model = processorMongo.Model,
+                        Price = processorMongo.Price,
+                        FrequencyInMhz = processorMongo.FrequencyInMhz,
+                        Manufacturer = processorMongo.Manufacturer
                     });
             }
         }
 
-        private static void TransferVideoCardDataToSQL(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
+        public void TransferVideoCardDataToSQL(IRepository<VideoCard> videoCardsRepository, IMongoRepository<VideoCardMongoModel> videoCardsMongoRepository)
         {
-            var mongoVideoCards = mongoDatabase.GetCollection<VideoCardMongoModel>("VideoCards").AsQueryable().ToList();
-            foreach (var mongoVideoCard in mongoVideoCards)
+            var videoCardsMongoCollection = videoCardsMongoRepository.GetAll();
+            foreach (var videoCardMongo in videoCardsMongoCollection)
             {
-                context.VideoCards.Add(
+                videoCardsRepository.Add(
                     new VideoCard
                     {
-                        Model = mongoVideoCard.Model,
-                        Price = mongoVideoCard.Price,
-                        Manufacturer = mongoVideoCard.Manufacturer
+                        Model = videoCardMongo.Model,
+                        Price = videoCardMongo.Price,
+                        Manufacturer = videoCardMongo.Manufacturer
                     });
             }
         }
 
-        private static void TransferComputerDataToSQL(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
+        public void TransferComputerDataToSQL(IRepository<Computer> computersRepository, IMongoRepository<ComputerMongoModel> computersMongoRepository)
         {
-            var mongoComputers = mongoDatabase.GetCollection<ComputerMongoModel>("Computers").AsQueryable().ToList();
-            var memories = context.Memories.Select(x => x.Id).ToList();
-            var motherboards = context.MotherBoards.Select(x => x.Id).ToList();
-            var processors = context.Procesors.Select(x => x.Id).ToList();
-            var videoCards = context.VideoCards.Select(x => x.Id).ToList();
-            var computerShops = context.ComputersShops.Select(x => x.Id).ToList();
-
-            foreach (var mongoComputer in mongoComputers)
+            var computersMongoCollection = computersMongoRepository.GetAll();
+            foreach (var computerMongo in computersMongoCollection)
             {
-                //var mongoHdds = mongoComputer.HardDrivesIds.ToList();
-                //var hddCollection = new HashSet<HardDrive>()
-                //{
-                //    context.HardDrives.Where(h => h.Id == mongoHdds[0]).FirstOrDefault(),
-                //    context.HardDrives.Where(h => h.Id == mongoHdds[1]).FirstOrDefault()
-                //};
-
-                context.Computers.Add(
+                computersRepository.Add(
                     new Computer
                     {
-                        Model = mongoComputer.Model,
-                        Price = mongoComputer.Price,
-                        MemoryId = memories[mongoComputer.MemoryId],
-                        MotherboardId = motherboards[mongoComputer.MotherboardId % motherboards.Count],
-                        ProcessorId = processors[mongoComputer.ProcesorId],
-                        VideocardId = videoCards[mongoComputer.VideocardId],
-                        ComputerShopId = computerShops[mongoComputer.ComputerShopId]
-                        //HardDrives = hddCollection
+                        Model = computerMongo.Model,
+                        Price = computerMongo.Price,
+                        Memory = new Memory
+                        {
+                            Manufacturer = computerMongo.Memory.Manufacturer,
+                            Price = computerMongo.Memory.Price,
+                            CapacityInGb = computerMongo.Memory.CapacityInGb
+                        },
+                        Motherboard = new Motherboard
+                        {
+                            Manufacturer = computerMongo.Motherboard.Manufacturer,
+                            Model = computerMongo.Motherboard.Model,
+                            Price = computerMongo.Motherboard.Price
+                        },
+                        Processor = new Processor
+                        {
+                            Model = computerMongo.Processor.Model,
+                            Manufacturer = computerMongo.Processor.Manufacturer,
+                            Price = computerMongo.Processor.Price,
+                            FrequencyInMhz = computerMongo.Processor.FrequencyInMhz
+                        },
+                        Videocard = new VideoCard
+                        {
+                            Model = computerMongo.Videocard.Model,
+                            Manufacturer = computerMongo.Videocard.Manufacturer,
+                            Price = computerMongo.Videocard.Price
+                        },
+                        ComputerShop = new ComputerShop
+                        {
+                            Name = computerMongo.ComputerShop.Name
+                        }
                     });
             }
         }
 
-        private static void TransferComputerShopDataToSQL(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
+        public void TransferComputerShopDataToSQL(IRepository<ComputerShop> computerShopsRepository, IMongoRepository<ComputerShopMongoModel> computerShopsMongoRepository)
         {
-            var mongoComputerShops = mongoDatabase.GetCollection<ComputerShopMongoModel>("ComputerShops").AsQueryable().ToList();
-            foreach (var mongoShop in mongoComputerShops)
+            var computerShopsMongoCollection = computerShopsMongoRepository.GetAll();
+            foreach (var computerShopMongo in computerShopsMongoCollection)
             {
-                context.ComputersShops.Add(
+                computerShopsRepository.Add(
                     new ComputerShop
                     {
-                        Name = mongoShop.Name
+                        Name = computerShopMongo.Name
                     });
             }
-        }
-
-        private static void AddComputersSetToHardDrives(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
-        {
-            var hardDrives = context.HardDrives.ToList();
-            var mongoHardDrives = mongoDatabase.GetCollection<HardDriveMongoModel>("HardDrives").AsQueryable().ToList();
-            var mongoHddComputers = mongoHardDrives.Select(h => h.Computers).ToList();
-            for (int i = 0; i < mongoHddComputers.Count; i++)
-            {
-                foreach (var mongoComputer in mongoHddComputers[i])
-                {
-                    hardDrives[i].Computers.Add(CreateNewComputer(mongoComputer));
-                }
-            }
-        }
-
-        private static void AddComputersSetToMemories(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
-        {
-            var memories = context.Memories.ToList();
-            var mongoMemories = mongoDatabase.GetCollection<MemoryMongoModel>("Memories").AsQueryable().ToList();
-            var mongoMemoriesComputers = mongoMemories.Select(m => m.Computers).ToList();
-            for (int i = 0; i < mongoMemoriesComputers.Count; i++)
-            {
-                foreach (var mongoComputer in mongoMemoriesComputers[i])
-                {
-                    memories[i].Computers.Add(CreateNewComputer(mongoComputer));
-                }
-            }
-        }
-
-        private static void AddComputersSetToMotherboards(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
-        {
-            var motherboards = context.MotherBoards.ToList();
-            var mongoMotherboards = mongoDatabase.GetCollection<MotherboardMongoModel>("MotherBoards").AsQueryable().ToList();
-            var mongoMotherboardsComputers = mongoMotherboards.Select(m => m.Computers).ToList();
-            for (int i = 0; i < mongoMotherboardsComputers.Count; i++)
-            {
-                foreach (var mongoComputer in mongoMotherboardsComputers[i])
-                {
-                    motherboards[i].Computers.Add(CreateNewComputer(mongoComputer));
-                }
-            }
-        }
-
-        private static void AddComputersSetToProcessors(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
-        {
-            var processors = context.Procesors.ToList();
-            var mongoProcessors = mongoDatabase.GetCollection<ProcessorMongoModel>("Processors").AsQueryable().ToList();
-            var mongoProcessorsComputers = mongoProcessors.Select(m => m.Computers).ToList();
-            for (int i = 0; i < mongoProcessorsComputers.Count; i++)
-            {
-                foreach (var mongoComputer in mongoProcessorsComputers[i])
-                {
-                    processors[i].Computers.Add(CreateNewComputer(mongoComputer));
-                }
-            }
-        }
-
-        private static void AddComputersSetToVideoCards(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
-        {
-            var videoCards = context.VideoCards.ToList();
-            var mongoVideoCards = mongoDatabase.GetCollection<VideoCardMongoModel>("VideoCards").AsQueryable().ToList();
-            var mongoVideoCardsComputers = mongoVideoCards.Select(m => m.Computers).ToList();
-            for (int i = 0; i < mongoVideoCardsComputers.Count; i++)
-            {
-                foreach (var mongoComputer in mongoVideoCardsComputers[i])
-                {
-                    videoCards[i].Computers.Add(CreateNewComputer(mongoComputer));
-                }
-            }
-        }
-
-        private static void AddComputersSetToComputerShops(ComputersFactoryDbContext context, IMongoDatabase mongoDatabase)
-        {
-            var computerShops = context.ComputersShops.ToList();
-            var mongoComputerShops = mongoDatabase.GetCollection<ComputerShopMongoModel>("ComputerShops").AsQueryable().ToList();
-            var mongoComputerShopsComputers = mongoComputerShops.Select(m => m.Computers).ToList();
-            for (int i = 0; i < mongoComputerShopsComputers.Count; i++)
-            {
-                foreach (var mongoComputer in mongoComputerShopsComputers[i])
-                {
-                    computerShops[i].Computers.Add(CreateNewComputer(mongoComputer));
-                }
-            }
-        }
-
-        private static Computer CreateNewComputer(ComputerMongoModel mongoComputer)
-        {
-            return new Computer
-            {
-                Model = mongoComputer.Model,
-                Price = mongoComputer.Price,
-                MemoryId = mongoComputer.MemoryId,
-                MotherboardId = mongoComputer.MotherboardId,
-                ProcessorId = mongoComputer.ProcesorId,
-                VideocardId = mongoComputer.VideocardId,
-                ComputerShopId = mongoComputer.ComputerShopId
-            };
         }
     }
 }
