@@ -13,6 +13,8 @@ namespace ComputersFactory.Data.SalesReports.PdfGenerator
 {
     public class ComputersPdfGenerator : IComputersPdfGenerator<Computer>
     {
+        private const string DefaultFileName = @"D:\TeamWorkFiles\GeneratedPdfList\ComputersList.pdf";
+
         private readonly AbstractComputersFactoryDbContext context;
 
         public ComputersPdfGenerator(AbstractComputersFactoryDbContext context)
@@ -27,6 +29,11 @@ namespace ComputersFactory.Data.SalesReports.PdfGenerator
 
         public IList<Computer> GeneratePdfReports(string fileName)
         {
+            if (string.IsNullOrEmpty(fileName))
+            {
+                fileName = ComputersPdfGenerator.DefaultFileName;
+            }
+
             var computers = this.context.Computers.ToList();
 
             var pdf = new Document();
