@@ -1,16 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using ComputersFactory.Data.Models;
 
 namespace ComputersFactory.Data.SQLite.Services.Contexts.Contracts
 {
-    public interface ISqLiteDbContext<TEntity> where TEntity : class
+    public interface ISqLiteDbContext
     {
-        void CreateTable();
-
-        void Add(TEntity entity);
-
-        IEnumerable<TEntity> All();
-
-        TEntity Find(int id);
+        ISqLiteDbSet<SqLiteComputer> Computers { get; set; }
 
         void Commit();
     }
