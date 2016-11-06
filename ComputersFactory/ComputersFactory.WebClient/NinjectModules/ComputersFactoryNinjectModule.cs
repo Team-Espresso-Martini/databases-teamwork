@@ -38,6 +38,8 @@ using ComputersFactory.Data.SalesReports.Excel.CompressedExcelDataParsers;
 using ComputersFactory.Data.MySql.ExcelReports.ExcelFileGenerators.Contracts;
 using ComputersFactory.Data.MySql.ExcelReports.ExcelFileGenerators;
 using ComputersFactory.Data.MySql.ExcelReports;
+using ComputersFactory.Data.SalesReports.PdfGenerator;
+using ComputersFactory.Data.Models;
 
 namespace ComputersFactory.WebClient.NinjectModules
 {
@@ -61,6 +63,8 @@ namespace ComputersFactory.WebClient.NinjectModules
                 .WhenInjectedInto<ResolveMissingPathFileSystemProvider>();
             this.Bind<IFileSystemProvider>().To<ResolveMissingPathFileSystemProvider>()
                 .WhenInjectedInto<FileSystemService>();
+
+            this.Bind<IComputersPdfGenerator<Computer>>().To<ComputersPdfGenerator>();
 
             this.Bind<IExcelFileGenerator>().To<ExcelFileGenerator>();
             this.Bind<IExcelReportsFromMySqlProvider>().To<ExcelReportsFromMySqlProvider>();
@@ -90,6 +94,9 @@ namespace ComputersFactory.WebClient.NinjectModules
             this.Bind<Controller>().To<TaskFourController>().Named(TaskFourControllerName);
             this.Bind<Controller>().To<TaskFiveController>().Named(TaskFiveControllerName);
             this.Bind<Controller>().To<TaskSixController>().Named(TaskSixControllerName);
+
+            this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
+                .WhenInjectedInto<ComputersPdfGenerator>().InSingletonScope();
 
             this.Bind<AbstractComputersFactoryDbContext>().To<ComputersFactoryDbContext>()
                 .WhenInjectedInto<XmlSalesReportDataImporter>().InSingletonScope();
