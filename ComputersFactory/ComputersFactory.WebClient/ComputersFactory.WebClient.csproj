@@ -60,6 +60,10 @@
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.10\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -242,6 +246,7 @@
     <Compile Include="Controllers\TaskOneController.cs" />
     <Compile Include="Controllers\TaskSixController.cs" />
     <Compile Include="Controllers\TaskThreeController.cs" />
+    <Compile Include="Controllers\TaskTwoController.cs" />
     <Compile Include="CustomControllerFactories\ComputersFactoryControllersFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -305,6 +310,8 @@
     <Content Include="Views\TaskFive\Index.cshtml" />
     <Content Include="Views\TaskSix\Index.cshtml" />
     <Content Include="Views\TaskSix\RunTask.cshtml" />
+    <Content Include="Views\TaskTwo\RunTask.cshtml" />
+    <Content Include="Views\TaskTwo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -353,6 +360,10 @@
     <ProjectReference Include="..\ComputersFactory.Data.SalesReports.MongoDbImport\ComputersFactory.Data.SalesReports.MongoDbImport.csproj">
       <Project>{21C4D11E-215E-42FF-8A38-9649A5FAD6B8}</Project>
       <Name>ComputersFactory.Data.SalesReports.MongoDbImport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.SalesReports.PdfGenerator\ComputersFactory.Data.SalesReports.PdfGenerator.csproj">
+      <Project>{658FBC31-222F-4D79-860E-9A0EDA9C9190}</Project>
+      <Name>ComputersFactory.Data.SalesReports.PdfGenerator</Name>
     </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.SalesReports\ComputersFactory.Data.SalesReports.csproj">
       <Project>{41056A52-57A7-449E-9E1A-D291810EDEA0}</Project>

@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Task 2";
+}
+
+<h2>Task 2</h2>
+<button class="btn btn-primary">@Html.ActionLink("Run Task", "RunTask", "TaskTwo")</button>
+
+<p>
+    Problem 2 - Generate PDF Reports
+
+    Your task is to generate a PDF reports summarizing information from the SQL Server.
+    For example:
+    the PDF report may contain a table like the sample below:
+    Aggregated Sales Report
+    Date: 20-Jul-2013
+    Product	Quantity	Unit Price	Location	Sum
+    Beer "Beck’s"	40 liters	1.20	Supermarket "Kaspichan – Center"	48.00
+    Beer "Zagorka"	37 liters	1.00	Supermarket "Bourgas – Plaza"	37.00
+    Chocolate "Milka"	7 pieces	2.85	Supermarket "Bay Ivan" – Zmeyovo	19.95
+    Vodka "Targovishte"	14 liters	8.50	Supermarket "Bourgas – Plaza"	119.00
+    Chocolate "Milka"	12 pieces	2.90	Supermarket "Kaspichan – Center"	34.80
+    Beer "Zagorka"	65 liters	0.92	Supermarket "Kaspichan – Center"	59.80
+    Vodka "Targovishte"	4 liters	7.80	Supermarket "Bay Ivan" – Zmeyovo	31.20
+    …	…	…	…	…
+    Total sum for 20-Jul-2012:	349.75
+    Date: 21-Jul-2013
+    Product	Quantity	Unit Price	Location	Sum
+    Beer "Zagorka"	11 liters	1.00	Supermarket "Bourgas – Plaza"	11.00
+    Beer "Zagorka"	78 liters	0.92	Supermarket "Kaspichan – Center"	71.76
+    Beer "Zagorka"	146 liters	0.88	Supermarket "Plovdiv – Stolipinovo"	128.48
+    Vodka "Targovishte"	20 liters	8.50	Supermarket "Bourgas – Plaza"	170.00
+    Vodka "Targovishte"	67 liters	7.70	Supermarket "Plovdiv – Stolipinovo"	515.90
+    Vodka "Targovishte"	3 liters	7.80	Supermarket "Bay Ivan" – Zmeyovo	23.40
+    Beer "Beck’s"	43 liters	1.20	Supermarket "Kaspichan – Center"	51.60
+    Beer "Beck’s"	75 liters	1.05	Supermarket "Plovdiv – Stolipinovo"	78.75
+    Chocolate "Milka"	9 pieces	2.90	Supermarket "Kaspichan – Center"	26.10
+    Chocolate "Milka"	5 pieces	2.85	Supermarket "Bay Ivan" – Zmeyovo	14.25
+    …	…	…	…	…
+    Total sum for 21-Jul-2012:	1091.24
+    Date: 22-Jul-2013
+    Product	Quantity	Unit Price	Location	Sum
+    Beer "Zagorka"	16.00	1.00	Supermarket "Bourgas – Plaza"	16.00
+    Beer "Zagorka"	90.00	0.92	Supermarket "Kaspichan – Center"	82.80
+    Beer "Zagorka"	230.00	0.88	Supermarket "Plovdiv – Stolipinovo"	202.40
+    Vodka "Targovishte"	24.00	8.50	Supermarket "Bourgas – Plaza"	204.00
+    Vodka "Targovishte"	12.00	7.70	Supermarket "Plovdiv – Stolipinovo"	92.40
+    Beer "Beck’s"	18.00	1.20	Supermarket "Kaspichan – Center"	21.60
+    Beer "Beck’s"	60.00	1.05	Supermarket "Plovdiv – Stolipinovo"	63.00
+    Chocolate "Milka"	14.00	2.90	Supermarket "Kaspichan – Center"	40.60
+    …	…	…	…	…
+    Total sum for 21-Jul-2012:	722.80
+    Grand total:	2163.79
+    A sample PDF report is also available: Sample-Aggregated-Sales-Report.pdf.
+    Input:
+    SQL Server database
+    Output:
+    PDF report
+</p>
