@@ -4,7 +4,6 @@ using System.Linq;
 using ComputersFactory.Data.Models;
 using ComputersFactory.Data.SQLite.Services.Contexts.Contracts;
 using ComputersFactory.Data.SQLite.Services.Factories;
-using System.Data.SQLite;
 
 namespace ComputersFactory.Data.SQLite.Services.Contexts
 {
@@ -15,9 +14,7 @@ namespace ComputersFactory.Data.SQLite.Services.Contexts
 
         private readonly IConnectionFactory connectionFactory;
         private readonly ICommandFactory commandFactory;
-
-        private readonly ICollection<SQLiteCommand> commands;
-
+        
         public SqLiteComputersDbSet(IConnectionFactory connectionFactory, ICommandFactory commandFactory)
         {
             this.connectionFactory = connectionFactory;
