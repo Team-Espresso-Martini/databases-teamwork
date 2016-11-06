@@ -38,7 +38,7 @@ namespace ComputersFactory.Data.MySql.ExcelReports
             }
 
             var reports = this.context.Reports.ToList();
-            this.excelGenerator.GenerateExcelTable<MySqlReport>(reports, fileName);
+            this.excelGenerator.GenerateExcelTable(reports, fileName);
 
             return reports;
         }

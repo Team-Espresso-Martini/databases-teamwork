@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Data;
-using System.Reflection;
+using System.IO;
 
 using ComputersFactory.Data.MySql.ExcelReports.ExcelFileGenerators.Contracts;
+using ComputersFactory.Models;
 
 namespace ComputersFactory.Data.MySql.ExcelReports.ExcelFileGenerators
 {
     public class ExcelFileGenerator : IExcelFileGenerator
     {
-        public void GenerateExcelTable<TModel>(IEnumerable<TModel> data, string fileName)
+        public void GenerateExcelTable(IEnumerable<MySqlReport> data, string fileName)
         {
             if (data == null)
             {
@@ -33,19 +33,10 @@ namespace ComputersFactory.Data.MySql.ExcelReports.ExcelFileGenerators
                 fileNameInfo.Delete();
             }
 
-            var propertiesInfo = typeof(TModel).GetProperties();
-            var table = this.CreateDataTable(propertiesInfo);
-
+            var table = this.CreateDataTable();
             foreach (var item in data)
             {
-                var values = new List<object>();
-                foreach (var property in propertiesInfo)
-                {
-                    var nextValue = property.GetValue(item);
-                    values.Add(nextValue);
-                }
-
-                table.Rows.Add(values);
+                table.Rows.Add(item.Model, item.TotalQuantity, item.TotalSales);
             }
 
             var dataSet = new DataSet("MySqlReports");
@@ -54,13 +45,12 @@ namespace ComputersFactory.Data.MySql.ExcelReports.ExcelFileGenerators
             ExcelLibrary.DataSetHelper.CreateWorkbook(fileName, dataSet);
         }
 
-        private DataTable CreateDataTable(IEnumerable<PropertyInfo> properties)
+        private DataTable CreateDataTable()
         {
             var table = new DataTable();
-            foreach (var property in properties)
-            {
-                table.Columns.Add(property.Name);
-            }
+            table.Columns.Add("Model");
+            table.Columns.Add("TotalQty");
+            table.Columns.Add("TotalSales");
 
             return table;
         }
