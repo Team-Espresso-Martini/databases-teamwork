@@ -52,6 +52,10 @@
       <HintPath>..\packages\ExcelDataReader.2.1.2.3\lib\net45\Excel.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelLibrary.1.2011.7.31\lib\ExcelLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
       <Private>True</Private>
@@ -236,6 +240,7 @@
     <Compile Include="Controllers\TaskFiveController.cs" />
     <Compile Include="Controllers\TaskFourController.cs" />
     <Compile Include="Controllers\TaskOneController.cs" />
+    <Compile Include="Controllers\TaskSixController.cs" />
     <Compile Include="Controllers\TaskThreeController.cs" />
     <Compile Include="CustomControllerFactories\ComputersFactoryControllersFactory.cs" />
     <Compile Include="Global.asax.cs">
@@ -298,6 +303,8 @@
     <Content Include="Views\TaskThree\RunTask.cshtml" />
     <Content Include="Views\TaskFive\RunTask.cshtml" />
     <Content Include="Views\TaskFive\Index.cshtml" />
+    <Content Include="Views\TaskSix\Index.cshtml" />
+    <Content Include="Views\TaskSix\RunTask.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -330,6 +337,10 @@
     <ProjectReference Include="..\ComputersFactory.Data.MongoDbWriter.Facade\ComputersFactory.Data.MongoDbWriter.Facade.csproj">
       <Project>{51092E1E-F239-4EA1-88B9-D571114C8A9C}</Project>
       <Name>ComputersFactory.Data.MongoDbWriter.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.MySql.ExcelReports\ComputersFactory.Data.MySql.ExcelReports.csproj">
+      <Project>{905B99DB-96A3-40B0-B63E-45F02A687005}</Project>
+      <Name>ComputersFactory.Data.MySql.ExcelReports</Name>
     </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.MySql\ComputersFactory.Data.MySql.csproj">
       <Project>{4df6e47f-c8ae-4a9a-80af-89e73fc479dc}</Project>
