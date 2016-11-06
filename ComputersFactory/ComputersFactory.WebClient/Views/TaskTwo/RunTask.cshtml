@@ -1,0 +1,16 @@
+﻿
+@using ComputersFactory.Data.Models
+@model IList<ComputersFactory.Data.Models.Computer>
+
+@{
+    ViewBag.Title = "Task 5";
+}
+
+<h2>Task 5 Completed</h2>
+<h3>Number of Reports: @Model.Count</h3>
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">Model: @item.Model, Price: $@item.Price</li>
+    }
+</ul>

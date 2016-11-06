@@ -246,6 +246,7 @@
     <Compile Include="Controllers\TaskOneController.cs" />
     <Compile Include="Controllers\TaskSixController.cs" />
     <Compile Include="Controllers\TaskThreeController.cs" />
+    <Compile Include="Controllers\TaskTwoController.cs" />
     <Compile Include="CustomControllerFactories\ComputersFactoryControllersFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -312,6 +313,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\TaskTwo\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -357,6 +359,10 @@
     <ProjectReference Include="..\ComputersFactory.Data.SalesReports.MongoDbImport\ComputersFactory.Data.SalesReports.MongoDbImport.csproj">
       <Project>{21C4D11E-215E-42FF-8A38-9649A5FAD6B8}</Project>
       <Name>ComputersFactory.Data.SalesReports.MongoDbImport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputersFactory.Data.SalesReports.PdfGenerator\ComputersFactory.Data.SalesReports.PdfGenerator.csproj">
+      <Project>{658FBC31-222F-4D79-860E-9A0EDA9C9190}</Project>
+      <Name>ComputersFactory.Data.SalesReports.PdfGenerator</Name>
     </ProjectReference>
     <ProjectReference Include="..\ComputersFactory.Data.SalesReports\ComputersFactory.Data.SalesReports.csproj">
       <Project>{41056A52-57A7-449E-9E1A-D291810EDEA0}</Project>
