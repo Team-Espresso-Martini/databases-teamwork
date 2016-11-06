@@ -12,10 +12,26 @@ namespace ComputersFactory.Data.Xml.XmlModels
     public partial class ComputerShop
     {
 
-        private ComputerShopComputer computerField;
+        private string nameField;
+
+        private ComputerShopComputer[] computerField;
 
         /// <remarks/>
-        public ComputerShopComputer Computer
+        public string Name
+        {
+            get
+            {
+                return this.nameField;
+            }
+            set
+            {
+                this.nameField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Computer")]
+        public ComputerShopComputer[] Computer
         {
             get
             {
@@ -35,6 +51,8 @@ namespace ComputersFactory.Data.Xml.XmlModels
 
         private decimal computerPriceField;
 
+        private string modelField;
+
         private ComputerShopComputerComponents componentsField;
 
         private byte comuterIDField;
@@ -49,6 +67,19 @@ namespace ComputersFactory.Data.Xml.XmlModels
             set
             {
                 this.computerPriceField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string Model
+        {
+            get
+            {
+                return this.modelField;
+            }
+            set
+            {
+                this.modelField = value;
             }
         }
 

@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ComputerShop>
+  <Name>BestCompShopEver</Name>
   <Computer ComuterID="1">
     <ComputerPrice>1222.22</ComputerPrice>
+    <Model>Game</Model>
     <Components>
       <Motherboard>
         <Price>101.60</Price>
@@ -42,6 +44,7 @@
   </Computer>
   <Computer ComuterID="2">
     <ComputerPrice>2000.20</ComputerPrice>
+    <Model>Work</Model>
     <Components>
       <Motherboard>
         <Price>122.60</Price>

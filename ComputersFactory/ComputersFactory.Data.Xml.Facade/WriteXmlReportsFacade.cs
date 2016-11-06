@@ -23,7 +23,7 @@ namespace ComputersFactory.Data.Xml.Facade
             {
                 var pc = computers[i];
                 var fileName = BaseFileName + i + ".xml";
-                XmlReports.GenerateComputerShopXmlReport(pc, fileName);
+                XmlReporter.GenerateComputerShopXmlReport(pc, fileName);
             }
         }
     }
