@@ -5,7 +5,6 @@ using ComputersFactory.Data.Migrations;
 using ComputersFactory.Data.MongoDbWriter;
 using ComputersFactory.Data.Repositories.UnitsOfWork;
 using ComputersFactory.Data.TransferToSql;
-using MongoDB.Driver;
 using ComputersFactory.Data.Repositories.Repositories.Base;
 using ComputersFactory.Data.MongoDbWriter.Models.Components;
 using ComputersFactory.Data.MongoDbWriter.Models;
@@ -14,12 +13,15 @@ using ComputersFactory.Models;
 using ComputersFactory.Data.Models;
 using ComputersFactory.Data.Generator;
 
+using MongoDB.Driver;
+
 namespace ComputersFactory.ConsoleClient
 {
     public class StartUp
     {
         private const string MongoDbHost = "mongodb://localhost";
         private const string MongoDbName = "ComputersFactory";
+
         public static void Main()
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<ComputersFactoryDbContext, Configuration>());

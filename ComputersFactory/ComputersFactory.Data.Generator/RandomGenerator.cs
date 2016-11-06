@@ -20,6 +20,7 @@ namespace ComputersFactory.Data.Generator
                 return instance ?? (instance = new RandomGenerator());
             }
         }
+
         public int GetRandomNumber(int min, int max)
         {
             return this.random.Next(min, max + 1);
