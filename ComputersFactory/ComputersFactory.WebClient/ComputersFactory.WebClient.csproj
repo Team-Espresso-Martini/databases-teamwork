@@ -310,10 +310,11 @@
     <Content Include="Views\TaskFive\Index.cshtml" />
     <Content Include="Views\TaskSix\Index.cshtml" />
     <Content Include="Views\TaskSix\RunTask.cshtml" />
+    <Content Include="Views\TaskTwo\RunTask.cshtml" />
+    <Content Include="Views\TaskTwo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\TaskTwo\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
