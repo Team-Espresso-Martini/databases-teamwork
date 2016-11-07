@@ -3,8 +3,7 @@
     ViewBag.Title = "Task 6";
 }
 
-<h2>Task 6</h2>
-<button class="btn btn-primary">@Html.ActionLink("Run Task", "RunTask", "TaskSix")</button>
+@Html.ActionLink("Run Task", "RunTask", "TaskSix", null, new { @class = "btn btn-success" })
 
 <h2 id="problem-6---excel-data">Problem 6 - Excel data</h2>
 <ul>
@@ -82,19 +81,4 @@
     <li>MySQL database</li>
     <li><strong>Output</strong>:</li>
     <li>Excel file (.xlsx)</li>
-</ul>
-<h2 id="additional-requirements">Additional Requirements</h2>
-<ul>
-    <li>Your main program logic should be a C# application (a set of modules, executed sequentially one after another).</li>
-    <li>Use non-commercial library to read the ZIP file.</li>
-    <li>For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).</li>
-    <li>MySQL should be accessed through Telerik® Data Access ORM (research it).</li>
-    <li>SQL Server should be accessed through Entity Framework.</li>
-    <li>You are free to use &quot;code first&quot; or &quot;database first&quot; approach or both for the ORM frameworks.</li>
-    <li>For the PDF export use a non-commercial third party framework.</li>
-    <li>The XML files should be read / written through the standard .NET parsers (by your choice).</li>
-    <li>For JSON serializations use a non-commercial library / framework of your choice.</li>
-    <li>MongoDB should be accessed through the Official MongoDB C# Driver.</li>
-    <li>The SQLite embedded database should be accesses though its Entity Framework provider.</li>
-    <li>For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.</li>
 </ul>

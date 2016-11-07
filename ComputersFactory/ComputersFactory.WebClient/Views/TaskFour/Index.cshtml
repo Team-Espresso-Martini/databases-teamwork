@@ -3,8 +3,7 @@
     ViewBag.Title = "Task 4";
 }
 
-<h2>Task 4</h2>
-<button class="btn btn-primary">@Html.ActionLink("Run Task", "RunTask", "TaskFour")</button>
+@Html.ActionLink("Run Task", "RunTask", "TaskFour", null, new { @class = "btn btn-success" })
 
 <h2 id="problem-4---json-reports">Problem 4 - JSON Reports</h2>
 <ul>

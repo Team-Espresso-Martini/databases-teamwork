@@ -3,8 +3,7 @@
     ViewBag.Title = "Task 1";
 }
 
-<h2>Task 1</h2>
-<button class="btn btn-primary">@Html.ActionLink("Run Task", "RunTask", "TaskOne")</button>
+@Html.ActionLink("Run Task", "RunTask", "TaskOne", null, new { @class = "btn btn-success" })
 
 <h2 id="problem-1---load-excel-reports-from-zip-file">Problem 1 - Load Excel Reports from ZIP File</h2>
 <ul>
