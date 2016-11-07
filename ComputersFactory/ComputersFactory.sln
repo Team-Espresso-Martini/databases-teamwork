@@ -64,6 +64,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.SQLit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Generator", "ComputersFactory.Data.Generator\ComputersFactory.Data.Generator.csproj", "{86DE102F-FCC7-4416-A955-A5206668D2B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.SalesReports.Excel.OleDb", "ComputersFactory.Data.SalesReports.Excel.OleDb\ComputersFactory.Data.SalesReports.Excel.OleDb.csproj", "{50C4EBCC-F8D9-4A40-BDEB-41D55622EEFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -182,6 +184,10 @@ Global
 		{86DE102F-FCC7-4416-A955-A5206668D2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86DE102F-FCC7-4416-A955-A5206668D2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86DE102F-FCC7-4416-A955-A5206668D2B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C4EBCC-F8D9-4A40-BDEB-41D55622EEFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C4EBCC-F8D9-4A40-BDEB-41D55622EEFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C4EBCC-F8D9-4A40-BDEB-41D55622EEFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C4EBCC-F8D9-4A40-BDEB-41D55622EEFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
