@@ -9,6 +9,9 @@ using ComputersFactory.Models;
 
 namespace ComputersFactory.Data.SalesReports.DataImporter
 {
+    /// <summary>
+    /// Expects 30+ ComputerShops, Run Task 1 Twice
+    /// </summary>
     public class XmlSalesReportDataImporter : IXmlDataImporter
     {
         private readonly IAdaptedXmlDeserializer xmlDeserializer;

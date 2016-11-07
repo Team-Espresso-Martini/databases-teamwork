@@ -38,4 +38,4 @@ namespace ComputersFactory.Data.MySql.OpenAccess.ConsoleApp
         }
     }
 }
-}
+
