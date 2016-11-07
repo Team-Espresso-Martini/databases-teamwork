@@ -66,6 +66,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.Gener
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.SalesReports.Excel.OleDb", "ComputersFactory.Data.SalesReports.Excel.OleDb\ComputersFactory.Data.SalesReports.Excel.OleDb.csproj", "{50C4EBCC-F8D9-4A40-BDEB-41D55622EEFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.MySql.OpenAccess", "ComputersFactory.Data.MySql.OpenAccess\ComputersFactory.Data.MySql.OpenAccess.csproj", "{1115AEAB-9B21-4072-9756-FCE814270281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersFactory.Data.MySql.OpenAccess.ConsoleApp", "ComputersFactory.Data.MySql.OpenAccess.ConsoleApp\ComputersFactory.Data.MySql.OpenAccess.ConsoleApp.csproj", "{BE4D808B-7281-4D18-8C65-1E99D831BCCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -188,6 +192,14 @@ Global
 		{50C4EBCC-F8D9-4A40-BDEB-41D55622EEFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50C4EBCC-F8D9-4A40-BDEB-41D55622EEFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50C4EBCC-F8D9-4A40-BDEB-41D55622EEFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1115AEAB-9B21-4072-9756-FCE814270281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1115AEAB-9B21-4072-9756-FCE814270281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1115AEAB-9B21-4072-9756-FCE814270281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1115AEAB-9B21-4072-9756-FCE814270281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE4D808B-7281-4D18-8C65-1E99D831BCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4D808B-7281-4D18-8C65-1E99D831BCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4D808B-7281-4D18-8C65-1E99D831BCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4D808B-7281-4D18-8C65-1E99D831BCCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
