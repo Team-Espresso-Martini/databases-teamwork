@@ -6,6 +6,10 @@ using MySql.Data.Entity;
 
 namespace ComputersFactory.Data.MySql
 {
+
+    /// <summary>
+    /// Uncomment attribute, comment constructor to run code migration.
+    /// </summary>
     //[DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class ComputersFactoryMySqlDbContext : DbContext, IMySqlDatabaseContext
     {
