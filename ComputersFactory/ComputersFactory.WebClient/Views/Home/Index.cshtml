@@ -7,3 +7,142 @@
     <p class="lead">Databases Teamwork project</p>
     <p><a href="https://github.com/Team-Espresso-Martini" target="_blank" class="btn btn-primary btn-lg">GitHub repository</a></p>
 </div>
+
+<section>
+    <h1 id="databases-october-2016">Databases October 2016</h1>
+    <h2 id="practical-teamwork-project">Practical Teamwork Project</h2>
+    <ul>
+        <li>A factory of your choice holds information about its products in MongoDB database consisting of at least 3 tables.</li>
+        <li>For example you may have the following schema for beer factory:</li>
+    </ul>
+    <h4 id="products">Products</h4>
+    <table>
+        <thead>
+            <tr class="header">
+                <th align="left">ID</th>
+                <th align="left">VendorID</th>
+                <th align="left">Product Name</th>
+                <th align="left">MeasureID</th>
+                <th align="left">Base Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td align="left">1</td>
+                <td align="left">20</td>
+                <td align="left">Beer “Zagorka”</td>
+                <td align="left">100</td>
+                <td align="left">0.86</td>
+            </tr>
+            <tr class="even">
+                <td align="left">2</td>
+                <td align="left">30</td>
+                <td align="left">Vodka “Targovishte”</td>
+                <td align="left">100</td>
+                <td align="left">7.56</td>
+            </tr>
+            <tr class="odd">
+                <td align="left">3</td>
+                <td align="left">20</td>
+                <td align="left">Beer “Beck’s”</td>
+                <td align="left">100</td>
+                <td align="left">1.03</td>
+            </tr>
+            <tr class="even">
+                <td align="left">4</td>
+                <td align="left">10</td>
+                <td align="left">Chocolate “Milka”</td>
+                <td align="left">200</td>
+                <td align="left">2.80</td>
+            </tr>
+            <tr class="odd">
+                <td align="left">…</td>
+                <td align="left">…</td>
+                <td align="left">…</td>
+                <td align="left">…</td>
+                <td align="left">…</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4 id="vendors">Vendors</h4>
+    <table>
+        <thead>
+            <tr class="header">
+                <th align="left">ID</th>
+                <th align="left">Vendor Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td align="left">10</td>
+                <td align="left">Nestle Sofia Corp.</td>
+            </tr>
+            <tr class="even">
+                <td align="left">20</td>
+                <td align="left">Zagorka Corp.</td>
+            </tr>
+            <tr class="odd">
+                <td align="left">30</td>
+                <td align="left">Targovishte Bottling Company Ltd.</td>
+            </tr>
+            <tr class="even">
+                <td align="left">…</td>
+                <td align="left">…</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4 id="measures">Measures</h4>
+    <table>
+        <thead>
+            <tr class="header">
+                <th align="left">ID</th>
+                <th align="left">Measure Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td align="left">100</td>
+                <td align="left">liters</td>
+            </tr>
+            <tr class="even">
+                <td align="left">200</td>
+                <td align="left">pieces</td>
+            </tr>
+            <tr class="odd">
+                <td align="left">…</td>
+                <td align="left">…</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li>Do not use the provided example but think of another case. Create your tables with at least 4 columns and try to be creative (it will be part of your final score). For testing purposes please fill between 10 and 50 records in each table. Try to use real-world data. You may use sequential IDs for the primary key or any other primary key notation.</li>
+    </ul>
+    <h2 id="assignment">Assignment</h2>
+    <ul>
+        <li>Your assignment is to design, develop and test a C# application for importing Excel reports from a ZIP file and the product data from MongoDB into SQL Server, generate XML reports and PDF reports, create reports as JSON documents and also load them into MySQL, load additional information by your choice from XML file, read other information by your choice from SQLite and calculate aggregated results and write them into Excel file:</li>
+    </ul>
+    <ul>
+        <li>All reports should be different from each other and are by your choice. They can be sales reports, taxes reports, vendor reports, etc. Try to use real-world example.</li>
+    </ul>
+    <div class="figure">
+        <img width="100%" src="https://cloud.githubusercontent.com/assets/3619393/10135708/e4b681d4-65f8-11e5-9243-0aea8fa008eb.png" alt="project" />
+    </div>
+</section>
+
+<section>
+    <h2 id="additional-requirements">Additional Requirements</h2>
+    <ul>
+        <li>Your main program logic should be a C# application (a set of modules, executed sequentially one after another).</li>
+        <li>Use non-commercial library to read the ZIP file.</li>
+        <li>For reading the Excel 2003 files (.xls) use ADO.NET (without ORM or third-party libraries).</li>
+        <li>MySQL should be accessed through Telerik® Data Access ORM (research it).</li>
+        <li>SQL Server should be accessed through Entity Framework.</li>
+        <li>You are free to use &quot;code first&quot; or &quot;database first&quot; approach or both for the ORM frameworks.</li>
+        <li>For the PDF export use a non-commercial third party framework.</li>
+        <li>The XML files should be read / written through the standard .NET parsers (by your choice).</li>
+        <li>For JSON serializations use a non-commercial library / framework of your choice.</li>
+        <li>MongoDB should be accessed through the Official MongoDB C# Driver.</li>
+        <li>The SQLite embedded database should be accesses though its Entity Framework provider.</li>
+        <li>For creating the Excel 2007 files (.xlsx) use a third-party non-commercial library.</li>
+    </ul>
+</section>

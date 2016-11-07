@@ -3,40 +3,35 @@
     ViewBag.Title = "Task 3";
 }
 
-<h2>Task 3</h2>
-<button class="btn btn-primary">@Html.ActionLink("Run Task", "RunTask", "TaskThree")</button>
+@Html.ActionLink("Run Task", "RunTask", "TaskThree", null, new { @class = "btn btn-success" })
 
-<p>
-    Problem 3 - Generate XML Report
-
-    Your task is to create a C# program to generate report in XML format like the sample below:
-    Sales-by-Vendors-report.xml
-    <code>
-        <?xml version="1.0" encoding="utf-8">
-            <sales>
-                <sale vendor="Nestle Sofia Corp.">
-                    <summary date="20-Jul-2013" total-sum="54.75" />
-                    <summary date="21-Jul-2013" total-sum="40.35" />
-                    <summary date="22-Jul-2013" total-sum="40.60" />
-                </sale>
-                <sale vendor="Targovishte Bottling Company Ltd.">
-                    <summary date="20-Jul-2013" total-sum="150.20" />
-                    <summary date="21-Jul-2013" total-sum="709.30" />
-                    <summary date="22-Jul-2013" total-sum="249.40" />
-                </sale>
-                <sale vendor="Zagorka Corp.">
-                    <summary date="20-Jul-2013" total-sum="144.80" />
-                    <summary date="21-Jul-2013" total-sum="341.59" />
-                    <summary date="22-Jul-2013" total-sum="385.80" />
-                </sale>
-                <sales>
-                    Save the report in an “xml” file.
-                    Input:
-                    SQL Server database
-                    Output:
-                    XML report
-                </sales>
-            </sales>
-        </?xml>
-    </code>
-</p>
+<h2 id="problem-3---generate-xml-report">Problem 3 - Generate XML Report</h2>
+<ul>
+    <li>Your task is to create a C# program to <strong>generate report in XML format</strong> like the sample below:</li>
+</ul>
+<p><strong>Sales-by-Vendors-report.xml</strong></p>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;&gt;
+&lt;sales&gt;
+  &lt;sale vendor=&quot;Nestle Sofia Corp.&quot;&gt;
+    &lt;summary date=&quot;20-Jul-2013&quot; total-sum=&quot;54.75&quot; /&gt;
+    &lt;summary date=&quot;21-Jul-2013&quot; total-sum=&quot;40.35&quot; /&gt;
+    &lt;summary date=&quot;22-Jul-2013&quot; total-sum=&quot;40.60&quot; /&gt;
+  &lt;/sale&gt;
+  &lt;sale vendor=&quot;Targovishte Bottling Company Ltd.&quot;&gt;
+    &lt;summary date=&quot;20-Jul-2013&quot; total-sum=&quot;150.20&quot; /&gt;
+    &lt;summary date=&quot;21-Jul-2013&quot; total-sum=&quot;709.30&quot; /&gt;
+    &lt;summary date=&quot;22-Jul-2013&quot; total-sum=&quot;249.40&quot; /&gt;
+  &lt;/sale&gt;
+  &lt;sale vendor=&quot;Zagorka Corp.&quot;&gt;
+    &lt;summary date=&quot;20-Jul-2013&quot; total-sum=&quot;144.80&quot; /&gt;
+    &lt;summary date=&quot;21-Jul-2013&quot; total-sum=&quot;341.59&quot; /&gt;
+    &lt;summary date=&quot;22-Jul-2013&quot; total-sum=&quot;385.80&quot; /&gt;
+  &lt;/sale&gt;
+&lt;sales&gt;</code></pre>
+<ul>
+    <li>Save the report in an “<strong>xml</strong>” file.</li>
+    <li><strong>Input</strong>:</li>
+    <li>SQL Server database</li>
+    <li><strong>Output</strong>:</li>
+    <li>XML report</li>
+</ul>

@@ -3,29 +3,82 @@
     ViewBag.Title = "Task 6";
 }
 
-<h2>Task 6</h2>
-<button class="btn btn-primary">@Html.ActionLink("Run Task", "RunTask", "TaskSix")</button>
+@Html.ActionLink("Run Task", "RunTask", "TaskSix", null, new { @class = "btn btn-success" })
 
-<p>
-    Problem 6 - Excel data
-
-    You are given a SQLite database holding more information for each product.
-    For example:
-    Product Name	Tax
-    Beer “Beck’s”	20%
-    Beer “Zagorka”	20%
-    Chocolate “Milka”	18%
-    Vodka “Targovishte”	25%
-    Write a program to read the MySQL database of reports, read the information from SQLite and generate a single Excel file holding some information by your choice.
-    For example:
-    Vendor	Incomes	Expenses	Taxes	Financial Result
-    Nestle Sofia Corp.	135.70	30	24.43	81.27
-    Targovishte Bottling Company Ltd.	1155.90	200	288.98	666.92
-    Zagorka Corp.	872.19	120	174.44	577.75
-    You are not allowed to connect to the SQL Server or MongoDB databases to read information.
-    Input:
-    SQLite database
-    MySQL database
-    Output:
-    Excel file (.xlsx)
-</p>
+<h2 id="problem-6---excel-data">Problem 6 - Excel data</h2>
+<ul>
+    <li>You are given a <strong>SQLite database</strong> holding more information for each product.</li>
+    <li><em>For example:</em></li>
+</ul>
+<table>
+    <thead>
+        <tr class="header">
+            <th align="left">Product Name</th>
+            <th align="center">Tax</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td align="left">Beer “Beck’s”</td>
+            <td align="center">20%</td>
+        </tr>
+        <tr class="even">
+            <td align="left">Beer “Zagorka”</td>
+            <td align="center">20%</td>
+        </tr>
+        <tr class="odd">
+            <td align="left">Chocolate “Milka”</td>
+            <td align="center">18%</td>
+        </tr>
+        <tr class="even">
+            <td align="left">Vodka “Targovishte”</td>
+            <td align="center">25%</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>Write a program to <strong>read the MySQL database</strong> of reports, <strong>read the information from SQLite</strong> and generate a <strong>single Excel</strong> file holding some information by your choice.</li>
+    <li><em>For example:</em></li>
+</ul>
+<table>
+    <thead>
+        <tr class="header">
+            <th align="left">Vendor</th>
+            <th align="center">Incomes</th>
+            <th align="left">Expenses</th>
+            <th align="left">Taxes</th>
+            <th align="left">Financial Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td align="left">Nestle Sofia Corp.</td>
+            <td align="center">135.70</td>
+            <td align="left">30</td>
+            <td align="left">24.43</td>
+            <td align="left">81.27</td>
+        </tr>
+        <tr class="even">
+            <td align="left">Targovishte Bottling Company Ltd.</td>
+            <td align="center">1155.90</td>
+            <td align="left">200</td>
+            <td align="left">288.98</td>
+            <td align="left">666.92</td>
+        </tr>
+        <tr class="odd">
+            <td align="left">Zagorka Corp.</td>
+            <td align="center">872.19</td>
+            <td align="left">120</td>
+            <td align="left">174.44</td>
+            <td align="left">577.75</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>You are <strong>not</strong> allowed to connect to the SQL Server or MongoDB databases to read information.</li>
+    <li><strong>Input</strong>:</li>
+    <li>SQLite database</li>
+    <li>MySQL database</li>
+    <li><strong>Output</strong>:</li>
+    <li>Excel file (.xlsx)</li>
+</ul>
