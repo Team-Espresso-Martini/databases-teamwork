@@ -1,4 +1,4 @@
-# [Slides](https://rawgit.com/Team-Espresso-Martini/databases-teamwork/presentation/presentation/index.html#/1)
+# [Slides](https://rawgit.com/Team-Espresso-Martini/databases-teamwork/presentation/presentation/index.html)
 
 # Modules
 
