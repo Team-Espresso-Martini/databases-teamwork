@@ -11,20 +11,22 @@
 </div>
 
 <!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
+
+# Captain Marvel Members
+
+| Name | TALS | GitHub |
+| :------------- | :------------------- | :------------------------------------------|
+| Кристиян Гериловски  | Gerilovski       | [kgerilovski](https://github.com/kgerilovski)                   |
+| Мариан Николов   | Marian_Nikolov | [MarianNikolov](https://github.com/MarianNikolov)       |
+| Петя Спасова    | pspassova  | [pspassova](https://github.com/pspassova)         |
+| Росица Бъндева | rossi.bundeva  | [RossyB](https://github.com/RossyB)         |
+| Христо Тодоров | todorovh    | [shakuu](https://github.com/shakuu)                 |
+
+<!-- section start -->
 
 <!-- attr: {id: 'table-of-contents'} -->
-# Table of Contents
-
-*   What is a Transaction?
-*   ACID Transactions
-*   Managing Transactions in SQL
-*   Concurrency Problems in DBMS
-*   Concurrency Control Techniques
-    *   Locking Strategies
-    *   Optimistic vs. Pessimistic Locking
-*   Transaction Isolation Levels
-*   Transaction Log and Recovery
-*   When and How to Use Transactions?
+# Live Demo
 
 <!-- section start -->
 
