@@ -13,7 +13,8 @@
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
 
-# Captain Marvel Members
+# Team Espresso-Martini
+## Members
 
 | Name | TALS | GitHub |
 | :------------- | :------------------- | :------------------------------------------|
@@ -26,10 +27,11 @@
 <!-- section start -->
 
 <!-- attr: {id: 'table-of-contents'} -->
-# Live Demo
+# Team Espresso-Martini
+## Live Demo
 
 <!-- section start -->
 
 <!-- attr: {id: 'questions', class: 'slide-questions', showInPresentation: true} -->
-# Database Transactions Concepts
+# Team Espresso-Martini
 ## Questions
